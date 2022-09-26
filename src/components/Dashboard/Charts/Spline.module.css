@@ -1,0 +1,62 @@
+.chart {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  overflow: hidden;
+  color: #1e293b;
+  -webkit-box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.22);
+  box-shadow: 5px 5px 15px -1px rgba(0, 0, 0, 0.22);
+  padding: var(--padding-sm);
+  background: white;
+}
+
+.chart h2 {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.chart h3 {
+  color: lightgray;
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+.chart .sales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: var(--margin-xxs);
+}
+
+.chart .sales span {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.chart .sales .percentage {
+  color: white;
+  padding: 0.1rem 0.5rem;
+  border-radius: 10px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: var(--margin-xxs);
+}
+
+.chart .sales .percentage_green {
+  background: #10b981;
+}
+
+.chart .sales .percentage_red {
+  background: red;
+}
+
+.canvas_wrapper {
+  height: 150px;
+  margin-top: auto;
+}
+/*# sourceMappingURL=Spline.module.css.map */
