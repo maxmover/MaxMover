@@ -1,0 +1,12 @@
+.tabpillsscroll {
+  width: 100%;
+  -ms-flex-wrap: nowrap !important;
+      flex-wrap: nowrap !important;
+  overflow-x: scroll;
+}
+
+.nav-link {
+  width: 150px !important;
+  text-align: center;
+}
+/*# sourceMappingURL=UsermanageCustomer.module.css.map */
