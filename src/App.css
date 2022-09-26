@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+body {
+  --margin-xl: 4rem;
+  --margin-lg: 3rem;
+  --margin-md: 2rem;
+  --margin-sm: 1rem;
+  --margin-xs: 0.8rem;
+  --margin-xxs: 0.5rem;
+
+  --padding-xl: 4rem;
+  --padding-lg: 3rem;
+  --padding-md: 2rem;
+  --padding-sm: 1rem;
+  --padding-xs: 0.8rem;
+  --padding-xxs: 0.5rem;
+
+  font-family: "IBM Plex Sans";
+  overflow: hidden;
+  background: rgb(240, 244, 248);
+}
+
+.App {
+  display: flex;
+}
+
+/* USERMANAGEMENT */
+
+.tabpillsscroll {
+  width: 100%;
+  flex-wrap: nowrap !important;
+  overflow-x: scroll;
+  border: 0.5px solid #139ee3;
+  border-radius: 4px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+}
+
+.tabpillsscroll .nav-link {
+  width: 140px !important;
+  text-align: center;
+  border-radius: 4px !important;
+}
+
+.pagetitle h1 {
+  font-size: 20px;
+}
+button.btnoutline {
+  border: 1px solid #139ee3 !important;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  width: 239px;
+  height: 36px;
+  color: #282828;
+}
+button.btnoutline svg {
+  font-size: 1.2rem;
+  margin-top: -2px;
+  color: #139ee3;
+}
+button.btnoutline:hover svg {
+  color: #fff;
+}
+button.actionbtns {
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  width: 80px;
+  height: 36px;
+  color: #fff;
+}
+.datePickinput input {
+  background: #ffffff;
+  border: 0.5px solid #139ee3;
+  border-radius: 4px;
+  padding: 0.4rem 0.5rem;
+  width: 100%;
+}
+.datePickinput {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #282828;
+}
+table.dataTable thead th,
+table.dataTable thead td {
+  padding: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+tr {
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+thead {
+  background: #033f5c;
+  border-radius: 4px;
+  color: #fff;
+}
+.table_component svg {
+  color: #139ee3;
+  font-size: 1.2rem;
+}
+
+/* /MEDIA QUERIES/ */
+
+@media (min-width: 320px) {
+  /* .table.dataTable {
+    display: block;
+  } */
+}
+@media (max-width: 576px) {
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 1200px) {
+}
+
+@media (min-width: 1440px) {
+}
