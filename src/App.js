@@ -21,52 +21,55 @@ function App() {
   const value = { nav, setNav };
 
   return (
-    <div className="App">
-      <NavContext.Provider value={value}>
-        <Navbar />
-        <Container
-          stickyNav={<RightNavbar />}
-          content={
-            <Routes>
-              <Route path="/" element={<Dashboard />} />
-              <Route
-                path="/usermanageCustomer"
-                element={<UsermanageCustomer />}
-              />
-              <Route
-                path="/usermanageEmployee"
-                element={<UsermanageEmployee />}
-              />
-              <Route
-                path="/usermanageSubContactor"
-                element={<UsermanageSubContactor />}
-              />
-              <Route
-                path="/UsermanageReception"
-                element={<UsermanageReception />}
-              />
-              <Route
-                path="/UsermanageRefereers"
-                element={<UsermanageRefereers />}
-              />
-              <Route
-                path="/service_categories"
-                element={<ServiceCategories />}
-              />
-              {/* <Route
+    <>
+      <div>fjbjfgbi</div>
+      <div className="App">
+        <NavContext.Provider value={value}>
+          <Navbar />
+          <Container
+            stickyNav={<RightNavbar />}
+            content={
+              <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route
+                  path="/usermanageCustomer"
+                  element={<UsermanageCustomer />}
+                />
+                <Route
+                  path="/usermanageEmployee"
+                  element={<UsermanageEmployee />}
+                />
+                <Route
+                  path="/usermanageSubContactor"
+                  element={<UsermanageSubContactor />}
+                />
+                <Route
+                  path="/UsermanageReception"
+                  element={<UsermanageReception />}
+                />
+                <Route
+                  path="/UsermanageRefereers"
+                  element={<UsermanageRefereers />}
+                />
+                <Route
+                  path="/service_categories"
+                  element={<ServiceCategories />}
+                />
+                {/* <Route
                 path="/servicecategories"
                 element={<Servicecategories />}
               />
               <Route path="/vehiclemanage" element={<Vehiclemanage />} />
               <Route path="/tempnotes" element={<Tempnotes />} />
               <Route path="/smsmanage" element={<Smsmanage />} /> */}
-              {/* <Route path="/messages" element={<main>Messages</main>} /> */}
-              <Route path="*" element={<main>NOT FOUND</main>} />
-            </Routes>
-          }
-        />
-      </NavContext.Provider>
-    </div>
+                {/* <Route path="/messages" element={<main>Messages</main>} /> */}
+                <Route path="*" element={<main>NOT FOUND</main>} />
+              </Routes>
+            }
+          />
+        </NavContext.Provider>
+      </div>
+    </>
   );
 }
 

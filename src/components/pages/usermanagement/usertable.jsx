@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 
 //Bootstrap and jQuery libraries
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -14,116 +14,111 @@ import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
 import $ from "jquery";
 
-class Usertable extends React.Component {
-  componentDidMount() {
-    //initialize datatable
-    $(document).ready(function () {
-      $("#Customer_table").DataTable({
-        responsive: true,
-
-        deferRender: true,
-        scroller: true,
-      });
+const Usertable = () => {
+  useEffect(() => {
+    $("#Customer_table").DataTable({
+      responsive: true,
+      deferRender: true,
+      scroller: true,
     });
-  }
-  render() {
-    //Datatable HTML
-    return (
-      <div className="MainDiv">
-        <div className="">
-          <table id="Customer_table" class="my-2 table_component display">
-            <thead>
-              <tr>
-                <th>Referrer ID</th>
-                <th>Date</th>
-                <th>Customer Type</th>
-                <th>Name</th>
-                <th>Email Id</th>
-                <th>Phone</th>
-                <th>Action</th>
-                <th>Delete</th>
-                <th>More Details</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>RE00023</td>
-                <td>22-02-22</td>
-                <td>Lauren Scott</td>
-                <td>Lauren</td>
-                <td>lauren@gmail.com</td>
-                <td>7869889790</td>
-                <td>
-                  <BsPen />
-                </td>
-                <td>
-                  <AiOutlineDelete />
-                </td>
-                <td>
-                  More Details <IoMdAddCircleOutline />
-                </td>
-              </tr>
+  }, []);
 
-              <tr>
-                <td>RE00023</td>
-                <td>22-02-22</td>
-                <td>Lauren Scott</td>
-                <td>Lauren</td>
-                <td>lauren@gmail.com</td>
-                <td>7869889790</td>
-                <td>
-                  <BsPen />
-                </td>
-                <td>
-                  <AiOutlineDelete />
-                </td>
-                <td>
-                  More Details <IoMdAddCircleOutline />
-                </td>
-              </tr>
+  //Datatable HTML
+  return (
+    <div className="MainDiv">
+      <div className="">
+        <table id="Customer_table" class="my-2 table_component display">
+          <thead>
+            <tr>
+              <th>Referrer ID</th>
+              <th>Date</th>
+              <th>Customer Type</th>
+              <th>Name</th>
+              <th>Email Id</th>
+              <th>Phone</th>
+              <th>Action</th>
+              <th>Delete</th>
+              <th>More Details</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>RE00023</td>
+              <td>22-02-22</td>
+              <td>Lauren Scott</td>
+              <td>Lauren</td>
+              <td>lauren@gmail.com</td>
+              <td>7869889790</td>
+              <td>
+                <BsPen />
+              </td>
+              <td>
+                <AiOutlineDelete />
+              </td>
+              <td>
+                More Details <IoMdAddCircleOutline />
+              </td>
+            </tr>
 
-              <tr>
-                <td>RE00023</td>
-                <td>22-02-22</td>
-                <td>Lauren Scott</td>
-                <td>Lauren</td>
-                <td>lauren@gmail.com</td>
-                <td>7869889790</td>
-                <td>
-                  <BsPen />
-                </td>
-                <td>
-                  <AiOutlineDelete />
-                </td>
-                <td>
-                  More Details <IoMdAddCircleOutline />
-                </td>
-              </tr>
+            <tr>
+              <td>RE00023</td>
+              <td>22-02-22</td>
+              <td>Lauren Scott</td>
+              <td>Lauren</td>
+              <td>lauren@gmail.com</td>
+              <td>7869889790</td>
+              <td>
+                <BsPen />
+              </td>
+              <td>
+                <AiOutlineDelete />
+              </td>
+              <td>
+                More Details <IoMdAddCircleOutline />
+              </td>
+            </tr>
 
-              <tr>
-                <td>RE00023</td>
-                <td>22-02-22</td>
-                <td>Lauren Scott</td>
-                <td>Lauren</td>
-                <td>lauren@gmail.com</td>
-                <td>7869889790</td>
-                <td>
-                  <BsPen />
-                </td>
-                <td>
-                  <AiOutlineDelete />
-                </td>
-                <td>
-                  More Details <IoMdAddCircleOutline />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+            <tr>
+              <td>RE00023</td>
+              <td>22-02-22</td>
+              <td>Lauren Scott</td>
+              <td>Lauren</td>
+              <td>lauren@gmail.com</td>
+              <td>7869889790</td>
+              <td>
+                <BsPen />
+              </td>
+              <td>
+                <AiOutlineDelete />
+              </td>
+              <td>
+                More Details <IoMdAddCircleOutline />
+              </td>
+            </tr>
+
+            <tr>
+              <td>RE00023</td>
+              <td>22-02-22</td>
+              <td>Lauren Scott</td>
+              <td>Lauren</td>
+              <td>lauren@gmail.com</td>
+              <td>7869889790</td>
+              <td>
+                <BsPen />
+              </td>
+              <td>
+                <AiOutlineDelete />
+              </td>
+              <td>
+                More Details <IoMdAddCircleOutline />
+              </td>
+            </tr>
+          </tbody>
+        </table>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 export default Usertable;
 
 // const Usertable = () => {

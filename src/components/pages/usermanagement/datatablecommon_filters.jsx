@@ -2,7 +2,7 @@ import React from "react";
 import Button from "react-bootstrap/Button";
 import { IoMdAddCircleOutline } from "react-icons/io";
 import Datepickercal from "./calender_input";
-
+// import { NavLink } from "react-router-dom";
 const Datacommonfilters = () => {
   return (
     <div className="container mx-0 px-0">
@@ -10,6 +10,7 @@ const Datacommonfilters = () => {
         <div className="col-xxl-5 col-xl-6 col-lg-6 col-md-12 col-12 my-3 ">
           <div className="d-flex flex-md-row flex-column justify-content-between align-items-md-center">
             <div>
+              {/* <NavLink to={-1}>jkgfhgghf</NavLink> */}
               <Button variant="outline-primary" className="btnoutline">
                 <IoMdAddCircleOutline /> Add new customer
               </Button>

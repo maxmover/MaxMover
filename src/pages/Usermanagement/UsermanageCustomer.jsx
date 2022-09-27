@@ -17,7 +17,8 @@ const UsermanageCustomer = () => {
     <>
       <div
         className="mainbody_container bg-white m-3 p-3"
-        style={{ Padding: "3rem", Width: "100%" }}>
+        style={{ Padding: "3rem", Width: "100%" }}
+      >
         <div className="container pagetitle my-2">
           <h1>User Management</h1>
         </div>
@@ -60,21 +61,16 @@ const UsermanageCustomer = () => {
                 <Usertable />
               </Tab.Pane>
               <Tab.Pane eventKey="employees">
-                <Datacommonfilters />
-                <Usertable />
+                <Datacommonfilters />1
               </Tab.Pane>
               <Tab.Pane eventKey="subcontractor">
-                <Datacommonfilters />
-                <Usertable />
+                <Datacommonfilters />1
               </Tab.Pane>
               <Tab.Pane eventKey="reception">
-                <Datacommonfilters />
-                <Usertable />
+                <Datacommonfilters />1
               </Tab.Pane>
               <Tab.Pane eventKey="refereers">
-                <Datacommonfilters />
-                <Usertable />
-                <div className="m_t"></div>
+                <Datacommonfilters />1<div className="m_t"></div>
                 {/* <PreviousExperiences /> */}
               </Tab.Pane>
             </Tab.Content>
