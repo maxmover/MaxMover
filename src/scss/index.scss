@@ -10,3 +10,18 @@
 .custom_container {
   padding: 1.3rem;
 }
+.action_strip_div {
+  background-color: $blue;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  text-transform: capitalize;
+  padding: 10px 18px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  span {
+    margin-right: 10px;
+    font-size: 12px;
+  }
+}
