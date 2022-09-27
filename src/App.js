@@ -13,6 +13,9 @@ import UsermanageRefereers from "./pages/Usermanagement/UsermanageRefereers.jsx"
 // import Team from "./components/";
 
 import NavContext from "./components/common/Context/NavContext";
+// sunny
+import { ServiceCategories } from "./pages/sunny/ServiceCategories";
+// sunny end
 function App() {
   const [nav, setNav] = useState(false);
   const value = { nav, setNav };
@@ -45,6 +48,10 @@ function App() {
               <Route
                 path="/UsermanageRefereers"
                 element={<UsermanageRefereers />}
+              />
+              <Route
+                path="/service_categories"
+                element={<ServiceCategories />}
               />
               {/* <Route
                 path="/servicecategories"

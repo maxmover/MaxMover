@@ -7,19 +7,13 @@ import { useContext, useState } from "react";
 import NavContext from "../../common/Context/NavContext";
 
 //REACT ROUTER
-import { NavLink, Link, useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 //LOGO
 import logo from "../../../pics/maxmover_logo.png";
 //ICONS
 import {
   MdOutlineDashboardCustomize,
-  MdOutlineAnalytics,
-  MdOutlinedFlag,
-  MdPeopleOutline,
-  MdOutlineSettings,
-  MdOutlineMessage,
-  MdOutlineLogout,
   MdOutlineManageAccounts,
   MdOutlineKeyboardArrowDown,
   MdOutlineKeyboardArrowRight,
@@ -28,22 +22,7 @@ import { GiExpense } from "react-icons/gi";
 import { BsChatLeftDots, BsTruck } from "react-icons/bs";
 import { VscServerEnvironment } from "react-icons/vsc";
 import { AiOutlineFileSearch } from "react-icons/ai";
-// const NavUrl = ({ url, icon, description }) => {
-//   return (
-//     <li className={styles.li_navlink}>
-//       <NavLink
-//         to={`${url}`}
-//         className={({ isActive }) => (isActive ? styles.active : undefined)}
-//         onClick={() => checkWindowSize()}>
-//         {icon}
-//         <span className={styles.description}>{description}</span>
-//         <span className={styles.drowpdownicon}>
-//           <MdOutlineKeyboardArrowRight />
-//         </span>
-//       </NavLink>
-//     </li>
-//   );
-// };
+import { GiGears } from "react-icons/gi";
 
 const Navbar = () => {
   let navigation = useNavigate();
@@ -107,6 +86,11 @@ const Navbar = () => {
       ],
     },
     {
+      title: "Service Categories",
+      icon: <GiGears />,
+      link: "/service_categories",
+    },
+    {
       title: "Vehicle Management",
       icon: <BsTruck />,
       subItems: [
@@ -141,7 +125,8 @@ const Navbar = () => {
       <div
         className={`${styles.li_navlink} ${
           menu.isActive ? styles.sidetabsactive : ""
-        }`}>
+        }`}
+      >
         <span
           onClick={() => {
             if (menu.isActive) menu.isActive = false;
@@ -151,7 +136,8 @@ const Navbar = () => {
           }}
           className={`d-flex position-relative ${
             menu.isActive ? styles.active : ""
-          }`}>
+          }`}
+        >
           <div className="mx-3">{menu.icon}</div>
           <div className={styles.description}>{menu.title} </div>
           <div className={styles.arrow}>
@@ -171,7 +157,9 @@ const Navbar = () => {
                   onClick={() => {
                     setActiveTab(i);
                   }}
-                  to={subItem.link}>
+                  className={activeTab ? styles.active : null}
+                  to={subItem.link}
+                >
                   &nbsp; {subItem.title}
                 </Link>
               ))}
@@ -184,7 +172,8 @@ const Navbar = () => {
     <div
       className={`${styles.navbar_container} ${
         nav ? styles.navbar_mobile_active : ""
-      }`}>
+      }`}
+    >
       <nav>
         {/* LOGO */}
         <div className="text-center">
@@ -205,7 +194,7 @@ const Navbar = () => {
         <ul className={styles.menu_container}>
           {/* FIRST CATEGORY */}
           {menuItems.map((menu, i) => (
-            <MenuItem menu={menu} i={i} />
+            <MenuItem key={i} menu={menu} i={i} />
           ))}
         </ul>
 
@@ -223,7 +212,8 @@ const Navbar = () => {
         className={nav ? styles.mobile_nav_background_active : null}
         onClick={() => {
           setNav(!nav);
-        }}></div>
+        }}
+      ></div>
     </div>
   );
 };

@@ -61,19 +61,19 @@ const UsermanageCustomer = () => {
               </Tab.Pane>
               <Tab.Pane eventKey="employees">
                 <Datacommonfilters />
-                {/* <Usertable /> */}
+                <Usertable />
               </Tab.Pane>
               <Tab.Pane eventKey="subcontractor">
                 <Datacommonfilters />
-                {/* <Usertable /> */}
+                <Usertable />
               </Tab.Pane>
               <Tab.Pane eventKey="reception">
                 <Datacommonfilters />
-                {/* <Usertable /> */}
+                <Usertable />
               </Tab.Pane>
               <Tab.Pane eventKey="refereers">
                 <Datacommonfilters />
-                {/* <Usertable /> */}
+                <Usertable />
                 <div className="m_t"></div>
                 {/* <PreviousExperiences /> */}
               </Tab.Pane>

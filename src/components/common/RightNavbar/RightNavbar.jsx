@@ -13,7 +13,6 @@ import { MdOutlineMenu } from "react-icons/md";
 
 //Components
 import MyProfile from "./Submenus/MyProfile";
-import Support from "./Submenus/Support";
 import Notifications from "./Submenus/Notifications";
 import Search from "./Submenus/Search";
 
@@ -28,7 +27,8 @@ const RightNavbar = () => {
         className={styles.burger_container}
         onClick={() => {
           setNav(!nav);
-        }}>
+        }}
+      >
         <MdOutlineMenu />
       </div>
 

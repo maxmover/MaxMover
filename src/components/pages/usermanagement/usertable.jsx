@@ -20,6 +20,9 @@ class Usertable extends React.Component {
     $(document).ready(function () {
       $("#Customer_table").DataTable({
         responsive: true,
+
+        deferRender: true,
+        scroller: true,
       });
     });
   }
@@ -28,7 +31,7 @@ class Usertable extends React.Component {
     return (
       <div className="MainDiv">
         <div className="">
-          <table id="Customer_table" class="my-3 table_component display">
+          <table id="Customer_table" class="my-2 table_component display">
             <thead>
               <tr>
                 <th>Referrer ID</th>

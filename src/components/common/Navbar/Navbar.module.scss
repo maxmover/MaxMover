@@ -1,4 +1,3 @@
-
 .navbar_container {
   --color_nav_bg: rgba(255, 255, 255, 1);
   --color_nav_txt: rgba(255, 255, 255, 1);
@@ -28,10 +27,10 @@
 }
 .logo {
   height: 83px;
-    // background: aliceblue;
-    justify-content: center;
-    align-items: center;
-    display: flex;
+  // background: aliceblue;
+  justify-content: center;
+  align-items: center;
+  display: flex;
 }
 .settings {
   display: flex;
@@ -50,7 +49,7 @@
     &:hover {
       background: rgba(196, 196, 196, 0.2);
     }
-    &:before{
+    &:before {
       content: "-";
     }
   }
@@ -61,6 +60,7 @@
     color: #3499ff;
   }
 }
+
 .navbar_mobile_active {
   @media screen and (max-width: 1024px) {
     transform: translateX(0);
@@ -135,7 +135,6 @@ nav {
     color: #282828;
     flex-shrink: 0;
   }
- 
 
   &:hover {
     // background: var(--color_nav_active_bg);
@@ -143,7 +142,8 @@ nav {
     background: #3499ff;
   }
 
-  &:hover svg,.active svg {
+  &:hover svg,
+  .active svg {
     color: #fff;
   }
   // &:nth-child(odd):before {
@@ -157,32 +157,30 @@ nav {
   // }
 }
 
-.sidetabsactive{
+.sidetabsactive {
   svg {
     color: #fff;
   }
-  .settings{
-    margin:.5rem 1rem;
-    background: #FFFFFF;
-    border: 1px solid #F3F4F6;
+  .settings {
+    margin: 0.5rem 1rem;
+    background: #ffffff;
+    border: 1px solid #f3f4f6;
     border-radius: 4px;
   }
 }
 
-.li_navlink  {
+.li_navlink {
   margin: 5px 10px 0px 10px;
   // background: var(--color_nav_active_bg);
-  .active,.active svg  {
+  .active,
+  .active svg {
     color: #fff;
     background: #3499ff;
   }
-  .arrow{
+  .arrow {
     position: absolute;
     right: 1%;
   }
- 
-
-  
 }
 
 .btn_logout {
@@ -235,12 +233,11 @@ nav {
   }
 }
 
-.drowpdownicon:not(:first-of-type){
+.drowpdownicon:not(:first-of-type) {
   position: absolute;
   right: 1%;
-
 }
-hr{
+hr {
   width: 90%;
   // margin: 0px auto !important;
   border-bottom: 1px solid rgb(211, 211, 211);

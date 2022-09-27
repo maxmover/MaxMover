@@ -1,6 +1,5 @@
 import { MdSearch } from "react-icons/md";
 import { IoSearch } from "react-icons/io5";
-import { BsBell } from "react-icons/bs";
 import { BsArrowRepeat } from "react-icons/bs";
 import styles from "./Search.module.scss";
 
@@ -30,19 +29,22 @@ const Search = () => {
   return (
     <div
       onClick={() => setisSearchOpen(true)}
-      className={`${styles.icon_container} ${styles.search} `}>
+      className={`${styles.icon_container} ${styles.search} `}
+    >
       <MdSearch />
 
       {/* SUBMENU */}
       <div
         className={`${styles.submenu_container} ${
           isSearchOpen ? styles.submenu_container_active : ""
-        }`}>
+        }`}
+      >
         <div
           ref={domNode}
           className={`${styles.submenu} ${
             isSearchOpen ? styles.submenu_active : ""
-          }`}>
+          }`}
+        >
           <div className={styles.input}>
             <IoSearch />
             <input

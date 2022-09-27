@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACd,KAAK,EAAE,IAAI;EACX,SAAS,EAAE,iBAAiB;EAC5B,UAAU,EAAE,MAAM;CACnB;;AAED,AAAA,SAAS,CAAC;EACR,KAAK,EAAE,KAAK,CAAA,UAAU;EACtB,UAAU,EAAE,MAAM;CACnB",
+    "sources": [
+        "UsermanageCustomer.module.scss"
+    ],
+    "names": [],
+    "file": "UsermanageCustomer.module.css"
+}
