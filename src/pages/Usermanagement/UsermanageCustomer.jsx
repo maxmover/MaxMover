@@ -17,8 +17,7 @@ const UsermanageCustomer = () => {
     <>
       <div
         className="mainbody_container bg-white m-3 p-3"
-        style={{ Padding: "3rem", Width: "100%" }}
-      >
+        style={{ Padding: "3rem", Width: "100%" }}>
         <div className="container pagetitle my-2">
           <h1>User Management</h1>
         </div>
@@ -32,7 +31,7 @@ const UsermanageCustomer = () => {
                 <div className="col-12">
                   <Nav variant="pills" className="tabpillsscroll">
                     <Nav.Item>
-                      <Nav.Link eventKey="customer">Customers</Nav.Link>
+                      <Nav.Link eventKey="customer">Customer</Nav.Link>
                     </Nav.Item>
                     <Nav.Item>
                       <Nav.Link eventKey="employees">Employees</Nav.Link>
