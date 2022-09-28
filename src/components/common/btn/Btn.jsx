@@ -18,7 +18,7 @@ export const OutlineBtn = (props) => {
   };
   const OutlineBtnIcon = () => {
     return (
-      <button className="out_line_btn">
+      <button onClick={props.onClick} className="out_line_btn">
         <span>{props.icon}</span>
         {props.title}
       </button>
