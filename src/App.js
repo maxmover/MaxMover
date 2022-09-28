@@ -22,7 +22,7 @@ function App() {
 
   return (
     <>
-      <div>fjbjfgbi</div>
+      <div>Subscribe</div>
       <div className="App">
         <NavContext.Provider value={value}>
           <Navbar />
