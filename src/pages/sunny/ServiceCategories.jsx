@@ -6,6 +6,8 @@ import {
   BlueBtn,
   BlueLinkBtn,
 } from "../../components/common/btn/Btn";
+
+import EnhancedTableHead from "../sunny/Muitable";
 import { MyTabel } from "./MyTabel";
 import {
   SelectTextFields,
@@ -37,6 +39,7 @@ export const ServiceCategories = () => {
           </div>
           <div className="col-12">
             <MyTabel />
+            <EnhancedTableHead />
             <div className="col-12 my-5">
               <FormPropsTextFields />
               <SelectTextFields />
