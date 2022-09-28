@@ -7,6 +7,12 @@ import {
   BlueLinkBtn,
 } from "../../components/common/btn/Btn";
 import { MyTabel } from "./MyTabel";
+import {
+  SelectTextFields,
+  FormPropsTextFields,
+  SelectLabels,
+} from "../../components/common/InputField/Form";
+
 export const ServiceCategories = () => {
   return (
     <>
@@ -31,6 +37,11 @@ export const ServiceCategories = () => {
           </div>
           <div className="col-12">
             <MyTabel />
+            <div className="col-12 my-5">
+              <FormPropsTextFields />
+              <SelectTextFields />
+              <SelectLabels />
+            </div>
           </div>
         </div>
       </div>
