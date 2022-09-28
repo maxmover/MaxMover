@@ -11,13 +11,7 @@ export const ServiceCategories = () => {
     <>
       <div className="custom_container">
         <h1>ServiceCategories</h1>
-<<<<<<< HEAD
-        <ActionStrip title="dfjfgnbkjgnjbgjnvbd" icon={<BsPlusLg />} />
-        <OutlineBtn title="dfjfvbd" icon={<BsPlusLg />} />
-        <OutlineLinkBtn title="dfjfvbd" icon={<BsPlusLg />} link="/" />
-        <BlueBtn title="Excel" icon={<BsPlusLg />} />
-        <BlueLinkBtn title="Print" icon={<BsPlusLg />} link="/" />
-=======
+
         <div className="row g-4">
           <div className="col-12">
             <ActionStrip title="dfjfgnbkjgnjbgjnvbd" icon={<BsPlusLg />} />
@@ -35,7 +29,6 @@ export const ServiceCategories = () => {
             <BlueLinkBtn title="Excel" icon={<BsPlusLg />} link="/" />
           </div>
         </div>
->>>>>>> 9103f940ed8c98574eeb2d6eb029babff9de444a
       </div>
     </>
   );
