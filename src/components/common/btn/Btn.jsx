@@ -4,7 +4,7 @@ export const BlueBtn = (props) => {
   const Fillbtn = () => {
     return (
       <>
-        <button onClick={props.onClick} className="fillbtn">
+        <button className="BlueBtn" onClick={props.onClick}>
           {props.title}
         </button>
       </>
@@ -13,7 +13,7 @@ export const BlueBtn = (props) => {
   const Fillbtnicon = () => {
     return (
       <>
-        <button className="fillbtnicon">
+        <button className="BlueBtn" onClick={props.onClick}>
           <span>{props.icon}</span>
           {props.title}
         </button>
@@ -26,7 +26,7 @@ export const BlueLinkBtn = (props) => {
   const FillLinkbtn = () => {
     return (
       <>
-        <NavLink to={props.link} className="fillbtn">
+        <NavLink className="BlueBtn" to={props.link}>
           {props.title}
         </NavLink>
       </>
@@ -35,7 +35,7 @@ export const BlueLinkBtn = (props) => {
   const FillLinkbtnicon = () => {
     return (
       <>
-        <NavLink to={props.link} className="fillbtn">
+        <NavLink className="BlueBtn" to={props.link}>
           <span>{props.icon}</span>
           {props.title}
         </NavLink>

@@ -52,3 +52,25 @@ a {
     margin-bottom: 2px;
   }
 }
+.BlueBtn {
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  padding: 7px 18px;
+  background: $blue2;
+  color: white;
+  transition: all 0.3s;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: white;
+    background: $hover;
+  }
+  span {
+    font-size: 11px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+  }
+}
