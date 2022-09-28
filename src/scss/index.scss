@@ -74,3 +74,37 @@ a {
     margin-bottom: 2px;
   }
 }
+.MyTabel_top_div {
+  display: inline-table;
+  overflow-x: auto;
+  white-space: nowrap;
+  thead {
+    background-color: $blue;
+    color: white;
+  }
+  th {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  td {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    span {
+      margin-right: 10px;
+    }
+  }
+}
+.tabel_td_inner {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: black;
+
+  &:hover {
+    color: $blue2;
+  }
+  svg {
+    font-size: 20px;
+  }
+}

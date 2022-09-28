@@ -47,37 +47,7 @@ body {
 .pagetitle h1 {
   font-size: 20px;
 }
-button.btnoutline {
-  border: 1px solid #139ee3 !important;
-  border-radius: 4px;
-  font-size: 1rem;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.02em;
-  width: 239px;
-  height: 36px;
-  color: #282828;
-}
-button.btnoutline svg {
-  font-size: 1.2rem;
-  margin-top: -2px;
-  color: #139ee3;
-}
-button.btnoutline:hover svg {
-  color: #fff;
-}
-button.actionbtns {
-  font-family: "IBM Plex Sans";
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 18px;
-  letter-spacing: 0.02em;
-  width: 80px;
-  height: 36px;
-  color: #fff;
-}
+
 .datePickinput input {
   background: #ffffff;
   border: 0.5px solid #139ee3;
@@ -96,27 +66,6 @@ button.actionbtns {
   line-height: 18px;
   letter-spacing: 0.02em;
   color: #282828;
-}
-table.dataTable thead th,
-table.dataTable thead td {
-  padding: 10px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-  font-weight: 500;
-  text-align: center !important;
-  vertical-align: middle !important;
-}
-tr {
-  text-align: center !important;
-  vertical-align: middle !important;
-}
-thead {
-  background: #033f5c;
-  border-radius: 4px;
-  color: #fff;
-}
-.table_component svg {
-  color: #139ee3;
-  font-size: 1.2rem;
 }
 
 /* /MEDIA QUERIES/ */

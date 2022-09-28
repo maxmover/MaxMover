@@ -1,10 +1,19 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .MyTabel_top_div {
+    display: block;
+  }
 }
 @media (min-width: 768px) {
+  .MyTabel_top_div {
+    display: block;
+  }
 }
 @media (min-width: 1024px) {
+  .MyTabel_top_div {
+    display: inline-table;
+  }
 }
 @media (min-width: 1440px) {
 }
