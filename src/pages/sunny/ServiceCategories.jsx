@@ -15,7 +15,7 @@ export const ServiceCategories = () => {
         <OutlineBtn title="dfjfvbd" icon={<BsPlusLg />} />
         <OutlineLinkBtn title="dfjfvbd" icon={<BsPlusLg />} link="/" />
         <BlueBtn title="Excel" icon={<BsPlusLg />} />
-        <BlueLinkBtn title="Excel" icon={<BsPlusLg />} link="/" />
+        <BlueLinkBtn title="Print" icon={<BsPlusLg />} link="/" />
       </div>
     </>
   );
