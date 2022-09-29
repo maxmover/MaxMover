@@ -1,4 +1,3 @@
-import "../../styles/UsermanageCustomer.module.scss";
 // import Line from "./Charts/Line";
 // import StackedColumns from "./Charts/StackedColumns";
 // import GroupedBars from "./Charts/GroupedBars";

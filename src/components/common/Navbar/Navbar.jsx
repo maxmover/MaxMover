@@ -41,6 +41,7 @@ const Navbar = () => {
     {
       title: "User Management",
       icon: <MdOutlineManageAccounts />,
+      activeSubItem: null,
       subItems: [
         { title: "Customers", link: "UsermanageCustomer" },
         { title: "Employees", link: "UsermanageEmployee" },
@@ -52,6 +53,7 @@ const Navbar = () => {
     {
       title: "Inquiry Management",
       icon: <AiOutlineFileSearch />,
+      activeSubItem: null,
       subItems: [
         { title: "My Account", link: "my_account" },
         { title: "Setting", link: "settings" },
@@ -61,6 +63,7 @@ const Navbar = () => {
     {
       title: "Job Payment Management",
       icon: <GiExpense />,
+      activeSubItem: null,
       subItems: [
         { title: "My Account", link: "my_account" },
         { title: "Setting", link: "settings" },
@@ -70,6 +73,7 @@ const Navbar = () => {
     {
       title: "Account Management",
       icon: <MdOutlineManageAccounts />,
+      activeSubItem: null,
       subItems: [
         { title: "My Account", link: "my_account" },
         { title: "Setting", link: "settings" },
@@ -79,6 +83,7 @@ const Navbar = () => {
     {
       title: "Max Cliq",
       icon: <BsChatLeftDots />,
+      activeSubItem: null,
       subItems: [
         { title: "My Account", link: "my_account" },
         { title: "Setting", link: "settings" },
@@ -88,11 +93,13 @@ const Navbar = () => {
     {
       title: "Service Categories",
       icon: <GiGears />,
+      activeSubItem: null,
       link: "/service_categories",
     },
     {
       title: "Vehicle Management",
       icon: <BsTruck />,
+      activeSubItem: null,
       subItems: [
         { title: "My Account", link: "my_account" },
         { title: "Setting", link: "settings" },
@@ -102,6 +109,7 @@ const Navbar = () => {
     {
       title: "Templates & Notes",
       icon: <VscServerEnvironment />,
+      activeSubItem: null,
       subItems: [
         { title: "My Account", link: "my_account" },
         { title: "Setting", link: "settings" },
@@ -111,6 +119,7 @@ const Navbar = () => {
     {
       title: "SMS Management",
       icon: <BsChatLeftDots />,
+      activeSubItem: null,
       subItems: [
         { title: "My Account", link: "my_account" },
         { title: "Setting", link: "settings" },
@@ -125,8 +134,7 @@ const Navbar = () => {
       <div
         className={`${styles.li_navlink} ${
           menu.isActive ? styles.sidetabsactive : ""
-        }`}
-      >
+        }`}>
         <span
           onClick={() => {
             if (menu.isActive) menu.isActive = false;
@@ -136,8 +144,7 @@ const Navbar = () => {
           }}
           className={`d-flex position-relative ${
             menu.isActive ? styles.active : ""
-          }`}
-        >
+          }`}>
           <div className="mx-3">{menu.icon}</div>
           <div className={styles.description}>{menu.title} </div>
           <div className={styles.arrow}>
@@ -152,14 +159,13 @@ const Navbar = () => {
         {menu?.subItems && (
           <div className={styles.settings}>
             {menu?.isActive &&
-              menu.subItems.map((subItem) => (
+              menu.subItems.map((subItem, i) => (
                 <Link
                   onClick={() => {
-                    setActiveTab(i);
+                    menu.activeSubItem = i;
                   }}
-                  className={activeTab ? styles.active : null}
-                  to={subItem.link}
-                >
+                  className={menu.activeSubItem === i ? styles.subactive : null}
+                  to={subItem.link}>
                   &nbsp; {subItem.title}
                 </Link>
               ))}
@@ -172,8 +178,7 @@ const Navbar = () => {
     <div
       className={`${styles.navbar_container} ${
         nav ? styles.navbar_mobile_active : ""
-      }`}
-    >
+      }`}>
       <nav>
         {/* LOGO */}
         <div className="text-center">
@@ -212,8 +217,7 @@ const Navbar = () => {
         className={nav ? styles.mobile_nav_background_active : null}
         onClick={() => {
           setNav(!nav);
-        }}
-      ></div>
+        }}></div>
     </div>
   );
 };
