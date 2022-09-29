@@ -13,6 +13,11 @@ a {
 .custom_container {
   padding: 1.3rem;
 }
+.inner_custom_container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
 .action_strip_div {
   background-color: $blue;
   font-weight: 500;

@@ -36,43 +36,45 @@ export const ServiceCategories = () => {
   return (
     <>
       <div className="custom_container">
-        <h1>ServiceCategories</h1>
+        <div className="inner_custom_container">
+          <h1>ServiceCategories</h1>
 
-        <div className="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-sm-3 g-3">
-          <div className="col-12">
-            <ActionStrip title="dfjfgnbkjgnjbgjnvbd" icon={<BsPlusLg />} />
-          </div>
-          <div className="col-12">
-            <OutlineBtn title="dfjfvbd" icon={<BsPlusLg />} />
-          </div>
-          <div className="col-12">
-            <OutlineLinkBtn title="dfjfvbd" icon={<BsPlusLg />} link="/" />
-          </div>
-          <div className="col-12">
-            <BlueBtn title="Excel" icon={<BsPlusLg />} />
-          </div>
-          <div className="col-12">
-            <BlueLinkBtn title="Excel" icon={<BsPlusLg />} link="/" />
-          </div>
-          <div className="col-12">
-            <MyTabel />
-            <div className="col-12 my-5">
-              <InputBoxWithSwitch
-                helperText="helperText"
-                label="InputBoxWithSwitch"
-              />
-              <SelectBox
-                data={currencies}
-                label="text*"
-                helperText="helperText"
-              />
-              <InputBox
-                type="text"
-                label="input"
-                helperText="helperText"
-                required
-              />
-              <TextAreaBox label="TextAreaBox" helperText="helperText" />
+          <div className="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-sm-3 g-3">
+            <div className="col-12">
+              <ActionStrip title="dfjfgnbkjgnjbgjnvbd" icon={<BsPlusLg />} />
+            </div>
+            <div className="col-12">
+              <OutlineBtn title="dfjfvbd" icon={<BsPlusLg />} />
+            </div>
+            <div className="col-12">
+              <OutlineLinkBtn title="dfjfvbd" icon={<BsPlusLg />} link="/" />
+            </div>
+            <div className="col-12">
+              <BlueBtn title="Excel" icon={<BsPlusLg />} />
+            </div>
+            <div className="col-12">
+              <BlueLinkBtn title="Excel" icon={<BsPlusLg />} link="/" />
+            </div>
+            <div className="col-12">
+              <MyTabel />
+              <div className="col-12 my-5">
+                <InputBoxWithSwitch
+                  helperText="helperText"
+                  label="InputBoxWithSwitch"
+                />
+                <SelectBox
+                  data={currencies}
+                  label="text*"
+                  helperText="helperText"
+                />
+                <InputBox
+                  type="text"
+                  label="input"
+                  helperText="helperText"
+                  required
+                />
+                <TextAreaBox label="TextAreaBox" helperText="helperText" />
+              </div>
             </div>
           </div>
         </div>
