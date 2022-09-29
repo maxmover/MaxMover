@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
 
 body {
@@ -22,6 +23,23 @@ body {
 
 .App {
   display: flex;
+}
+
+.subscribebadge {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.04em;
+  color: #666666;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+}
+.subscribeLink {
+  color: #ef2870;
 }
 
 /* USERMANAGEMENT */

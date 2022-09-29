@@ -1,5 +1,6 @@
 import "./App.css";
 import { useState } from "react";
+import { Topnav } from "./components/common/topnav/Topnav";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/common/Navbar/Navbar";
 import Container from "./components/common/Container/Container";
@@ -22,7 +23,7 @@ function App() {
 
   return (
     <>
-      <div>Subscribe</div>
+      <Topnav />
       <div className="App">
         <NavContext.Provider value={value}>
           <Navbar />

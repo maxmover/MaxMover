@@ -17,7 +17,7 @@
 @media screen and (max-width: 1024px) {
   .navbar_container {
     -webkit-transform: translateX(-100%);
-            transform: translateX(-100%);
+    transform: translateX(-100%);
     position: absolute;
     top: 0;
     left: 0;
@@ -34,11 +34,11 @@
 .logo {
   height: 83px;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,8 +50,8 @@
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   gap: 0.5rem;
   background: #f5f5f5;
   border-radius: 10px;
@@ -68,7 +68,9 @@
 .settings a:hover {
   background: rgba(196, 196, 196, 0.2);
 }
-
+.subactive {
+  background: rgba(196, 196, 196, 0.2);
+}
 .settings a:before {
   content: "-";
 }
@@ -81,7 +83,7 @@
 @media screen and (max-width: 1024px) {
   .navbar_mobile_active {
     -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
   }
 }
 
@@ -94,8 +96,8 @@ nav {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   overflow-y: scroll;
   overflow-x: hidden;
   -ms-overflow-style: none;
@@ -120,8 +122,8 @@ nav::-webkit-scrollbar {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   padding-left: 0rem;
 }
 
@@ -145,11 +147,11 @@ nav::-webkit-scrollbar {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   -webkit-box-flex: 1;
-      -ms-flex: 1;
-          flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   padding: 0.7rem 0rem;
   text-decoration: none;
   color: var(--color_nav_ctg);
@@ -171,7 +173,7 @@ nav::-webkit-scrollbar {
   font-size: 1.2rem;
   color: #282828;
   -ms-flex-negative: 0;
-      flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .li_navlink span:hover {
@@ -216,8 +218,8 @@ nav::-webkit-scrollbar {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  -ms-flex-pack: end;
+  justify-content: flex-end;
   -webkit-transition: all ease-in-out 200ms;
   transition: all ease-in-out 200ms;
   padding: 0.5rem 0.75rem 0 0.75rem;
@@ -227,7 +229,7 @@ nav::-webkit-scrollbar {
   font-size: 1.5rem;
   cursor: pointer;
   -webkit-transform: scaleX(-1);
-          transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .mobile_nav_background_active {
@@ -236,7 +238,7 @@ nav::-webkit-scrollbar {
   -webkit-transition: all ease-out 500ms;
   transition: all ease-out 500ms;
   -webkit-transition-delay: 300ms;
-          transition-delay: 300ms;
+  transition-delay: 300ms;
   cursor: pointer;
 }
 
@@ -266,7 +268,7 @@ nav::-webkit-scrollbar {
 
 .nav_small .btn_logout svg {
   -webkit-transform: scaleX(1);
-          transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 .drowpdownicon:not(:first-of-type) {
