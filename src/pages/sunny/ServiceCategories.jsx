@@ -6,16 +6,33 @@ import {
   BlueBtn,
   BlueLinkBtn,
 } from "../../components/common/btn/Btn";
-
-import EnhancedTableHead from "../sunny/Muitable";
 import { MyTabel } from "./MyTabel";
 import {
-  SelectTextFields,
-  FormPropsTextFields,
-  SelectLabels,
+  SelectBox,
+  InputBox,
+  TextAreaBox,
+  InputBoxWithSwitch,
 } from "../../components/common/InputField/Form";
 
 export const ServiceCategories = () => {
+  const currencies = [
+    {
+      value: "1",
+      label: "1",
+    },
+    {
+      value: "2",
+      label: "2",
+    },
+    {
+      value: "3",
+      label: "3",
+    },
+    {
+      value: "4",
+      label: "4",
+    },
+  ];
   return (
     <>
       <div className="custom_container">
@@ -39,11 +56,23 @@ export const ServiceCategories = () => {
           </div>
           <div className="col-12">
             <MyTabel />
-            <EnhancedTableHead />
             <div className="col-12 my-5">
-              <FormPropsTextFields />
-              <SelectTextFields />
-              <SelectLabels />
+              <InputBoxWithSwitch
+                helperText="helperText"
+                label="InputBoxWithSwitch"
+              />
+              <SelectBox
+                data={currencies}
+                label="text*"
+                helperText="helperText"
+              />
+              <InputBox
+                type="text"
+                label="input"
+                helperText="helperText"
+                required
+              />
+              <TextAreaBox label="TextAreaBox" helperText="helperText" />
             </div>
           </div>
         </div>

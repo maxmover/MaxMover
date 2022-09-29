@@ -1,25 +1,40 @@
 //Bootstrap and jQuery libraries
 
-// import "jquery/dist/jquery.min.js";
+import "jquery/dist/jquery.min.js";
 
-// import "datatables.net-dt/js/dataTables.dataTables";
-// import "datatables.net-dt/css/jquery.dataTables.min.css";
-// import $ from "jquery";
+import "datatables.net-dt/js/dataTables.dataTables";
+import "datatables.net-dt/css/jquery.dataTables.min.css";
+import $ from "jquery";
 import { FaRegEdit } from "react-icons/fa";
 import { RiDeleteBin5Line } from "react-icons/ri";
 import { AiOutlinePlusCircle } from "react-icons/ai";
-// import React, { useEffect } from "react";
+import { useState } from "react";
+import React, { useEffect } from "react";
 export const MyTabel = () => {
-  //   useEffect(() => {
-  //     $("#Customer_table").DataTable({
-  //       responsive: true,
-  //       deferRender: true,
-  //       scroller: true,
-  //     });
-  //   }, []);
+  const [isTableLoaded, setIsTableLoaded] = useState(false);
+  useEffect(() => {
+    if (!isTableLoaded) {
+      setTimeout(() => {
+        setIsTableLoaded(true);
+        $("#Customer_table").DataTable({
+          responsive: true,
+          deferRender: true,
+          scroller: true,
+        });
+      }, 1000);
+    }
+  }, []);
   const ListData = [
     {
       CustomerID: "MMCR111",
+      date: "22-02-22",
+      CustomerType: "Normal",
+      PhoneNumber: "Lauren",
+      EmailId: "lauren@gmail.com",
+      Phone: "7869889790",
+    },
+    {
+      CustomerID: "1",
       date: "22-02-22",
       CustomerType: "Normal",
       PhoneNumber: "Lauren",
@@ -58,7 +73,10 @@ export const MyTabel = () => {
   return (
     <>
       <div>
-        <table className="table-striped table-hover text-center  table MyTabel_top_div">
+        <table
+          id="Customer_table"
+          className="table-striped table-hover text-center  table MyTabel_top_div"
+        >
           <thead>
             <tr>
               <th scope="col">Customer ID</th>

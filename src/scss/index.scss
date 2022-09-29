@@ -108,3 +108,18 @@ a {
     font-size: 20px;
   }
 }
+.input_box_with_switch_div {
+  position: relative;
+  input {
+    padding-right: 64px;
+  }
+}
+
+.input_box_with_switch_div_Switch {
+  position: absolute;
+  top: 7.5px;
+  right: 11px;
+}
+.testing {
+  display: none;
+}
