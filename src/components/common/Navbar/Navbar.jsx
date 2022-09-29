@@ -91,7 +91,7 @@ const Navbar = () => {
       ],
     },
     {
-      title: "Service Categories",
+      title: "All Components",
       icon: <GiGears />,
       activeSubItem: null,
       link: "/service_categories",

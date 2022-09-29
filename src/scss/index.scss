@@ -10,6 +10,7 @@
 a {
   text-decoration: none;
 }
+// components all css
 .custom_container {
   padding: 1.3rem;
 }
@@ -17,6 +18,12 @@ a {
   background-color: white;
   padding: 1rem;
   border-radius: 8px;
+}
+.inner_pages_top_title {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 0;
 }
 .action_strip_div {
   background-color: $blue;
@@ -128,3 +135,4 @@ a {
 .testing {
   display: none;
 }
+// components all css end

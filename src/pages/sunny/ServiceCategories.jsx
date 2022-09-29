@@ -13,7 +13,7 @@ import {
   TextAreaBox,
   InputBoxWithSwitch,
 } from "../../components/common/InputField/Form";
-
+import { InnerPagesTopTitle } from "../../components/common/InnerPagesTopTitle/InnerPagesTopTitle";
 export const ServiceCategories = () => {
   const currencies = [
     {
@@ -37,7 +37,7 @@ export const ServiceCategories = () => {
     <>
       <div className="custom_container">
         <div className="inner_custom_container">
-          <h1>ServiceCategories</h1>
+          <InnerPagesTopTitle name="User Management" />
 
           <div className="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-sm-3 g-3">
             <div className="col-12">
