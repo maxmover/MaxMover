@@ -23,7 +23,7 @@ export const MyTabel = () => {
         });
       }, 1000);
     }
-  }, []);
+  });
   const ListData = [
     {
       CustomerID: "MMCR111",
