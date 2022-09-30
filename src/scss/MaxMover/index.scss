@@ -1,0 +1,166 @@
+@import "--var.scss";
+@import "--mixing.scss";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  user-select: none;
+}
+a {
+  text-decoration: none;
+}
+// components all css
+.custom_container {
+  padding: 1.3rem;
+}
+.inner_custom_container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 8px;
+}
+.inner_pages_top_title {
+  font-weight: 500;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin-bottom: 0;
+}
+.action_strip_div {
+  background-color: $blue;
+  font-weight: 500;
+  font-size: 14px;
+  color: white;
+  text-transform: capitalize;
+  padding: 10px 18px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  span {
+    margin-right: 10px;
+    font-size: 12px;
+    margin-bottom: 2px;
+  }
+}
+.out_line_btn {
+  font-weight: 500;
+  font-size: 14px;
+  border: 1px solid $blue2;
+  padding: 7px 18px;
+  background: white;
+  color: black;
+  transition: all 0.3s;
+  border-radius: 6px;
+  text-transform: capitalize;
+  display: flex;
+  outline: none;
+  align-items: center;
+  &:hover {
+    background: $blue2;
+    color: white;
+  }
+  span {
+    font-size: 11px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+  }
+}
+.BlueBtn {
+  font-weight: 500;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  padding: 7px 18px;
+  background: $blue2;
+  color: white;
+  transition: all 0.3s;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  &:hover {
+    color: white;
+    background: $hover;
+  }
+  span {
+    font-size: 11px;
+    margin-right: 10px;
+    margin-bottom: 2px;
+  }
+}
+.MyTabel_top_div {
+  display: inline-table;
+  overflow-x: auto;
+  white-space: nowrap;
+  thead {
+    background-color: $blue;
+    color: white;
+  }
+  th {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  td {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+    span {
+      margin-right: 10px;
+    }
+  }
+}
+.tabel_td_inner {
+  cursor: pointer;
+  transition: all 0.3s;
+  color: black;
+
+  &:hover {
+    color: $blue2;
+  }
+  svg {
+    font-size: 20px;
+  }
+}
+.input_box_with_switch_div {
+  position: relative;
+  input {
+    padding-right: 64px;
+  }
+}
+
+.input_box_with_switch_div_Switch {
+  position: absolute;
+  top: 7.5px;
+  right: 11px;
+}
+.testing {
+  display: none;
+}
+// components all css end
+// page top nav
+.page_top_nav_div_top {
+  border: 1px solid $blue2;
+  display: inline-block;
+}
+.page_top_nav {
+  display: flex;
+  // overflow-x: scroll;
+  // width: 100%;
+}
+.page_top_nav_link {
+  width: 9rem;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: 500;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: black;
+  color: white;
+}
+// page top nav end
+// User Managemen
+.user_managemen_top_title {
+  margin-bottom: 1.5rem;
+}
+
+// User Managemen end
