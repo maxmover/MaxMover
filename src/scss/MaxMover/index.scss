@@ -140,6 +140,7 @@ a {
 .page_top_nav_div_top {
   border: 1px solid $blue2;
   display: inline-block;
+  border-radius: 6px;
 }
 .page_top_nav {
   display: flex;
@@ -156,6 +157,7 @@ a {
   cursor: pointer;
   background-color: black;
   color: white;
+  border-radius: 5px;
 }
 // page top nav end
 // User Managemen

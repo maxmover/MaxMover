@@ -2,8 +2,13 @@
 @import "--mixing.scss";
 @media (max-width: 576px) {
   .page_top_nav_div_top {
-    border: 1px solid $blue2;
+    border: 0;
     display: block;
+    border-radius: 0;
+  }
+  .page_top_nav_link {
+    border: 1px solid $blue2;
+    margin-right: 5px;
   }
   .MyTabel_top_div {
     display: block;
