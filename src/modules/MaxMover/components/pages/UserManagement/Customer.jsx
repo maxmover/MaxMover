@@ -4,9 +4,8 @@ import "jquery/dist/jquery.min.js";
 import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
 import $ from "jquery";
-import { FaRegEdit } from "react-icons/fa";
-import { RiDeleteBin5Line } from "react-icons/ri";
-import { AiOutlinePlusCircle } from "react-icons/ai";
+import { MdOutlineModeEditOutline } from "react-icons/md";
+import { AiOutlinePlusCircle, AiOutlineDelete } from "react-icons/ai";
 import { useState } from "react";
 import React, { useEffect } from "react";
 import { OutlineBtn, BlueBtn } from "../../../../../common/btn/Btn";
@@ -130,6 +129,7 @@ export const PageTopBtn = () => {
   );
 };
 const MyTabel = () => {
+  const navigate = useNavigate();
   const [isTableLoaded, setIsTableLoaded] = useState(false);
   useEffect(() => {
     if (!isTableLoaded) {
@@ -152,6 +152,7 @@ const MyTabel = () => {
       PhoneNumber: "Lauren",
       EmailId: "lauren@gmail.com",
       Phone: "7869889790",
+      editLink: "/",
     },
     {
       CustomerID: "1",
@@ -160,6 +161,25 @@ const MyTabel = () => {
       PhoneNumber: "Lauren",
       EmailId: "lauren@gmail.com",
       Phone: "7869889790",
+      editLink: "/",
+    },
+    {
+      CustomerID: "2",
+      date: "22-02-22",
+      CustomerType: "Normal",
+      PhoneNumber: "Lauren",
+      EmailId: "lauren@gmail.com",
+      Phone: "7869889790",
+      editLink: "/",
+    },
+    {
+      CustomerID: "3",
+      date: "22-02-22",
+      CustomerType: "Normal",
+      PhoneNumber: "Lauren",
+      EmailId: "lauren@gmail.com",
+      Phone: "7869889790",
+      editLink: "/",
     },
   ];
   const ListApp = (props) => {
@@ -172,19 +192,48 @@ const MyTabel = () => {
         <td>{props.EmailId}</td>
         <td>{props.Phone}</td>
         <td>
-          <div className="tabel_td_inner">
-            <FaRegEdit />
+          <div
+            onClick={() => navigate(props.editLink)}
+            className="tabel_td_inner">
+            <MdOutlineModeEditOutline />
           </div>
         </td>
         <td>
           <div className="tabel_td_inner">
-            <RiDeleteBin5Line />
+            <AiOutlineDelete />
           </div>
         </td>
         <td>
-          <ApplicationBtn />
+          <TabelMoreDetailsBtn />
         </td>
       </tr>
+    );
+  };
+  const TabelMoreDetailsBtn = () => {
+    const navigate = useNavigate();
+
+    return (
+      <>
+        <Dropdown className="list_btn_dropdown">
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            <div className="tabel_td_inner">
+              <span>More Details</span>
+              <AiOutlinePlusCircle />
+            </div>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu>
+            <Dropdown.Item>
+              <button onClick={() => navigate("/")}>Bank Details</button>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <button onClick={() => navigate("/")}>
+                Make Regular Customer
+              </button>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </>
     );
   };
   return (
@@ -192,7 +241,7 @@ const MyTabel = () => {
       <div>
         <table
           id="Customer_table"
-          className="table-striped table-hover text-center  table MyTabel_top_div">
+          className="table-striped table-hover text-center mb-3  table MyTabel_top_div">
           <thead>
             <tr>
               <th scope="col">Customer ID</th>
@@ -213,28 +262,6 @@ const MyTabel = () => {
           </tbody>
         </table>
       </div>
-    </>
-  );
-};
-const ApplicationBtn = () => {
-  const navigate = useNavigate();
-
-  return (
-    <>
-      <Dropdown className="list_btn_dropdown">
-        <Dropdown.Toggle variant="success" id="dropdown-basic">
-          <div className="tabel_td_inner">
-            <span>More Details</span>
-            <AiOutlinePlusCircle />
-          </div>
-        </Dropdown.Toggle>
-
-        <Dropdown.Menu>
-          <Dropdown.Item>
-            <button onClick={() => navigate("/hr/hire")}>hire</button>
-          </Dropdown.Item>
-        </Dropdown.Menu>
-      </Dropdown>
     </>
   );
 };

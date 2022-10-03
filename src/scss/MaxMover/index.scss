@@ -205,7 +205,92 @@ a {
       width: 12rem;
     }
   }
+  .current {
+    background-color: #3499ff !important;
+    color: #fff !important;
+    border-radius: 100% !important;
+    padding: 3px 9px !important;
+    font-size: 14px;
+    border: none !important;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current,
+  .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    background-color: #3499ff !important;
+    color: #fff !important;
+    border: none !important;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: black !important;
+    border: none !important;
+    padding: 3px 9px !important;
+    background: #ececec !important;
+    border-radius: 100% !important;
+    font-size: 14px !important;
+  }
+  .dataTables_wrapper .dataTables_paginate .paginate_button {
+    padding: 3px 9px !important;
+    font-size: 14px !important;
+    margin-right: 10px;
+    border: none !important;
+  }
+}
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+  color: #333;
+  font-size: 14px;
 }
 .list_btn_dropdown {
+  .dropdown-toggle::after {
+    display: none;
+  }
+  .btn-success {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    background-color: transparent !important;
+    &:hover {
+      background-color: transparent !important;
+    }
+  }
+  .btn-check:focus + .btn-success,
+  .btn-success:focus {
+    color: #fff;
+    background-color: transparent !important;
+    border: none !important;
+    box-shadow: unset !important;
+  }
+  .dropdown-menu {
+    background: white;
+    margin-left: -2rem !important;
+  }
+  .dropdown-item {
+    padding: 0 !important;
+    button {
+      width: 100%;
+      background: white;
+      border: none;
+      outline: none;
+      transition: all 0.3s;
+      text-transform: capitalize;
+      text-align: left;
+      padding: 5px 10px;
+      font-weight: 400;
+      font-size: 14px;
+      &:hover {
+        background: #e9ecef;
+        // background: black;
+      }
+    }
+  }
+}
+
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable tfoot th,
+table.dataTable tfoot td {
+  text-align: center !important;
 }
 // User Managemen end
