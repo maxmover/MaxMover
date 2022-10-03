@@ -20,11 +20,11 @@ export const Vehiclemanagement = () => {
           <div className="user_managemen_top_title">
             <InnerPagesTopTitle name="Vehicle Management" />
           </div>
-          <div className="col-12">
+          <div className="col-12 ">
             <div className="row">
-              <div className="col-xl-6">
+              <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12">
                 <div className="row g-3">
-                  <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-sm-12">
+                  <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sm-12">
                     <div>
                       <OutlineBtn
                         icon={<AiOutlinePlusCircle />}
@@ -37,7 +37,7 @@ export const Vehiclemanagement = () => {
                       <BlueBtn title="Excel" />
                     </div>
                   </div>
-                  <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
+                  <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
                     <div>
                       <BlueBtn title="Print" />
                     </div>
@@ -47,7 +47,7 @@ export const Vehiclemanagement = () => {
               <div className="col-xl-6"></div>
             </div>
           </div>
-          <div className=" mt-5">
+          <div className="table_main_div">
             <MyTabel />
           </div>
         </div>
@@ -62,7 +62,7 @@ const MyTabel = () => {
     if (!isTableLoaded) {
       setTimeout(() => {
         setIsTableLoaded(true);
-        $("#Customer_table").DataTable({
+        $("#VehicleMg_Table").DataTable({
           responsive: true,
           deferRender: true,
           scroller: true,
@@ -72,31 +72,22 @@ const MyTabel = () => {
   });
   const ListData = [
     {
-      CustomerID: "MMCR111",
-      date: "22-02-22",
-      CustomerType: "Normal",
-      PhoneNumber: "Lauren",
-      EmailId: "lauren@gmail.com",
-      Phone: "7869889790",
+      srno: "1",
+      categoryName: "Domestic Removal",
+      status: "Active",
     },
     {
-      CustomerID: "1",
-      date: "22-02-22",
-      CustomerType: "Normal",
-      PhoneNumber: "Lauren",
-      EmailId: "lauren@gmail.com",
-      Phone: "7869889790",
+      srno: "2",
+      categoryName: "Antique Removal",
+      status: "Inactive",
     },
   ];
   const ListApp = (props) => {
     return (
       <tr>
-        <td>{props.CustomerID}</td>
-        <td>{props.date}</td>
-        <td>{props.CustomerType}</td>
-        <td>{props.PhoneNumber}</td>
-        <td>{props.EmailId}</td>
-        <td>{props.Phone}</td>
+        <td>{props.srno}</td>
+        <td>{props.categoryName}</td>
+        <td>{props.status}</td>
         <td>
           <div className="tabel_td_inner">
             <FaRegEdit />
@@ -107,12 +98,6 @@ const MyTabel = () => {
             <RiDeleteBin5Line />
           </div>
         </td>
-        <td>
-          <div className="tabel_td_inner">
-            <span>More Details</span>
-            <AiOutlinePlusCircle />
-          </div>
-        </td>
       </tr>
     );
   };
@@ -120,19 +105,15 @@ const MyTabel = () => {
     <>
       <div>
         <table
-          id="Customer_table"
+          id="VehicleMg_Table"
           className="table-striped table-hover text-center  table MyTabel_top_div">
           <thead>
             <tr>
-              <th scope="col">Customer ID</th>
-              <th scope="col">Date</th>
-              <th scope="col">Customer Type</th>
-              <th scope="col">Name</th>
-              <th scope="col">Email Id</th>
-              <th scope="col">Phone Number</th>
+              <th scope="col">Sr.No.</th>
+              <th scope="col">Category Name</th>
+              <th scope="col">Status</th>
               <th scope="col">Action</th>
               <th scope="col">Delete</th>
-              <th scope="col">More Details</th>
             </tr>
           </thead>
           <tbody>

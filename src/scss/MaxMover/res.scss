@@ -1,13 +1,31 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
-  .out_line_btn {
-    width: 100%;
-    justify-content: center;
+  .table_main_div {
+    .dataTables_length {
+      font-size: 14px;
+      font-weight: 500;
+    }
   }
-  .BlueBtn {
-    width: 100%;
-    justify-content: center;
+  .dataTables_wrapper .dataTables_length,
+  .dataTables_wrapper .dataTables_filter {
+    float: right;
+    text-align: center;
+  }
+  .dataTables_wrapper .dataTables_length select {
+    width: 9rem;
+    margin-left: 10px;
+  }
+  .Customer_date_div {
+    label {
+      font-size: 14px;
+    }
+  }
+  .table_main_div {
+    .dataTables_filter {
+      display: flex;
+      justify-content: flex-end;
+    }
   }
   .page_top_nav_div_top {
     border: 0;
@@ -31,6 +49,18 @@
   }
 }
 @media (min-width: 768px) {
+  .Customer_date_div {
+    label {
+      font-size: 14px;
+    }
+  }
+  .table_main_div {
+    .dataTables_filter {
+      input {
+        width: 10rem;
+      }
+    }
+  }
   .MyTabel_top_div {
     display: block;
   }
@@ -47,6 +77,11 @@
   }
 }
 @media (min-width: 1024px) {
+  .Customer_date_div {
+    label {
+      font-size: 11px;
+    }
+  }
   .BlueBtn {
     font-size: 14px;
   }
@@ -58,12 +93,29 @@
       width: 10rem;
     }
   }
+  .table_main_div {
+    .dataTables_filter {
+      input {
+        width: 10rem;
+      }
+    }
+  }
   .MyTabel_top_div {
     display: inline-table;
   }
 }
 @media (min-width: 1440px) {
+  .table_main_div {
+    .dataTables_filter {
+      input {
+        width: 12rem;
+      }
+    }
+  }
   .Customer_date_div {
+    label {
+      font-size: 14px;
+    }
     .MuiFormControl-root {
       width: 12rem;
     }

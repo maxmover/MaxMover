@@ -11,6 +11,9 @@ import { useState } from "react";
 import React, { useEffect } from "react";
 import { OutlineBtn, BlueBtn } from "../../../../../common/btn/Btn";
 import { InputBox } from "../../../../../common/InputField/Form";
+import Dropdown from "react-bootstrap/Dropdown";
+import { useNavigate } from "react-router-dom";
+
 export const Customer = () => {
   return (
     <>
@@ -28,7 +31,9 @@ export const Customer = () => {
               <PageTopBtn />
             </div>
             <div className="col-12">
-              <MyTabel />
+              <div className="table_main_div">
+                <MyTabel />
+              </div>
             </div>
           </div>
         </div>
@@ -82,9 +87,9 @@ export const PageTopBtn = () => {
   return (
     <>
       <div className="row g-3">
-        <div className="col-xxl-5 col-xl-5 col-lg-5 col-md-6 col-sm-12 col-12">
+        <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12">
           <div className="row g-3">
-            <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-7 col-sm-12 col-sm-12">
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sm-12">
               <div>
                 <OutlineBtn
                   icon={<AiOutlinePlusCircle />}
@@ -97,14 +102,14 @@ export const PageTopBtn = () => {
                 <BlueBtn title="Excel" />
               </div>
             </div>
-            <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
               <div>
                 <BlueBtn title="Print" />
               </div>
             </div>
           </div>
         </div>
-        <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
+        <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-5 col-sm-12 col-12">
           <div className="row g-3">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
               <div className="Customer_date_div">
@@ -134,6 +139,7 @@ const MyTabel = () => {
           responsive: true,
           deferRender: true,
           scroller: true,
+          // bLengthChange: false,
         });
       }, 1000);
     }
@@ -176,10 +182,7 @@ const MyTabel = () => {
           </div>
         </td>
         <td>
-          <div className="tabel_td_inner">
-            <span>More Details</span>
-            <AiOutlinePlusCircle />
-          </div>
+          <ApplicationBtn />
         </td>
       </tr>
     );
@@ -210,6 +213,28 @@ const MyTabel = () => {
           </tbody>
         </table>
       </div>
+    </>
+  );
+};
+const ApplicationBtn = () => {
+  const navigate = useNavigate();
+
+  return (
+    <>
+      <Dropdown className="list_btn_dropdown">
+        <Dropdown.Toggle variant="success" id="dropdown-basic">
+          <div className="tabel_td_inner">
+            <span>More Details</span>
+            <AiOutlinePlusCircle />
+          </div>
+        </Dropdown.Toggle>
+
+        <Dropdown.Menu>
+          <Dropdown.Item>
+            <button onClick={() => navigate("/hr/hire")}>hire</button>
+          </Dropdown.Item>
+        </Dropdown.Menu>
+      </Dropdown>
     </>
   );
 };

@@ -42,6 +42,8 @@ a {
   }
 }
 .out_line_btn {
+  width: 100%;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   border: 1px solid $blue2;
@@ -73,6 +75,8 @@ a {
   }
 }
 .BlueBtn {
+  width: 100%;
+  justify-content: center;
   font-weight: 500;
   font-size: 14px;
   border: none;
@@ -94,10 +98,12 @@ a {
     margin-bottom: 2px;
   }
 }
+
 .MyTabel_top_div {
   display: inline-table;
   overflow-x: auto;
   white-space: nowrap;
+
   thead {
     background-color: $blue;
     color: white;
@@ -186,5 +192,20 @@ a {
     width: 12rem;
     margin-left: 10px;
   }
+}
+.table_main_div {
+  .dataTables_filter {
+    margin-bottom: 1rem;
+    label {
+      font-weight: 500;
+      font-size: 14px;
+    }
+    input {
+      margin-left: 10px;
+      width: 12rem;
+    }
+  }
+}
+.list_btn_dropdown {
 }
 // User Managemen end
