@@ -1,6 +1,14 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .out_line_btn {
+    width: 100%;
+    justify-content: center;
+  }
+  .BlueBtn {
+    width: 100%;
+    justify-content: center;
+  }
   .page_top_nav_div_top {
     border: 0;
     display: block;
@@ -26,11 +34,38 @@
   .MyTabel_top_div {
     display: block;
   }
+  .Customer_date_div {
+    .MuiFormControl-root {
+      width: 10rem;
+    }
+  }
+  .out_line_btn {
+    font-size: 12px;
+  }
+  .BlueBtn {
+    font-size: 12px;
+  }
 }
 @media (min-width: 1024px) {
+  .BlueBtn {
+    font-size: 14px;
+  }
+  .out_line_btn {
+    font-size: 14px;
+  }
+  .Customer_date_div {
+    .MuiFormControl-root {
+      width: 10rem;
+    }
+  }
   .MyTabel_top_div {
     display: inline-table;
   }
 }
 @media (min-width: 1440px) {
+  .Customer_date_div {
+    .MuiFormControl-root {
+      width: 12rem;
+    }
+  }
 }

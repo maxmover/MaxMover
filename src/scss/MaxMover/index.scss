@@ -57,11 +57,19 @@ a {
   &:hover {
     background: $blue2;
     color: white;
+    span {
+      svg {
+        color: white;
+      }
+    }
   }
   span {
     font-size: 11px;
     margin-right: 10px;
-    margin-bottom: 2px;
+    svg {
+      font-size: 20px;
+      color: $blue2;
+    }
   }
 }
 .BlueBtn {
@@ -165,4 +173,18 @@ a {
   margin-bottom: 1.5rem;
 }
 
+.Customer_date_div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  label {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: capitalize;
+  }
+  .MuiFormControl-root {
+    width: 12rem;
+    margin-left: 10px;
+  }
+}
 // User Managemen end
