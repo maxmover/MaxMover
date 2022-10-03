@@ -2,13 +2,13 @@
 import { Link } from "react-router-dom";
 
 //HOOKS
-import useClickOutside from "../../../common/CustomHooks/ClickOutside";
+import useClickOutside from "../../../../../common/CustomHooks/ClickOutside";
 import { useState } from "react";
 import SlideDrawer from "./../../RightNavbar/Submenus/SideDrawer";
 import Backdrop from "./../../RightNavbar/Submenus/backdrop";
 
 //ICONS , PICS , STYLES
-import ProfilePic from "../../../../pics/people1.jpg";
+import ProfilePic from "../../../../../pics/people1.jpg";
 import styles from "./MyProfile.module.scss";
 import { MdKeyboardArrowDown, MdOutlineSettings } from "react-icons/md";
 import { RiUserSettingsLine } from "react-icons/ri";
@@ -39,7 +39,8 @@ const MyProfile = () => {
         className="d-flex"
         onClick={() => {
           setisProfileOpen(!isProfileOpen);
-        }}>
+        }}
+      >
         {/* AVATAR ICON */}
         {/* <div className={styles.icon_avatar_container}>
         <Avatar />
@@ -61,7 +62,8 @@ const MyProfile = () => {
         <div
           className={`${styles.menu} ${
             isProfileOpen ? styles.menu_active : ""
-          }`}>
+          }`}
+        >
           <div className={styles.info}>
             <span className={styles.name}>
               <b>Welcome !</b>

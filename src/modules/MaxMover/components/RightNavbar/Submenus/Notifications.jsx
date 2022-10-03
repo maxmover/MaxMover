@@ -1,11 +1,11 @@
 //ICONS , STYLES
 import { BiBell } from "react-icons/bi";
 import styles from "./Notifications.module.scss";
-import ProfilePic from "../../../../pics/people1.jpg";
+import ProfilePic from "../../../../../pics/people1.jpg";
 
 //HOOKS
 import { useState } from "react";
-import useClickOutside from "../../../common/CustomHooks/ClickOutside";
+import useClickOutside from "../../../../../common/CustomHooks/ClickOutside";
 const Notification = ({ title, content, date }) => {
   return (
     <div className={styles.notification}>
@@ -48,14 +48,16 @@ const Notifications = () => {
       }`}
       onClick={() => {
         setisNotificationsOpen(!isNotificationsOpen);
-      }}>
+      }}
+    >
       <BiBell />
 
       {/* INBOX SUBMENU */}
       <div
         className={`${styles.submenu} ${
           isNotificationsOpen ? styles.submenu_active : ""
-        }`}>
+        }`}
+      >
         <div className="d-flex justify-content-between align-items-center my-3">
           <div>
             <h3 className={styles.title}>Notifications</h3>
@@ -63,7 +65,8 @@ const Notifications = () => {
           <div>
             <h6
               className={styles.title}
-              style={{ paddingRight: ".8rem", fontSize: "14px" }}>
+              style={{ paddingRight: ".8rem", fontSize: "14px" }}
+            >
               Clear All
             </h6>
           </div>

@@ -6,7 +6,7 @@ import { MdOutlineDashboardCustomize, MdOutlineSettings } from "react-icons/md";
 import { BiMessageDetail } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
 import { GrDropbox } from "react-icons/gr";
-import ProfilePic from "../../../../pics/people4.jpg";
+import ProfilePic from "../../../../../pics/people4.jpg";
 
 // Style
 import "./Sidebartabs.scss";
@@ -53,14 +53,16 @@ function FillExample() {
       defaultActiveKey="tab1"
       id="fill-tab-example"
       className=" sidebarTabs"
-      fill>
+      fill
+    >
       <Tab
         eventKey="tab1"
         title={
           <span>
             <BiMessageDetail />{" "}
           </span>
-        }>
+        }
+      >
         <div className="blueTape">
           <h5>CHATTING SETTING </h5>
         </div>
@@ -103,7 +105,8 @@ function FillExample() {
           <span>
             <MdOutlineDashboardCustomize />{" "}
           </span>
-        }>
+        }
+      >
         <div className="blueTape">
           <h5>&nbsp;</h5>
         </div>
@@ -112,7 +115,8 @@ function FillExample() {
             <a
               href="https://gsuite.google.com/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <span>
                 <FcGoogle />
               </span>{" "}
@@ -124,7 +128,8 @@ function FillExample() {
             <a
               href="https://gsuite.google.com/"
               target="_blank"
-              rel="noreferrer">
+              rel="noreferrer"
+            >
               <span style={{ color: "#0061FF" }}>
                 <GrDropbox />
               </span>{" "}
@@ -139,7 +144,8 @@ function FillExample() {
           <span>
             <MdOutlineSettings />{" "}
           </span>
-        }>
+        }
+      >
         <div className="blueTape">
           <h5>THEME SETTING </h5>
         </div>

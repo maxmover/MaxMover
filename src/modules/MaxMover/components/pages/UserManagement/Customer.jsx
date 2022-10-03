@@ -1,4 +1,4 @@
-import { InnerPagesTopTitle } from "../../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
+import { InnerPagesTopTitle } from "../../../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
 import { NavLink } from "react-router-dom";
 import "jquery/dist/jquery.min.js";
 

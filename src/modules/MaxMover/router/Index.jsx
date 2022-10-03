@@ -1,10 +1,10 @@
 import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
-import NavContext from "../components/Context/NavContext";
-import RightNavbar from "../../common/RightNavbar/RightNavbar";
-import Dashboard from "../components/Dashboard/Dashboard";
-import Container from "../components/Container/Container";
+import NavContext from "../../../modules/MaxMover/components/Context/NavContext";
+import RightNavbar from "../components/RightNavbar/RightNavbar";
+import { Dashboard } from "../pages/Dashboard";
+import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);

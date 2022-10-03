@@ -7,7 +7,7 @@ import { useContext } from "react";
 
 //CONTEXT
 import ReactFlagsSelect from "react-flags-select";
-import NavContext from "../../common/Context/NavContext";
+import NavContext from "../Context/NavContext";
 //ICONS , IMAGES
 import { MdOutlineMenu } from "react-icons/md";
 

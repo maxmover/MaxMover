@@ -4,7 +4,7 @@ import { BsArrowRepeat } from "react-icons/bs";
 import styles from "./Search.module.scss";
 
 import { useState } from "react";
-import useClickOutside from "../../../common/CustomHooks/ClickOutside";
+import useClickOutside from "../../../../../common/CustomHooks/ClickOutside";
 const RecentSearch = ({ children }) => {
   return (
     <li>
