@@ -60,8 +60,7 @@ const PageTopNav = () => {
             backgroundColor: props.backgroundColor,
             color: props.color,
           }}
-          className=" page_top_nav_link"
-        >
+          className=" page_top_nav_link">
           {props.name}
         </div>
       </NavLink>
@@ -79,7 +78,7 @@ const PageTopNav = () => {
     </>
   );
 };
-const PageTopBtn = () => {
+export const PageTopBtn = () => {
   return (
     <>
       <div className="row g-3">
@@ -190,8 +189,7 @@ const MyTabel = () => {
       <div>
         <table
           id="Customer_table"
-          className="table-striped table-hover text-center  table MyTabel_top_div"
-        >
+          className="table-striped table-hover text-center  table MyTabel_top_div">
           <thead>
             <tr>
               <th scope="col">Customer ID</th>
