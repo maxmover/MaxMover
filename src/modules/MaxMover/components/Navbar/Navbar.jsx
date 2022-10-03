@@ -43,7 +43,7 @@ const Navbar = () => {
       icon: <MdOutlineManageAccounts />,
       activeSubItem: null,
       subItems: [
-        { title: "Customers", link: "Customer" },
+        { title: "Customers", link: "/max/Customer" },
         { title: "Employees", link: "/" },
         { title: "Sub-contractors", link: "/" },
         { title: "Receptions", link: "/" },
