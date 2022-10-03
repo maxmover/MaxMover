@@ -35,7 +35,7 @@ const Navbar = () => {
     {
       title: "Dashboard",
       icon: <MdOutlineDashboardCustomize />,
-      link: "dashboard",
+      link: "/max/dashboard",
     },
 
     {
@@ -73,6 +73,7 @@ const Navbar = () => {
     {
       title: "Vehicle Management",
       icon: <BsTruck />,
+      link: "/max/vehiclemanagement",
     },
     {
       title: "Templates & Notes",
@@ -90,8 +91,7 @@ const Navbar = () => {
       <div
         className={`${styles.li_navlink} ${
           menu.isActive ? styles.sidetabsactive : ""
-        }`}
-      >
+        }`}>
         <span
           onClick={() => {
             if (menu.isActive) menu.isActive = false;
@@ -101,8 +101,7 @@ const Navbar = () => {
           }}
           className={`d-flex position-relative ${
             menu.isActive ? styles.active : ""
-          }`}
-        >
+          }`}>
           <div className="mx-3">{menu.icon}</div>
           <div className={styles.description}>{menu.title} </div>
           <div className={styles.arrow}>
@@ -124,8 +123,7 @@ const Navbar = () => {
                     menu.activeSubItem = i;
                   }}
                   className={menu.activeSubItem === i ? styles.subactive : null}
-                  to={subItem.link}
-                >
+                  to={subItem.link}>
                   &nbsp; {subItem.title}
                 </Link>
               ))}
@@ -138,8 +136,7 @@ const Navbar = () => {
     <div
       className={`${styles.navbar_container} ${
         nav ? styles.navbar_mobile_active : ""
-      }`}
-    >
+      }`}>
       <nav>
         {/* LOGO */}
         <div className="text-center">
@@ -178,8 +175,7 @@ const Navbar = () => {
         className={nav ? styles.mobile_nav_background_active : null}
         onClick={() => {
           setNav(!nav);
-        }}
-      ></div>
+        }}></div>
     </div>
   );
 };
