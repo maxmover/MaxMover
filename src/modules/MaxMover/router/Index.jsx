@@ -7,8 +7,8 @@ import { Dashboard } from "./pages/Dashboard";
 import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
 
-import { AddNewVehicle } from "../components/pages/Vehiclemanagement/AddNewVehicle";
-import { Vehiclemanagement } from "./pages/Vehiclemanagement";
+import { AddNewVehicle } from "../components/pages/VehicleManagement/AddNewVehicle";
+import { Vehiclemanagement } from "../pages/Vehiclemanagement";
 
 import { BankDetails } from "../components/pages/UserManagement/customerPage/BankDetails";
 import { AddCustomer } from "../components/pages/UserManagement/customerPage/AddCustomer";

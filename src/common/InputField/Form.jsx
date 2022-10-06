@@ -5,8 +5,6 @@ import MenuItem from "@mui/material/MenuItem";
 import Switch from "@mui/material/Switch";
 
 // Date Picker
-
-import dayjs from "dayjs";
 import Stack from "@mui/material/Stack";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
@@ -32,7 +30,8 @@ export const SelectBox = (props) => {
       onChange={handleChange}
       helperText={props.helperText}
       label={props.label}
-      value={currency}>
+      value={currency}
+    >
       {props.data.map((option) => (
         <MenuItem key={option.value} value={option.value}>
           {option.label}
@@ -72,7 +71,8 @@ export const InputBoxWithSwitch = (props) => {
         "& .MuiTextField-root": { width: "100%" },
       }}
       noValidate
-      autoComplete="off">
+      autoComplete="off"
+    >
       <div>
         {/* Toggle */}
         <div className="input_box_with_switch_div">
@@ -104,16 +104,18 @@ export const DatepickerMui = () => {
   };
 
   return (
-    <LocalizationProvider dateAdapter={AdapterDayjs}>
-      <Stack>
-        <MobileDatePicker
-          label="Date mobile"
-          inputFormat="MM/DD/YYYY"
-          value={value}
-          onChange={handleChange}
-          renderInput={(params) => <TextField {...params} />}
-        />
-      </Stack>
-    </LocalizationProvider>
+    <div>
+      <LocalizationProvider dateAdapter={AdapterDayjs}>
+        <Stack>
+          <MobileDatePicker
+            label="Date mobile"
+            inputFormat="MM/DD/YYYY"
+            value={value}
+            onChange={handleChange}
+            renderInput={(params) => <TextField {...params} />}
+          />
+        </Stack>
+      </LocalizationProvider>
+    </div>
   );
 };
