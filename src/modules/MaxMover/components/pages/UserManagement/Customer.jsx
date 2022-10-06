@@ -9,7 +9,7 @@ import { AiOutlinePlusCircle, AiOutlineDelete } from "react-icons/ai";
 import { useState } from "react";
 import React, { useEffect } from "react";
 import { OutlineBtn, BlueBtn } from "../../../../../common/btn/Btn";
-import { InputBox } from "../../../../../common/InputField/Form";
+import { SiedLabelInput } from "../../../../../common/InputField/Form";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 
@@ -64,7 +64,8 @@ const PageTopNav = () => {
             backgroundColor: props.backgroundColor,
             color: props.color,
           }}
-          className=" page_top_nav_link">
+          className=" page_top_nav_link"
+        >
           {props.name}
         </div>
       </NavLink>
@@ -111,16 +112,10 @@ export const PageTopBtn = () => {
         <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-5 col-sm-12 col-12">
           <div className="row g-3">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <div className="Customer_date_div">
-                <label>Start date</label>
-                <InputBox type="date" />
-              </div>
+              <SiedLabelInput label="start date" type="date" />
             </div>
             <div className="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <div className="Customer_date_div">
-                <label>Start date</label>
-                <InputBox type="date" />
-              </div>
+              <SiedLabelInput label="end date" type="date" />
             </div>
           </div>
         </div>
@@ -194,7 +189,8 @@ const MyTabel = () => {
         <td>
           <div
             onClick={() => navigate(props.editLink)}
-            className="tabel_td_inner">
+            className="tabel_td_inner"
+          >
             <MdOutlineModeEditOutline />
           </div>
         </td>
@@ -241,7 +237,8 @@ const MyTabel = () => {
       <div>
         <table
           id="Customer_table"
-          className="table-striped table-hover text-center mb-3  table MyTabel_top_div">
+          className="table-striped table-hover text-center mb-3  table MyTabel_top_div"
+        >
           <thead>
             <tr>
               <th scope="col">Customer ID</th>
