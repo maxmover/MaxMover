@@ -8,8 +8,8 @@ import { MdOutlineModeEditOutline } from "react-icons/md";
 import { AiOutlinePlusCircle, AiOutlineDelete } from "react-icons/ai";
 import { useState } from "react";
 import React, { useEffect } from "react";
-import { OutlineBtn, BlueBtn } from "../../../../../common/btn/Btn";
-import { SiedLabelInput } from "../../../../../common/InputField/Form";
+import { OutlineLinkBtn, BlueBtn } from "../../../../../common/btn/Btn";
+import { SideLabelInput } from "../../../../../common/InputField/Form";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 
@@ -53,7 +53,25 @@ const PageTopNav = () => {
       backgroundColor: "white",
       color: "black",
       name: "Employees",
-      link: "/",
+      link: "/max/employees",
+    },
+    {
+      backgroundColor: "white",
+      color: "black",
+      name: "Sub-contractor",
+      link: "/max/sub_contractors",
+    },
+    {
+      backgroundColor: "white",
+      color: "black",
+      name: "Receptions",
+      link: "/max/receptions",
+    },
+    {
+      backgroundColor: "white",
+      color: "black",
+      name: "Receptions",
+      link: "/max/receptions",
     },
   ];
   const PageTopNavListApp = (props) => {
@@ -91,9 +109,10 @@ export const PageTopBtn = () => {
           <div className="row g-3">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sm-12">
               <div>
-                <OutlineBtn
+                <OutlineLinkBtn
                   icon={<AiOutlinePlusCircle />}
                   title="Add new customer"
+                  link="/max/add_customer"
                 />
               </div>
             </div>
@@ -112,10 +131,14 @@ export const PageTopBtn = () => {
         <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-5 col-sm-12 col-12">
           <div className="row g-3">
             <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <SiedLabelInput label="start date" type="date" />
+              <div className=" d-flex justify-content-end">
+                <SideLabelInput label="start date" type="date" />
+              </div>
             </div>
             <div className="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <SiedLabelInput label="end date" type="date" />
+              <div className=" d-flex justify-content-end">
+                <SideLabelInput label="end date" type="date" />
+              </div>
             </div>
           </div>
         </div>
@@ -147,7 +170,25 @@ const MyTabel = () => {
       PhoneNumber: "Lauren",
       EmailId: "lauren@gmail.com",
       Phone: "7869889790",
-      editLink: "/",
+      editLink: "/max/edit_customer",
+    },
+    {
+      CustomerID: "100",
+      date: "22-02-22",
+      CustomerType: "Normal",
+      PhoneNumber: "Lauren",
+      EmailId: "lauren@gmail.com",
+      Phone: "7869889790",
+      editLink: "/max/edit_customer",
+    },
+    {
+      CustomerID: "10",
+      date: "22-02-22",
+      CustomerType: "Normal",
+      PhoneNumber: "Lauren",
+      EmailId: "lauren@gmail.com",
+      Phone: "7869889790",
+      editLink: "/max/edit_customer",
     },
     {
       CustomerID: "1",
@@ -156,25 +197,7 @@ const MyTabel = () => {
       PhoneNumber: "Lauren",
       EmailId: "lauren@gmail.com",
       Phone: "7869889790",
-      editLink: "/",
-    },
-    {
-      CustomerID: "2",
-      date: "22-02-22",
-      CustomerType: "Normal",
-      PhoneNumber: "Lauren",
-      EmailId: "lauren@gmail.com",
-      Phone: "7869889790",
-      editLink: "/",
-    },
-    {
-      CustomerID: "3",
-      date: "22-02-22",
-      CustomerType: "Normal",
-      PhoneNumber: "Lauren",
-      EmailId: "lauren@gmail.com",
-      Phone: "7869889790",
-      editLink: "/",
+      editLink: "/max/edit_customer",
     },
   ];
   const ListApp = (props) => {
@@ -220,10 +243,12 @@ const MyTabel = () => {
 
           <Dropdown.Menu>
             <Dropdown.Item>
-              <button onClick={() => navigate("/")}>Bank Details</button>
+              <button onClick={() => navigate("/max/bank_details")}>
+                Bank Details
+              </button>
             </Dropdown.Item>
             <Dropdown.Item>
-              <button onClick={() => navigate("/")}>
+              <button onClick={() => navigate("/max/add_customer")}>
                 Make Regular Customer
               </button>
             </Dropdown.Item>

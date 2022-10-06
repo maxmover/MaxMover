@@ -182,7 +182,6 @@ a {
 .Customer_date_div {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
   label {
     font-weight: 500;
     font-size: 14px;
@@ -292,5 +291,28 @@ table.dataTable thead td,
 table.dataTable tfoot th,
 table.dataTable tfoot td {
   text-align: center !important;
+}
+.bank_details_input_main_div {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.bank_details_input_div {
+  .Customer_date_div {
+    label {
+      font-weight: 400;
+      font-size: 14px;
+      position: absolute;
+      left: 6%;
+    }
+    .MuiFormControl-root {
+      width: 35rem;
+    }
+  }
+}
+.add_customer_note {
+  .MuiInputBase-root {
+    height: 105px !important;
+  }
 }
 // User Managemen end

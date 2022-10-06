@@ -35,14 +35,7 @@ export const SelectBox = (props) => {
   );
 };
 export const InputBox = (props) => {
-  return (
-    <TextField
-      sx={{ width: 1 }}
-      size="small"
-      id="outlined-required"
-      {...props}
-    />
-  );
+  return <TextField sx={{ width: 1 }} size="small" {...props} />;
 };
 export const TextAreaBox = (props) => {
   return (
@@ -86,7 +79,7 @@ export const InputBoxWithSwitch = (props) => {
     </Box>
   );
 };
-export const SiedLabelInput = (props) => {
+export const SideLabelInput = (props) => {
   return (
     <>
       <div className="Customer_date_div">
