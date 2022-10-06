@@ -6,7 +6,7 @@ import RightNavbar from "../components/RightNavbar/RightNavbar";
 import { Dashboard } from "../pages/Dashboard";
 import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
-import { Vehiclemanagement } from "../pages/Vehiclemanagement";
+import { Vehiclemanagement } from "../pages/Vehiclemanagement/Vehiclemanagement";
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
   const value = { nav, setNav };
