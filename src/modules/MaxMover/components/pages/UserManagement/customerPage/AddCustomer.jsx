@@ -94,9 +94,7 @@ const Form = () => {
           </div>
         </div>
         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <div className="add_customer_note">
-            <TextAreaBox label="Notes " />
-          </div>
+          <TextAreaBox multiline rows={"3.8"} label="Notes " />
         </div>
         <div className="col-12">
           <div className="row g-4 justify-content-center">
