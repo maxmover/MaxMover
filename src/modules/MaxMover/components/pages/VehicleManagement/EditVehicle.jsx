@@ -20,7 +20,7 @@ import "datatables.net-dt/css/jquery.dataTables.min.css";
 // import { AiOutlinePlusCircle } from "react-icons/ai";
 // import { useState } from "react";
 // import React, { useEffect } from "react";
-export const AddNewVehicle = () => {
+export const EditVehicle = () => {
   return (
     <>
       <div className="custom_container">
@@ -32,7 +32,7 @@ export const AddNewVehicle = () => {
           <div className="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-sm-3 g-3 ">
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
               <div>
-                <ActionStrip title="Add new service category" />
+                <ActionStrip title="Edit vehicle details" />
               </div>
             </div>
             <div className="col-xxl-12 col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">

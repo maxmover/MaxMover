@@ -81,7 +81,7 @@ const MyTabel = () => {
       vehicleNumber: "DL AC 1059",
       vehicleCapacity: "18",
       status: "Active",
-      editLink: "/",
+      editLink: "/max/edit_vehicle",
     },
     {
       srno: "2",
@@ -89,7 +89,7 @@ const MyTabel = () => {
       vehicleNumber: "DL AC 2000",
       vehicleCapacity: "20",
       status: "Active",
-      editLink: "/",
+      editLink: "/max/edit_vehicle",
     },
   ];
   const ListApp = (props) => {

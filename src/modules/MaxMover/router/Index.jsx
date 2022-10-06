@@ -3,7 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import NavContext from "../../../modules/MaxMover/components/Context/NavContext";
 import RightNavbar from "../components/RightNavbar/RightNavbar";
-import { Dashboard } from "./pages/Dashboard";
+import { Dashboard } from "../pages/Dashboard";
 import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
 
@@ -17,6 +17,7 @@ import { Employees } from "../components/pages/UserManagement/Employees";
 import { Receptions } from "../components/pages/UserManagement/Receptions";
 import { Refereers } from "../components/pages/UserManagement/Refereers";
 import { SubContractors } from "../components/pages/UserManagement/SubContractors";
+import { EditVehicle } from "../components/pages/VehicleManagement/EditVehicle";
 
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
@@ -43,6 +44,7 @@ export const MaxMoverRouts = () => {
                 <Route path="/receptions" element={<Receptions />} />
                 <Route path="/refereers" element={<Refereers />} />
                 <Route path="/sub_contractors" element={<SubContractors />} />
+                <Route path="/edit_vehicle" element={<EditVehicle />} />
 
                 <Route
                   path="/vehiclemanagement"
