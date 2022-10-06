@@ -2,7 +2,7 @@ export const ActionStrip = (props) => {
   const ActionStripNormal = () => {
     return (
       <>
-        <div className="action_strip_div">{props.title}</div>;
+        <div className="action_strip_div">{props.title}</div>
       </>
     );
   };

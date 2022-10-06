@@ -3,10 +3,11 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import NavContext from "../../../modules/MaxMover/components/Context/NavContext";
 import RightNavbar from "../components/RightNavbar/RightNavbar";
-import { Dashboard } from "../pages/Dashboard";
+import { Dashboard } from "./pages/Dashboard";
 import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
-import { Vehiclemanagement } from "../pages/Vehiclemanagement/Vehiclemanagement";
+import { AddNewVehicle } from "../components/pages/Vehiclemanagement/AddNewVehicle";
+import { Vehiclemanagement } from "./pages/Vehiclemanagement";
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
   const value = { nav, setNav };
@@ -22,6 +23,7 @@ export const MaxMoverRouts = () => {
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/customer" element={<Customer />} />
+                <Route path="/addnewvehicle" element={<AddNewVehicle />} />
                 <Route
                   path="/vehiclemanagement"
                   element={<Vehiclemanagement />}
