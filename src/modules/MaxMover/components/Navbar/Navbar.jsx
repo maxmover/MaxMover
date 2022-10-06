@@ -44,10 +44,10 @@ const Navbar = () => {
       activeSubItem: null,
       subItems: [
         { title: "Customers", link: "/max/Customer" },
-        { title: "Employees", link: "/" },
-        { title: "Sub-contractors", link: "/" },
-        { title: "Receptions", link: "/" },
-        { title: "Refereers", link: "/" },
+        { title: "Employees", link: "/max/employees" },
+        { title: "Sub-contractors", link: "/max/sub_contractors" },
+        { title: "Receptions", link: "/max/receptions" },
+        { title: "Refereers", link: "/max/receptions" },
       ],
     },
     {

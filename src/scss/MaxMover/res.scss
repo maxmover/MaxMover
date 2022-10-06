@@ -1,6 +1,23 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .bank_details_input_main_div {
+    display: block;
+  }
+  .bank_details_input_div {
+    .Customer_date_div {
+      display: block;
+      label {
+        margin-bottom: 7px;
+        position: relative;
+        left: 0;
+      }
+      .MuiFormControl-root {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+  }
   .list_btn_dropdown .dropdown-menu {
     margin-left: 0rem !important;
   }
@@ -52,6 +69,13 @@
   }
 }
 @media (min-width: 768px) {
+  .bank_details_input_div {
+    .Customer_date_div {
+      .MuiFormControl-root {
+        width: 20rem;
+      }
+    }
+  }
   .Customer_date_div {
     label {
       font-size: 14px;
@@ -80,6 +104,13 @@
   }
 }
 @media (min-width: 1024px) {
+  .bank_details_input_div {
+    .Customer_date_div {
+      .MuiFormControl-root {
+        width: 35rem;
+      }
+    }
+  }
   .Customer_date_div {
     label {
       font-size: 11px;
