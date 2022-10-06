@@ -86,3 +86,13 @@ export const InputBoxWithSwitch = (props) => {
     </Box>
   );
 };
+export const SiedLabelInput = (props) => {
+  return (
+    <>
+      <div className="Customer_date_div">
+        <label>{props.label}</label>
+        <InputBox type={props.type} />
+      </div>
+    </>
+  );
+};
