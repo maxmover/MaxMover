@@ -5,7 +5,11 @@ import { BlueBtn, OutlineLinkBtn } from "../../../../../common/btn/Btn";
 // import { NavLink } from "react-router-dom";
 // import { useNavigate } from "react-router-dom";
 import { ActionStrip } from "../../../../../common/actionStrip/ActionStrip";
-import { TextAreaBox, InputBox } from "../../../../../common/InputField/Form";
+import {
+  TextAreaBox,
+  InputBox,
+  SelectBox,
+} from "../../../../../common/InputField/Form";
 import "jquery/dist/jquery.min.js";
 
 import "datatables.net-dt/js/dataTables.dataTables";
@@ -42,7 +46,7 @@ export const AddNewCategory = () => {
     </>
   );
 };
-const NewServiceForm = () => {
+export const NewServiceForm = () => {
   const DropData = [
     {
       value: "1",

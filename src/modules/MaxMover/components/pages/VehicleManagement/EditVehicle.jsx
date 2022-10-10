@@ -46,7 +46,7 @@ export const EditVehicle = () => {
     </>
   );
 };
-const NewVehicleForm = () => {
+export const NewVehicleForm = () => {
   // const DropData = [
   //   {
   //     value: "1",
