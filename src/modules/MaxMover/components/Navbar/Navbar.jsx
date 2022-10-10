@@ -73,7 +73,7 @@ const Navbar = () => {
     {
       title: "Service Categories",
       icon: <GiGears />,
-      link: "/",
+      link: "/max/service_category",
     },
     {
       title: "Vehicle Management",

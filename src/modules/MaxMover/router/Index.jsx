@@ -8,7 +8,10 @@ import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
 
 import { AddNewVehicle } from "../components/pages/VehicleManagement/AddNewVehicle";
+import { AddNewCategory } from "../components/pages/Servicecategory/AddNewCategory";
+import { EditCategory } from "../components/pages/Servicecategory/EditCategory";
 import { Vehiclemanagement } from "../pages/Vehiclemanagement";
+import { Servicecategory } from "../pages/Servicecategory";
 
 import { BankDetails } from "../components/pages/UserManagement/customerPage/BankDetails";
 import { AddCustomer } from "../components/pages/UserManagement/customerPage/AddCustomer";
@@ -39,12 +42,15 @@ export const MaxMoverRouts = () => {
                 <Route path="/bank_details" element={<BankDetails />} />
                 <Route path="/add_customer" element={<AddCustomer />} />
                 <Route path="/edit_customer" element={<EditCustomer />} />
+                <Route path="/add_new_category" element={<AddNewCategory />} />
+                <Route path="/edit_category" element={<EditCategory />} />
 
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/receptions" element={<Receptions />} />
                 <Route path="/refereers" element={<Refereers />} />
                 <Route path="/sub_contractors" element={<SubContractors />} />
                 <Route path="/edit_vehicle" element={<EditVehicle />} />
+                <Route path="/service_category" element={<Servicecategory />} />
 
                 <Route
                   path="/vehiclemanagement"
