@@ -331,6 +331,10 @@ table.dataTable tfoot td {
     font-weight: 500;
     font-size: 12px;
     transition: all 0.3s;
+    &:hover {
+      background-color: $blue2 !important;
+      color: white !important;
+    }
   }
 }
 .dark_blue_link_btn {

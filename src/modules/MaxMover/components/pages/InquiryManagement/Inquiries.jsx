@@ -1,5 +1,4 @@
 import { InnerPagesTopTitle } from "../../../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
-import { NavLink } from "react-router-dom";
 import "jquery/dist/jquery.min.js";
 import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
@@ -17,7 +16,7 @@ import { SideLabelInput } from "../../../../../common/InputField/Form";
 import { useNavigate } from "react-router-dom";
 import { FiClock } from "react-icons/fi";
 import { PageTopNav } from "../../../../../common/PageTopNav";
-
+import { PageTabs } from "../../../../../common/PageTabs";
 export const Inquiries = () => {
   return (
     <>
@@ -46,7 +45,7 @@ export const Inquiries = () => {
               </div>
             </div>
             <div className="col-12 ">
-              <PageTab />
+              <PageTabs data="Inquiries" />
             </div>
             <div className="col-12  ">
               <div className="table_main_div">
@@ -106,75 +105,6 @@ export const PageTopBtn = () => {
   );
 };
 
-const PageTab = () => {
-  const PageTabListData = [
-    {
-      backgroundColor: "white",
-      color: "black",
-      HoverColor: "white",
-      HoverBackgroundColor: "#3499ff",
-      name: "Inquiry Information",
-      link: "/max/inquiries",
-    },
-    {
-      backgroundColor: "white",
-      color: "black",
-      HoverColor: "white",
-      HoverBackgroundColor: "#3499ff",
-      name: "Inquiry Followup Information",
-      link: "/max/followups",
-    },
-    {
-      backgroundColor: "white",
-      color: "black",
-      HoverColor: "white",
-      HoverBackgroundColor: "#3499ff",
-      name: "Quotation",
-      link: "/max/quotations",
-    },
-  ];
-  const PageTabListApp = (props) => {
-    const [isHover, setIsHover] = useState(false);
-
-    const handleMouseEnter = () => {
-      setIsHover(true);
-    };
-    const handleMouseLeave = () => {
-      setIsHover(false);
-    };
-    const boxStyle = {
-      backgroundColor: isHover
-        ? props.HoverBackgroundColor
-        : props.backgroundColor,
-      color: isHover ? props.HoverColor : props.color,
-    };
-
-    return (
-      <NavLink to={props.link}>
-        <div
-          style={boxStyle}
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-          className=" page_top_nav_link"
-        >
-          {props.name}
-        </div>
-      </NavLink>
-    );
-  };
-
-  return (
-    <>
-      <div>
-        <div className="page_tab_top_div">
-          {PageTabListData.map((val, i) => {
-            return <PageTabListApp key={i} {...val} />;
-          })}
-        </div>
-      </div>
-    </>
-  );
-};
 const MyTabel = () => {
   const navigate = useNavigate();
   const [isTableLoaded, setIsTableLoaded] = useState(false);
