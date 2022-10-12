@@ -7,7 +7,9 @@
   list-style: none;
   user-select: none;
 }
-input,label,textarea{
+input,
+label,
+textarea {
   font-family: "IBM Plex Sans", sans-serif !important;
 }
 a {
@@ -96,9 +98,11 @@ a {
     background: $hover;
   }
   span {
-    font-size: 11px;
     margin-right: 10px;
-    margin-bottom: 2px;
+    svg {
+      font-size: 15px;
+      color: white;
+    }
   }
 }
 
@@ -172,8 +176,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: white;
   border-radius: 5px;
 }
 // page top nav end
@@ -315,3 +318,22 @@ table.dataTable tfoot td {
 }
 
 // User Managemen end
+// Inquiry Management
+.page_tab_top_div {
+  display: flex;
+  align-items: center;
+  .page_top_nav_link {
+    width: auto;
+    margin-right: 10px;
+    border: 1px solid $blue2;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    transition: all 0.3s;
+  }
+}
+.dark_blue_link_btn {
+  background: #0067ce;
+}
+// Inquiry Management end

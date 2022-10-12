@@ -21,6 +21,23 @@ import { Receptions } from "../components/pages/UserManagement/Receptions";
 import { Refereers } from "../components/pages/UserManagement/Refereers";
 import { SubContractors } from "../components/pages/UserManagement/SubContractors";
 import { EditVehicle } from "../components/pages/VehicleManagement/EditVehicle";
+import { AddEmployees } from "../components/pages/UserManagement/EmployeesPage/AddEmployees";
+import { EditEmployees } from "../components/pages/UserManagement/EmployeesPage/EditEmployees";
+import { WorkingRate } from "../components/pages/UserManagement/EmployeesPage/WorkingRate";
+import { EmployeesBankDetails } from "../components/pages/UserManagement/EmployeesPage/EmployeesBankDetails";
+import { AddSubContractors } from "../components/pages/UserManagement/SubContractorsPage/AddSubContractors";
+import { EditSubContractors } from "../components/pages/UserManagement/SubContractorsPage/EditSubContractors";
+import { SubContractorsBankDetails } from "../components/pages/UserManagement/SubContractorsPage/SubContractorsBankDetails";
+import { SubContractorsWorkingRate } from "../components/pages/UserManagement/SubContractorsPage/SubContractorsWorkingRate";
+import { AddNewReception } from "../components/pages/UserManagement/ReceptionsPage/AddNewReception";
+import { EditNewReception } from "../components/pages/UserManagement/ReceptionsPage/EditNewReception";
+import { AddNewRefereers } from "../components/pages/UserManagement/RefereersPage/AddNewRefereers";
+import { EditRefereers } from "../components/pages/UserManagement/RefereersPage/EditRefereers";
+
+import { Followups } from "../components/pages/InquiryManagement/Followups";
+import { Inquiries } from "../components/pages/InquiryManagement/Inquiries";
+import { Jobs } from "../components/pages/InquiryManagement/Jobs";
+import { Quotations } from "../components/pages/InquiryManagement/Quotations";
 
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
@@ -37,25 +54,63 @@ export const MaxMoverRouts = () => {
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/customer" element={<Customer />} />
-
                 <Route path="/addnewvehicle" element={<AddNewVehicle />} />
                 <Route path="/bank_details" element={<BankDetails />} />
                 <Route path="/add_customer" element={<AddCustomer />} />
                 <Route path="/edit_customer" element={<EditCustomer />} />
                 <Route path="/add_new_category" element={<AddNewCategory />} />
                 <Route path="/edit_category" element={<EditCategory />} />
-
                 <Route path="/employees" element={<Employees />} />
                 <Route path="/receptions" element={<Receptions />} />
                 <Route path="/refereers" element={<Refereers />} />
                 <Route path="/sub_contractors" element={<SubContractors />} />
                 <Route path="/edit_vehicle" element={<EditVehicle />} />
                 <Route path="/service_category" element={<Servicecategory />} />
-
+                <Route path="/add_employees" element={<AddEmployees />} />
+                <Route path="/edit_employees" element={<EditEmployees />} />
+                <Route
+                  path="/employees_bank_details"
+                  element={<EmployeesBankDetails />}
+                />
+                <Route path="/working_rate" element={<WorkingRate />} />
                 <Route
                   path="/vehiclemanagement"
                   element={<Vehiclemanagement />}
                 />
+                <Route
+                  path="/add_sub_contractors"
+                  element={<AddSubContractors />}
+                />
+                <Route
+                  path="/edit_sub_contractors"
+                  element={<EditSubContractors />}
+                />
+                <Route
+                  path="/sub_contractors_bank_details"
+                  element={<SubContractorsBankDetails />}
+                />
+                <Route
+                  path="/sub_contractors_working_rate"
+                  element={<SubContractorsWorkingRate />}
+                />
+                <Route
+                  path="/add_new_reception"
+                  element={<AddNewReception />}
+                />
+                <Route
+                  path="/edit_new_reception"
+                  element={<EditNewReception />}
+                />
+                <Route
+                  path="/add_new_refereers"
+                  element={<AddNewRefereers />}
+                />
+                <Route path="/edit_refereers" element={<EditRefereers />} />
+
+                <Route path="/followups" element={<Followups />} />
+                <Route path="/inquiries" element={<Inquiries />} />
+                <Route path="/jobs" element={<Jobs />} />
+                <Route path="/quotations" element={<Quotations />} />
 
                 <Route path="*" element={<main>NOT FOUND</main>} />
               </Routes>

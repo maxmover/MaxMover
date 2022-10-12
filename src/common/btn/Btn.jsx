@@ -85,3 +85,48 @@ export const OutlineLinkBtn = (props) => {
   };
   return props.icon ? <OutlineBtnIcon /> : <OutlineBtnNormal />;
 };
+
+export const DarkBlueBtn = (props) => {
+  const Fillbtn = () => {
+    return (
+      <>
+        <button className="BlueBtn" onClick={props.onClick}>
+          {props.title}
+        </button>
+      </>
+    );
+  };
+  const Fillbtnicon = () => {
+    return (
+      <>
+        <button className="BlueBtn" onClick={props.onClick}>
+          <span>{props.icon}</span>
+          {props.title}
+        </button>
+      </>
+    );
+  };
+  return props.icon ? <Fillbtnicon /> : <Fillbtn />;
+};
+export const DarkBlueLinkBtn = (props) => {
+  const FillLinkbtn = () => {
+    return (
+      <>
+        <NavLink className="BlueBtn dark_blue_link_btn" to={props.link}>
+          {props.title}
+        </NavLink>
+      </>
+    );
+  };
+  const FillLinkbtnicon = () => {
+    return (
+      <>
+        <NavLink className="BlueBtn dark_blue_link_btn" to={props.link}>
+          <span>{props.icon}</span>
+          {props.title}
+        </NavLink>
+      </>
+    );
+  };
+  return props.icon ? <FillLinkbtnicon /> : <FillLinkbtn />;
+};

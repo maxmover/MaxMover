@@ -1,5 +1,4 @@
 import { InnerPagesTopTitle } from "../../../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
-import { NavLink } from "react-router-dom";
 import "jquery/dist/jquery.min.js";
 import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
@@ -12,6 +11,7 @@ import { OutlineLinkBtn, BlueBtn } from "../../../../../common/btn/Btn";
 import { SideLabelInput } from "../../../../../common/InputField/Form";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
+import { PageTopNav } from "../../../../../common/PageTopNav";
 
 export const Customer = () => {
   return (
@@ -24,7 +24,7 @@ export const Customer = () => {
 
           <div className="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-sm-3 g-3 ">
             <div className="col-12">
-              <PageTopNav />
+              <PageTopNav data="customer" activeTabName="Customers" />
             </div>
             <div className="col-12">
               <PageTopBtn />
@@ -41,66 +41,6 @@ export const Customer = () => {
   );
 };
 
-const PageTopNav = () => {
-  const PageTopNavListData = [
-    {
-      backgroundColor: "#3499ff",
-      color: "white",
-      name: "Customers",
-      link: "/max/Customer",
-    },
-    {
-      backgroundColor: "white",
-      color: "black",
-      name: "Employees",
-      link: "/max/employees",
-    },
-    {
-      backgroundColor: "white",
-      color: "black",
-      name: "Sub-contractor",
-      link: "/max/sub_contractors",
-    },
-    {
-      backgroundColor: "white",
-      color: "black",
-      name: "Receptions",
-      link: "/max/receptions",
-    },
-    {
-      backgroundColor: "white",
-      color: "black",
-      name: "Receptions",
-      link: "/max/receptions",
-    },
-  ];
-  const PageTopNavListApp = (props) => {
-    return (
-      <NavLink to={props.link}>
-        <div
-          style={{
-            backgroundColor: props.backgroundColor,
-            color: props.color,
-          }}
-          className=" page_top_nav_link"
-        >
-          {props.name}
-        </div>
-      </NavLink>
-    );
-  };
-  return (
-    <>
-      <div className="page_top_nav_div_top">
-        <div className="page_top_nav">
-          {PageTopNavListData.map((val, i) => {
-            return <PageTopNavListApp key={i} {...val} />;
-          })}
-        </div>
-      </div>
-    </>
-  );
-};
 export const PageTopBtn = () => {
   return (
     <>
