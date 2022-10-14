@@ -93,6 +93,12 @@ export const MaxMoverRouts = () => {
                   element={<EmployeesBankDetails />}
                 />
                 <Route path="/working_rate" element={<WorkingRate />} />
+
+                <Route
+                  path="/employees_bank_details"
+                  element={<EmployeesBankDetails />}
+                />
+                <Route path="/working_rate" element={<WorkingRate />} />
                 <Route
                   path="/vehiclemanagement"
                   element={<Vehiclemanagement />}
