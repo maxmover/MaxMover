@@ -79,19 +79,19 @@ const MyTabel = () => {
       srno: "1",
       categoryName: "Domestic removals",
       status: "Active",
-      editLink: "/max/edit_vehicle",
+      editLink: "/max/edit_category",
     },
     {
       srno: "2",
       categoryName: "Domestic removals",
       status: "Active",
-      editLink: "/max/edit_vehicle",
+      editLink: "/max/edit_category",
     },
     {
       srno: "3",
       categoryName: "Domestic removals",
       status: "Active",
-      editLink: "/max/edit_vehicle",
+      editLink: "/max/edit_category",
     },
   ];
   const ListApp = (props) => {

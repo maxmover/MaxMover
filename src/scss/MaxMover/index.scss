@@ -12,6 +12,7 @@ label,
 textarea {
   font-family: "IBM Plex Sans", sans-serif !important;
 }
+
 a {
   text-decoration: none;
 }
@@ -93,6 +94,13 @@ a {
   border-radius: 6px;
   display: flex;
   align-items: center;
+  font-family: "IBM Plex Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
   &:hover {
     color: white;
     background: $hover;
@@ -318,6 +326,13 @@ table.dataTable tfoot td {
 }
 
 // User Managemen end
+
+.uploadOptions {
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
 // Inquiry Management
 .page_tab_top_div {
   display: flex;
@@ -341,6 +356,7 @@ table.dataTable tfoot td {
   background: #0067ce;
 }
 // Inquiry Management end
+
 // quotation
 .quotation_man_title_bottom {
   h3 {

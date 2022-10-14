@@ -68,7 +68,7 @@ const Navbar = () => {
     {
       title: "Account Management",
       icon: <MdOutlineManageAccounts />,
-      link: "/",
+      link: "/max/account_management",
     },
     {
       title: "Max Cliq",
@@ -88,12 +88,12 @@ const Navbar = () => {
     {
       title: "Templates & Notes",
       icon: <VscServerEnvironment />,
-      link: "/",
+      link: "/max/templates_notes",
     },
     {
       title: "SMS Management",
       icon: <BsChatLeftDots />,
-      link: "/",
+      link: "/max/smsmanagement",
     },
   ]);
 

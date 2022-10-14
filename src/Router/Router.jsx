@@ -6,8 +6,8 @@ function AllRoutes() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
         <Route path="max/*" element={<MaxMoverRouts />} />
+        <Route path="/" element={<Login />} />
         <Route path="*" element={<main>NOT FOUND</main>} />
       </Routes>
     </Router>

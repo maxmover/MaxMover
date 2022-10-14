@@ -3,6 +3,7 @@ import { Routes, Route } from "react-router-dom";
 import Navbar from "../components/Navbar/Navbar";
 import NavContext from "../../../modules/MaxMover/components/Context/NavContext";
 import RightNavbar from "../components/RightNavbar/RightNavbar";
+import { TopSubBadge } from "../components/TopSubBadge/TopSubBadge";
 import { Dashboard } from "../pages/Dashboard";
 import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
@@ -12,6 +13,9 @@ import { AddNewCategory } from "../components/pages/Servicecategory/AddNewCatego
 import { EditCategory } from "../components/pages/Servicecategory/EditCategory";
 import { Vehiclemanagement } from "../pages/Vehiclemanagement";
 import { Servicecategory } from "../pages/Servicecategory";
+import { Accountmanagement } from "../pages/Accountmanagement";
+import { TemplatesNotes } from "../pages/Templatesnotes";
+import { Smsmanagement } from "../pages/Smsmanagement";
 
 import { BankDetails } from "../components/pages/UserManagement/customerPage/BankDetails";
 import { AddCustomer } from "../components/pages/UserManagement/customerPage/AddCustomer";
@@ -21,6 +25,13 @@ import { Receptions } from "../components/pages/UserManagement/Receptions";
 import { Refereers } from "../components/pages/UserManagement/Refereers";
 import { SubContractors } from "../components/pages/UserManagement/SubContractors";
 import { EditVehicle } from "../components/pages/VehicleManagement/EditVehicle";
+import { Editsms } from "../components/pages/Smsmanagement/editsms";
+import { AddnewSms } from "../components/pages/Smsmanagement/Addnewsms";
+import { AddnewNotes } from "../components/pages/TemplateNotes/Addnewnotes";
+import { Editnotes } from "../components/pages/TemplateNotes/Editnotes";
+import { AddNewExpense } from "../components/pages/Accountmanagement/AddNewExpense";
+import { EditExpense } from "../components/pages/Accountmanagement/EditExpense";
+
 import { AddEmployees } from "../components/pages/UserManagement/EmployeesPage/AddEmployees";
 import { EditEmployees } from "../components/pages/UserManagement/EmployeesPage/EditEmployees";
 import { WorkingRate } from "../components/pages/UserManagement/EmployeesPage/WorkingRate";
@@ -56,8 +67,10 @@ import { FollowupsNextFollowup } from "../components/pages/InquiryManagement/Fol
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
   const value = { nav, setNav };
+  const [isSubExp, setIsSubExp] = useState(true);
   return (
     <>
+      {isSubExp ? <TopSubBadge /> : null}
       <div className="App">
         <NavContext.Provider value={value}>
           <Navbar />
@@ -82,6 +95,19 @@ export const MaxMoverRouts = () => {
                 <Route path="/service_category" element={<Servicecategory />} />
                 <Route path="/add_employees" element={<AddEmployees />} />
                 <Route path="/edit_employees" element={<EditEmployees />} />
+                <Route path="/edit_sms" element={<Editsms />} />
+                <Route path="/add_new_sms" element={<AddnewSms />} />
+                <Route path="/add_new_notes" element={<AddnewNotes />} />
+                <Route path="/edit_notes" element={<Editnotes />} />
+                <Route path="/add_expense" element={<AddNewExpense />} />
+                <Route path="/edit_expense" element={<EditExpense />} />
+
+                <Route
+                  path="/employees_bank_details"
+                  element={<EmployeesBankDetails />}
+                />
+                <Route path="/working_rate" element={<WorkingRate />} />
+
                 <Route
                   path="/employees_bank_details"
                   element={<EmployeesBankDetails />}
@@ -90,6 +116,12 @@ export const MaxMoverRouts = () => {
                 <Route
                   path="/vehiclemanagement"
                   element={<Vehiclemanagement />}
+                />
+                <Route path="/smsmanagement" element={<Smsmanagement />} />
+                <Route path="/templates_notes" element={<TemplatesNotes />} />
+                <Route
+                  path="/account_management"
+                  element={<Accountmanagement />}
                 />
                 <Route
                   path="/add_sub_contractors"

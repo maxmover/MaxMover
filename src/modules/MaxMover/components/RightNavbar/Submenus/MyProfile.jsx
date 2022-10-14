@@ -39,8 +39,7 @@ const MyProfile = () => {
         className="d-flex"
         onClick={() => {
           setisProfileOpen(!isProfileOpen);
-        }}
-      >
+        }}>
         {/* AVATAR ICON */}
         {/* <div className={styles.icon_avatar_container}>
         <Avatar />
@@ -62,8 +61,7 @@ const MyProfile = () => {
         <div
           className={`${styles.menu} ${
             isProfileOpen ? styles.menu_active : ""
-          }`}
-        >
+          }`}>
           <div className={styles.info}>
             <span className={styles.name}>
               <b>Welcome !</b>
