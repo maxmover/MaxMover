@@ -7,7 +7,7 @@ import {
 } from "../../../../../common/btn/Btn";
 
 import { TextAreaBox, InputBox } from "../../../../../common/InputField/Form";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import "jquery/dist/jquery.min.js";
 
 import "datatables.net-dt/js/dataTables.dataTables";
@@ -19,7 +19,7 @@ import "datatables.net-dt/css/jquery.dataTables.min.css";
 // import React, { useEffect } from "react";
 
 export const AddnewNotes = () => {
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   return (
     <>
       <div className="custom_container">

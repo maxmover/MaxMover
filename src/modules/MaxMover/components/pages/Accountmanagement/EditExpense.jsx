@@ -8,7 +8,7 @@ import { ActionStrip } from "../../../../../common/actionStrip/ActionStrip";
 import {
   TextAreaBox,
   InputBox,
-  SelectBox,
+  // SelectBox,
 } from "../../../../../common/InputField/Form";
 import "jquery/dist/jquery.min.js";
 
@@ -47,24 +47,24 @@ export const EditExpense = () => {
   );
 };
 export const EditExpenseForm = () => {
-  const DropData = [
-    {
-      value: "1",
-      label: "1",
-    },
-    {
-      value: "2",
-      label: "2",
-    },
-    {
-      value: "3",
-      label: "3",
-    },
-    {
-      value: "4",
-      label: "4",
-    },
-  ];
+  // const DropData = [
+  //   {
+  //     value: "1",
+  //     label: "1",
+  //   },
+  //   {
+  //     value: "2",
+  //     label: "2",
+  //   },
+  //   {
+  //     value: "3",
+  //     label: "3",
+  //   },
+  //   {
+  //     value: "4",
+  //     label: "4",
+  //   },
+  // ];
   return (
     <>
       <div className="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-sm-3 g-3">

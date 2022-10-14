@@ -1,6 +1,6 @@
 import { InnerPagesTopTitle } from "../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
 // import { PageTopBtn } from "../components/pages/UserManagement/Customer";
-import { OutlineBtn, BlueBtn } from "../../../common/btn/Btn";
+import { BlueBtn } from "../../../common/btn/Btn";
 // import { AddNewVehicle } from "../../components/pages/Vehiclemanagement/AddNewVehicle";
 // import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -106,7 +106,8 @@ const MyTabel = () => {
         <td>
           <div
             onClick={() => navigate(props.editLink)}
-            className="tabel_td_inner">
+            className="tabel_td_inner"
+          >
             <MdOutlineModeEditOutline />
           </div>
         </td>
@@ -123,7 +124,8 @@ const MyTabel = () => {
       <div>
         <table
           id="template_notes_table"
-          className="table-striped table-hover text-center  table MyTabel_top_div">
+          className="table-striped table-hover text-center  table MyTabel_top_div"
+        >
           <thead>
             <tr>
               <th scope="col">Sr.No.</th>
