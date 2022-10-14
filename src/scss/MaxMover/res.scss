@@ -1,6 +1,13 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .page_tab_top_div {
+    overflow-x: scroll;
+    width: 100%;
+    .page_top_nav_link {
+      width: 13rem;
+    }
+  }
   .bank_details_input_main_div {
     display: block;
   }

@@ -86,7 +86,12 @@ export const NewVehicleForm = () => {
           <InputBox label="Vehicle Capacity" type="number" required />
         </div>
         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <DatepickerMui required />
+          <InputBox
+            InputLabelProps={{ shrink: true }}
+            label="Date"
+            type="date"
+            required
+          />
         </div>
         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <InputBox type="file" required />
@@ -127,7 +132,7 @@ export const NewVehicleForm = () => {
         </div>
 
         <div className="col-12">
-          <div className="row g-4 justify-content-center">
+          <div className="row g-4 justify-content-start">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
               <BlueBtn title="Submit" />
             </div>

@@ -7,9 +7,12 @@
   list-style: none;
   user-select: none;
 }
-input,label,textarea{
+input,
+label,
+textarea {
   font-family: "IBM Plex Sans", sans-serif !important;
 }
+
 a {
   text-decoration: none;
 }
@@ -91,6 +94,13 @@ a {
   border-radius: 6px;
   display: flex;
   align-items: center;
+  font-family: 'IBM Plex Sans';
+font-style: normal;
+font-weight: 500;
+font-size: 14px;
+line-height: 18px;
+letter-spacing: 0.02em;
+color: #FFFFFF;
   &:hover {
     color: white;
     background: $hover;
@@ -98,7 +108,10 @@ a {
   span {
     font-size: 11px;
     margin-right: 10px;
-    margin-bottom: 2px;
+    svg {
+      font-size: 15px;
+      color: white;
+    }
   }
 }
 
@@ -172,8 +185,7 @@ a {
   font-weight: 500;
   font-size: 14px;
   cursor: pointer;
-  background-color: black;
-  color: white;
+  background-color: white;
   border-radius: 5px;
 }
 // page top nav end
@@ -315,3 +327,35 @@ table.dataTable tfoot td {
 }
 
 // User Managemen end
+
+
+.uploadOptions{
+  position: absolute;
+  top: 5%;
+  right: 2%;
+}
+
+// Inquiry Management
+.page_tab_top_div {
+  display: flex;
+  align-items: center;
+  .page_top_nav_link {
+    width: auto;
+    margin-right: 10px;
+    border: 1px solid $blue2;
+    padding-right: 15px;
+    padding-left: 15px;
+    font-weight: 500;
+    font-size: 12px;
+    transition: all 0.3s;
+    &:hover {
+      background-color: $blue2 !important;
+      color: white !important;
+    }
+  }
+}
+.dark_blue_link_btn {
+  background: #0067ce;
+}
+// Inquiry Management end
+

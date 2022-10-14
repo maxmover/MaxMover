@@ -47,13 +47,18 @@ const Navbar = () => {
         { title: "Employees", link: "/max/employees" },
         { title: "Sub-contractors", link: "/max/sub_contractors" },
         { title: "Receptions", link: "/max/receptions" },
-        { title: "Refereers", link: "/max/receptions" },
+        { title: "Refereers", link: "/max/refereers" },
       ],
     },
     {
       title: "Inquiry Management",
       icon: <AiOutlineFileSearch />,
-      link: "/",
+      subItems: [
+        { title: "Inquiries", link: "/max/inquiries" },
+        { title: "Followups", link: "/max/followups" },
+        { title: "Quotations", link: "/max/quotations" },
+        { title: "Jobs", link: "/max/jobs" },
+      ],
     },
     {
       title: "Job Payment Management",
@@ -63,7 +68,7 @@ const Navbar = () => {
     {
       title: "Account Management",
       icon: <MdOutlineManageAccounts />,
-      link: "/",
+      link: "/max/account_management",
     },
     {
       title: "Max Cliq",
@@ -83,12 +88,12 @@ const Navbar = () => {
     {
       title: "Templates & Notes",
       icon: <VscServerEnvironment />,
-      link: "/",
+      link: "/max/templates_notes",
     },
     {
       title: "SMS Management",
       icon: <BsChatLeftDots />,
-      link: "/",
+      link: "/max/smsmanagement",
     },
   ]);
 
