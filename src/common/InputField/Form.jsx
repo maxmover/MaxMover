@@ -4,6 +4,7 @@ import TextField from "@mui/material/TextField";
 import MenuItem from "@mui/material/MenuItem";
 import Switch from "@mui/material/Switch";
 
+import { useNavigate } from "react-router-dom";
 // Date Picker
 import Stack from "@mui/material/Stack";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
@@ -14,6 +15,8 @@ import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 
 //
 export const SelectBox = (props) => {
+  const navigate = useNavigate();
+
   const [currency, setCurrency] = React.useState("");
 
   const handleChange = (event) => {
@@ -33,7 +36,13 @@ export const SelectBox = (props) => {
       value={currency}
     >
       {props.data.map((option) => (
-        <MenuItem key={option.value} value={option.value}>
+        <MenuItem
+          onClick={() => {
+            if (option.url) navigate(option.url);
+          }}
+          key={option.value}
+          value={option.value}
+        >
           {option.label}
         </MenuItem>
       ))}

@@ -5,15 +5,15 @@ export const PageTabs = (props) => {
     Inquiries: [
       {
         name: "Inquiry Information",
-        link: "/max/inquiries",
+        link: "/max/inquiry_information",
       },
       {
         name: "Inquiry Followup Information",
-        link: "/max/followups",
+        link: "/max/inquiry_followup_information",
       },
       {
         name: "Quotation",
-        link: "/max/quotations",
+        link: "/max/quotation",
       },
     ],
   };
