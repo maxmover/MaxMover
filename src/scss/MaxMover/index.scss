@@ -359,3 +359,35 @@ table.dataTable tfoot td {
 }
 // Inquiry Management end
 
+.SubscribeBadge{
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 0.04em;
+  height: 40px;
+   position: relative;
+
+  .Subscribelink{
+    color: #EF2870;
+    position: relative;
+    &:after{
+      position: absolute;
+      content: "\2022";
+      background: #EF2870;
+      // color: #EF2870;
+      filter: blur(1.5px);
+      width: 8px;
+      height: 8px;
+      right: -25%;
+      top: 25%;
+      border-radius: 50%;
+    }
+  }
+}
+
+
