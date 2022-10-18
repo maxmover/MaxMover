@@ -63,6 +63,11 @@ import { NextFollowup } from "../components/pages/InquiryManagement/InquiriesPag
 import { FollowupsAction } from "../components/pages/InquiryManagement/FollowupsPages/FollowupsAction";
 import { FollowupsGenerateQuotation } from "../components/pages/InquiryManagement/FollowupsPages/FollowupsGenerateQuotation";
 import { FollowupsNextFollowup } from "../components/pages/InquiryManagement/FollowupsPages/FollowupsNextFollowup";
+import { AddNewQuotations } from "../components/pages/InquiryManagement/QuotationsPage/AddNewQuotations";
+import { EditNewQuotations } from "../components/pages/InquiryManagement/QuotationsPage/EditNewQuotations";
+import { JobsViewHistory } from "../components/pages/InquiryManagement/JobsPages/JobsViewHistory";
+import { AddNewJob } from "../components/pages/InquiryManagement/JobsPages/AddNewJob";
+import { EditNewJob } from "../components/pages/InquiryManagement/JobsPages/EditNewJob";
 
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
@@ -189,6 +194,20 @@ export const MaxMoverRouts = () => {
                   path="/followups_next_followup"
                   element={<FollowupsNextFollowup />}
                 />
+                <Route
+                  path="/add_new_quotations"
+                  element={<AddNewQuotations />}
+                />
+                <Route
+                  path="/edit_quotations"
+                  element={<EditNewQuotations />}
+                />
+                <Route
+                  path="/jobs_view_history"
+                  element={<JobsViewHistory />}
+                />
+                <Route path="/add_new_job" element={<AddNewJob />} />
+                <Route path="/edit_job" element={<EditNewJob />} />
 
                 <Route path="*" element={<main>NOT FOUND</main>} />
               </Routes>
