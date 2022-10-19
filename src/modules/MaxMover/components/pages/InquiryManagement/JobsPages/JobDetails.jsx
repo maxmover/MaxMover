@@ -119,10 +119,10 @@ const DetailsList = () => {
   const ListLeftApp = (props) => {
     return (
       <div className="row">
-        <div className="col-4">
+        <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-5">
           <p className="job_details_text">{props.title} -</p>
         </div>
-        <div className="col-8">
+        <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-7 col-sm-7 col-7">
           <p className="job_details_text">
             <span>{props.titleData}</span>
           </p>
@@ -133,10 +133,10 @@ const DetailsList = () => {
   const ListRightApp = (props) => {
     return (
       <div className="row">
-        <div className="col-4">
+        <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-5 col-sm-5 col-5">
           <p className="job_details_text">{props.title} -</p>
         </div>
-        <div className="col-8">
+        <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-7 col-sm-7 col-7">
           <p className="job_details_text">
             <span>{props.titleData}</span>
           </p>
@@ -203,7 +203,7 @@ const DetailsList = () => {
             <hr className=" w-100" />
           </div>
         </div>
-        <div className="col-12">
+        <div className="col-12 mt-3">
           <div className="row g-4 justify-content-center">
             <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-6 col-6">
               <BlueBtn title="Submit" />
