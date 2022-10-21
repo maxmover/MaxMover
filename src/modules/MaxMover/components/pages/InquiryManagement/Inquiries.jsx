@@ -35,7 +35,7 @@ export const Inquiries = () => {
                 <div className="col-xxl-2 col-xl-2 col-lg-3 col-md-3 col-sm-12 col-12">
                   <DarkBlueLinkBtn
                     icon={<FiClock />}
-                    link="/"
+                    link="/max/view_history"
                     title="View History"
                   />
                 </div>
@@ -123,56 +123,61 @@ const MyTabel = () => {
   });
   const ListData = [
     {
-      ReceptionID: "MMCR111",
+      SrNo: "1",
+      ID: "MMCR111",
       date: "22-02-22",
       Name: "Lauren Scott",
-      Username: "Lauren",
       EmailId: "lauren@gmail.com",
       PhoneNumber: "1234567890",
-      Status: "Active",
-      editLink: "/max/edit_refereers",
+      Status: "Job Completed",
+      Resource: "google",
+      editLink: "/",
     },
     {
-      ReceptionID: "1",
+      SrNo: "2",
+      ID: "MMCR111",
       date: "22-02-22",
       Name: "Lauren Scott",
-      Username: "Lauren",
       EmailId: "lauren@gmail.com",
       PhoneNumber: "1234567890",
-      Status: "Inactive",
-      editLink: "/max/edit_refereers",
+      Status: "Job Completed",
+      Resource: "google",
+      editLink: "/",
     },
     {
-      ReceptionID: "MMCR112",
+      SrNo: "3",
+      ID: "MMCR111",
       date: "22-02-22",
       Name: "Lauren Scott",
-      Username: "Lauren",
       EmailId: "lauren@gmail.com",
       PhoneNumber: "1234567890",
-      Status: "Active",
-      editLink: "/max/edit_refereers",
+      Status: "Job Completed",
+      Resource: "google",
+      editLink: "/",
     },
     {
-      ReceptionID: "2",
+      SrNo: "4",
+      ID: "MMCR111",
       date: "22-02-22",
       Name: "Lauren Scott",
-      Username: "Lauren",
       EmailId: "lauren@gmail.com",
       PhoneNumber: "1234567890",
-      Status: "Inactive",
-      editLink: "/max/edit_refereers",
+      Status: "Job Completed",
+      Resource: "google",
+      editLink: "/",
     },
   ];
   const ListApp = (props) => {
     return (
       <tr>
-        <td>{props.ReceptionID}</td>
+        <td>{props.SrNo}</td>
+        <td>{props.ID}</td>
         <td>{props.date}</td>
         <td>{props.Name}</td>
-        <td>{props.Username}</td>
         <td>{props.EmailId}</td>
         <td>{props.PhoneNumber}</td>
         <td>{props.Status}</td>
+        <td>{props.Resource}</td>
         <td>
           <div
             onClick={() => navigate(props.editLink)}
@@ -199,13 +204,14 @@ const MyTabel = () => {
         >
           <thead>
             <tr>
-              <th scope="col">Referrer ID</th>
+              <th scope="col">Sr. No.</th>
+              <th scope="col">Inquiry ID</th>
               <th scope="col">Date</th>
               <th scope="col">Name</th>
-              <th scope="col">Username</th>
               <th scope="col">Email Id</th>
               <th scope="col">Phone</th>
               <th scope="col">Status</th>
+              <th scope="col">Resource</th>
               <th scope="col">Action</th>
               <th scope="col">Delete</th>
             </tr>

@@ -50,10 +50,32 @@ import { Inquiries } from "../components/pages/InquiryManagement/Inquiries";
 import { Jobs } from "../components/pages/InquiryManagement/Jobs";
 import { Quotations } from "../components/pages/InquiryManagement/Quotations";
 
+import { InquiryFollowupInformation } from "../components/pages/InquiryManagement/InquiriesPages/InquiryFollowupInformation";
+import { InquiryInformation } from "../components/pages/InquiryManagement/InquiriesPages/InquiryInformation";
+import { Quotation } from "../components/pages/InquiryManagement/InquiriesPages/Quotation";
+import { ViewHistory } from "../components/pages/InquiryManagement/InquiriesPages/ViewHistory";
+import { TakeAction } from "../components/pages/InquiryManagement/InquiriesPages/TakeAction";
+
+import { CreateBooking } from "../components/pages/InquiryManagement/InquiriesPages/CreateBooking";
+import { GenerateQuotatio } from "../components/pages/InquiryManagement/InquiriesPages/GenerateQuotatio";
+import { NextFollowup } from "../components/pages/InquiryManagement/InquiriesPages/NextFollowup";
+
+import { FollowupsAction } from "../components/pages/InquiryManagement/FollowupsPages/FollowupsAction";
+import { FollowupsGenerateQuotation } from "../components/pages/InquiryManagement/FollowupsPages/FollowupsGenerateQuotation";
+import { FollowupsNextFollowup } from "../components/pages/InquiryManagement/FollowupsPages/FollowupsNextFollowup";
+import { AddNewQuotations } from "../components/pages/InquiryManagement/QuotationsPage/AddNewQuotations";
+import { EditNewQuotations } from "../components/pages/InquiryManagement/QuotationsPage/EditNewQuotations";
+import { JobsViewHistory } from "../components/pages/InquiryManagement/JobsPages/JobsViewHistory";
+import { AddNewJob } from "../components/pages/InquiryManagement/JobsPages/AddNewJob";
+import { EditNewJob } from "../components/pages/InquiryManagement/JobsPages/EditNewJob";
+
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
   const value = { nav, setNav };
-  const [isSubExp, setIsSubExp] = useState(true);
+  const [
+    isSubExp,
+    // setIsSubExp
+  ] = useState(true);
   return (
     <>
       {isSubExp ? <TopSubBadge /> : null}
@@ -143,6 +165,49 @@ export const MaxMoverRouts = () => {
                 <Route path="/inquiries" element={<Inquiries />} />
                 <Route path="/jobs" element={<Jobs />} />
                 <Route path="/quotations" element={<Quotations />} />
+
+                <Route
+                  path="/inquiry_followup_information"
+                  element={<InquiryFollowupInformation />}
+                />
+                <Route
+                  path="/inquiry_information"
+                  element={<InquiryInformation />}
+                />
+                <Route path="/quotation" element={<Quotation />} />
+                <Route path="/view_history" element={<ViewHistory />} />
+                <Route path="/take_action" element={<TakeAction />} />
+
+                <Route path="/create_booking" element={<CreateBooking />} />
+                <Route
+                  path="/generate_quotatio"
+                  element={<GenerateQuotatio />}
+                />
+                <Route path="/next_followup" element={<NextFollowup />} />
+                <Route path="/followups_action" element={<FollowupsAction />} />
+
+                <Route
+                  path="/followups_generate_quotation"
+                  element={<FollowupsGenerateQuotation />}
+                />
+                <Route
+                  path="/followups_next_followup"
+                  element={<FollowupsNextFollowup />}
+                />
+                <Route
+                  path="/add_new_quotations"
+                  element={<AddNewQuotations />}
+                />
+                <Route
+                  path="/edit_quotations"
+                  element={<EditNewQuotations />}
+                />
+                <Route
+                  path="/jobs_view_history"
+                  element={<JobsViewHistory />}
+                />
+                <Route path="/add_new_job" element={<AddNewJob />} />
+                <Route path="/edit_job" element={<EditNewJob />} />
 
                 <Route path="*" element={<main>NOT FOUND</main>} />
               </Routes>

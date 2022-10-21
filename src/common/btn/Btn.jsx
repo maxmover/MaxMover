@@ -2,7 +2,6 @@ import { NavLink } from "react-router-dom";
 import { useState, useEffect } from "react";
 import Box from "@mui/material/Box";
 import Button from "@mui/material/Button";
-import { VscNewFile } from "react-icons/vsc";
 
 export const BlueBtn = (props) => {
   const Fillbtn = () => {
@@ -94,7 +93,7 @@ export const DarkBlueBtn = (props) => {
   const Fillbtn = () => {
     return (
       <>
-        <button className="BlueBtn" onClick={props.onClick}>
+        <button className="BlueBtn dark_blue_link_btn" onClick={props.onClick}>
           {props.title}
         </button>
       </>
@@ -103,7 +102,7 @@ export const DarkBlueBtn = (props) => {
   const Fillbtnicon = () => {
     return (
       <>
-        <button className="BlueBtn" onClick={props.onClick}>
+        <button className="BlueBtn dark_blue_link_btn" onClick={props.onClick}>
           <span>{props.icon}</span>
           {props.title}
         </button>
