@@ -1,5 +1,5 @@
-import { InnerPagesTopTitle } from "../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
-import { BlueBtn } from "../../../common/btn/Btn";
+import { InnerPagesTopTitle } from "../../../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
+import { BlueBtn } from "../../../../../common/btn/Btn";
 import { useNavigate } from "react-router-dom";
 import "jquery/dist/jquery.min.js";
 
@@ -12,10 +12,11 @@ import {
   AiOutlinePlusCircle,
   AiOutlineDelete,
   AiOutlineCheck,
+  AiOutlineDownload,
 } from "react-icons/ai";
 import { useState } from "react";
 import React, { useEffect } from "react";
-export const Smsmanagement = () => {
+export const Policymanagement = () => {
   const navigate = useNavigate();
   return (
     <>
@@ -78,24 +79,24 @@ const MyTabel = () => {
   const ListData = [
     {
       srno: "1",
-      smstitle: "Job confirmation email has sent",
-      smsDescription:
+      policytitle: "Insurance",
+      policyDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      editLink: "/max/edit_sms",
+      editLink: "/max/edit_policy",
     },
     {
       srno: "2",
-      smstitle: "Job confirmation email has sent",
-      smsDescription:
+      policytitle: "Insurance",
+      policyDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      editLink: "/max/edit_sms",
+      editLink: "/max/edit_policy",
     },
     {
       srno: "3",
-      smstitle: "Job confirmation email has sent",
-      smsDescription:
+      policytitle: "Insurance",
+      policyDescription:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      editLink: "/max/edit_sms",
+      editLink: "/max/edit_policy",
     },
   ];
   const ListApp = (props) => {
@@ -103,17 +104,17 @@ const MyTabel = () => {
       <tr>
         <td>{props.srno}</td>
         <td>{props.policytitle}</td>
-        <td className="w-50">{props.policyDescription}</td>
+        <td className="">{props.policyDescription}</td>
+        <td>
+          <div className="tabel_td_inner">
+            <AiOutlineDownload />
+          </div>
+        </td>
         <td>
           <div
             onClick={() => navigate(props.editLink)}
             className="tabel_td_inner">
             <MdOutlineModeEditOutline />
-          </div>
-        </td>
-        <td>
-          <div className="tabel_td_inner">
-            <AiOutlineCheck />
           </div>
         </td>
         <td>

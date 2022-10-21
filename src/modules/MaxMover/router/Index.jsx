@@ -55,6 +55,7 @@ import { InquiryInformation } from "../components/pages/InquiryManagement/Inquir
 import { Quotation } from "../components/pages/InquiryManagement/InquiriesPages/Quotation";
 import { ViewHistory } from "../components/pages/InquiryManagement/InquiriesPages/ViewHistory";
 import { TakeAction } from "../components/pages/InquiryManagement/InquiriesPages/TakeAction";
+import { Policymanagement } from "../components/pages/Maxcliq/PolicyInManagement";
 
 import { CreateBooking } from "../components/pages/InquiryManagement/InquiriesPages/CreateBooking";
 import { GenerateQuotatio } from "../components/pages/InquiryManagement/InquiriesPages/GenerateQuotatio";
@@ -126,6 +127,7 @@ export const MaxMoverRouts = () => {
                   element={<Vehiclemanagement />}
                 />
                 <Route path="/smsmanagement" element={<Smsmanagement />} />
+                <Route path="/policymanage" element={<Policymanagement />} />
                 <Route path="/templates_notes" element={<TemplatesNotes />} />
                 <Route
                   path="/account_management"
