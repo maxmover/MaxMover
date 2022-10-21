@@ -128,7 +128,7 @@ const MyTabel = () => {
       StartDate: "22-02-22",
       Status: "Job Created",
       editLink: "/max/edit_job",
-      JobDetails: "/",
+      JobDetails: "/max/job_details",
     },
     {
       SrNo: "2",
@@ -139,7 +139,7 @@ const MyTabel = () => {
       StartDate: "22-02-22",
       Status: "Job Created",
       editLink: "/max/edit_job",
-      JobDetails: "/",
+      JobDetails: "/max/job_details",
     },
   ];
   const ListApp = (props) => {

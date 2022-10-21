@@ -399,3 +399,18 @@ table.dataTable tfoot td {
   }
 }
 // quotation end
+// job details
+.job_details_text {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 14px;
+  color: #282828;
+
+  span {
+    font-weight: 400;
+  }
+}
+.job_details_div {
+  width: 10rem;
+}
+// job details end

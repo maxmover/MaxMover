@@ -69,6 +69,7 @@ import { EditNewQuotations } from "../components/pages/InquiryManagement/Quotati
 import { JobsViewHistory } from "../components/pages/InquiryManagement/JobsPages/JobsViewHistory";
 import { AddNewJob } from "../components/pages/InquiryManagement/JobsPages/AddNewJob";
 import { EditNewJob } from "../components/pages/InquiryManagement/JobsPages/EditNewJob";
+import { JobDetails } from "../components/pages/InquiryManagement/JobsPages/JobDetails";
 
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
@@ -210,6 +211,7 @@ export const MaxMoverRouts = () => {
                 />
                 <Route path="/add_new_job" element={<AddNewJob />} />
                 <Route path="/edit_job" element={<EditNewJob />} />
+                <Route path="/job_details" element={<JobDetails />} />
 
                 <Route path="*" element={<main>NOT FOUND</main>} />
               </Routes>
