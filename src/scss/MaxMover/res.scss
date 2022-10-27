@@ -1,6 +1,37 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .Job_Details_totle_text {
+    .inner_title {
+      font-size: 12px;
+    }
+  }
+  .Job_Details_title_ul_color_3 {
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+  .Job_Details_title_divder {
+    display: none;
+  }
+  .Job_Details_title_ul {
+    .title {
+      font-size: 12px;
+    }
+    .details {
+      font-size: 12px;
+    }
+  }
+  .add_received_payment_form_title {
+    p {
+      text-align: center;
+    }
+  }
+  .Job_Payment_Management_top_nav {
+    .page_top_nav_div_top {
+      .page_top_nav_link {
+        border-radius: 5px;
+      }
+    }
+  }
   .page_tab_top_div {
     overflow-x: scroll;
     width: 100%;
@@ -76,6 +107,12 @@
   }
 }
 @media (min-width: 768px) {
+  .Job_Details_title_ul_color_3 {
+    padding-left: 12px;
+  }
+  .Job_Details_title_divder {
+    display: none;
+  }
   .bank_details_input_div {
     .Customer_date_div {
       .MuiFormControl-root {
@@ -111,6 +148,12 @@
   }
 }
 @media (min-width: 1024px) {
+  .Job_Details_title_ul_color_3 {
+    padding-left: 2px;
+  }
+  .Job_Details_title_divder {
+    display: block;
+  }
   .bank_details_input_div {
     .Customer_date_div {
       .MuiFormControl-root {

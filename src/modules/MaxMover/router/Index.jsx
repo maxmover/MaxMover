@@ -69,6 +69,8 @@ import { JobsViewHistory } from "../components/pages/InquiryManagement/JobsPages
 import { AddNewJob } from "../components/pages/InquiryManagement/JobsPages/AddNewJob";
 import { EditNewJob } from "../components/pages/InquiryManagement/JobsPages/EditNewJob";
 import { JobDetails } from "../components/pages/InquiryManagement/JobsPages/JobDetails";
+import { JobExpenseReport } from "../components/pages/JobPaymentManagement/JobExpenseReport";
+import { AddReceivedPayment } from "../components/pages/JobPaymentManagement/JobExpenseReportPages/AddReceivedPayment";
 
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
@@ -210,6 +212,14 @@ export const MaxMoverRouts = () => {
                 <Route path="/add_new_job" element={<AddNewJob />} />
                 <Route path="/edit_job" element={<EditNewJob />} />
                 <Route path="/job_details" element={<JobDetails />} />
+                <Route
+                  path="/job_expense_report"
+                  element={<JobExpenseReport />}
+                />
+                <Route
+                  path="/add_received_payment"
+                  element={<AddReceivedPayment />}
+                />
 
                 <Route path="*" element={<main>NOT FOUND</main>} />
               </Routes>

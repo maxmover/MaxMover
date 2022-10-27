@@ -63,7 +63,16 @@ const Navbar = () => {
     {
       title: "Job Payment Management",
       icon: <GiExpense />,
-      link: "/",
+      subItems: [
+        { title: "Job Expense Report", link: "/max/job_expense_report" },
+        { title: "Employee ", link: "/" },
+        { title: "Admin", link: "/" },
+        { title: "Sub-contractor", link: "/" },
+        { title: "Fuel Account", link: "/" },
+        { title: "Discount report", link: "/" },
+        { title: "Hours report", link: "/" },
+        { title: "Invoices", link: "/" },
+      ],
     },
     {
       title: "Account Management",

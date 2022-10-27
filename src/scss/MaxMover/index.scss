@@ -145,6 +145,10 @@ a {
   &:hover {
     color: $blue2;
   }
+  span {
+    font-weight: 500;
+    font-size: 14px;
+  }
   svg {
     font-size: 20px;
   }
@@ -173,6 +177,8 @@ a {
 }
 .page_top_nav {
   display: flex;
+  overflow-x: scroll;
+  width: 100%;
   // overflow-x: scroll;
   // width: 100%;
 }
@@ -381,3 +387,95 @@ table.dataTable tfoot td {
   width: 10rem;
 }
 // job details end
+// Job Expense Report
+.Job_Payment_Management_top_nav {
+  .page_top_nav_div_top {
+    display: block;
+    border-radius: 0px;
+    .page_top_nav_link {
+      border-radius: 0;
+    }
+  }
+}
+.Job_Details_Modal_header {
+  .modal-title {
+    font-weight: 500;
+    font-size: 20px;
+    text-transform: capitalize;
+  }
+  .btn-close {
+    font-size: 10px;
+  }
+}
+.Job_Details_title_main_div {
+  background: #f7f7f7;
+  padding: 10px;
+  border: 0.5px solid #abafb1;
+  border-radius: 3px;
+  position: relative;
+}
+.Job_Details_title_divder {
+  position: absolute;
+  height: 100%;
+  width: 0.5px;
+  background-color: #abafb1;
+  left: 50%;
+  top: 0;
+  display: block;
+}
+.Job_Details_title_ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  text-transform: capitalize;
+  .title {
+    font-weight: 600;
+    font-size: 17px;
+  }
+  .title2 {
+    font-weight: 400;
+  }
+  .details {
+    font-weight: 400;
+    margin-left: 6px;
+    font-size: 18px;
+  }
+}
+.Job_Details_title_main_div2 {
+  padding: 0 !important;
+
+  .Job_Details_title_ul_color_1 {
+    padding: 10px;
+    background-color: #033f5c;
+    .title {
+      color: white;
+    }
+  }
+  .Job_Details_title_ul_color_2 {
+    padding: 10px;
+  }
+}
+.Job_Details_title_ul_color_3 {
+  padding-left: 2px;
+}
+.Job_Details_totle_text {
+  .inner_title {
+    padding: 10px;
+    border: 1px solid #c4c4c4;
+    background: #f3f3f3;
+    font-weight: 400;
+    font-size: 18px;
+  }
+}
+// Job Expense Report end
+// Add Received Payment
+.add_received_payment_form_title {
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+  }
+}
+// Add Received Payment end

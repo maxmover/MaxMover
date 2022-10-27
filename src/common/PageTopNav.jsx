@@ -129,6 +129,40 @@ const allData = {
       link: "/max/jobs",
     },
   ],
+  JobPaymentManagement: [
+    {
+      name: "Job Expense Report",
+      link: "/max/job_expense_report",
+    },
+    {
+      name: "Employee",
+      link: "/",
+    },
+    {
+      name: "Admin",
+      link: "/",
+    },
+    {
+      name: "Sub-contractor",
+      link: "/",
+    },
+    {
+      name: "Fuel Account",
+      link: "/",
+    },
+    {
+      name: "Discount report",
+      link: "/",
+    },
+    {
+      name: "Hours report",
+      link: "/",
+    },
+    {
+      name: "Invoices",
+      link: "/",
+    },
+  ],
 };
 export const PageTopNav = (props) => {
   const PageTopNavListApp = (props) => {
