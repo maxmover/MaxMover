@@ -31,6 +31,7 @@ const Navbar = () => {
   // const checkWindowSize = () => {
   //   if (window.innerWidth < 1240) setNav(!nav);
   // };
+  const [selectedMenu, setSelectedMenu] = useState(null);
   const [menuItems] = useState([
     {
       title: "Dashboard",
@@ -120,13 +121,14 @@ const Navbar = () => {
       >
         <span
           onClick={() => {
+            setSelectedMenu(i);
             if (menu.isActive) menu.isActive = false;
             else menu["isActive"] = true;
             if (menu?.subItems) setShowItems(!showItems);
             else navigation(menu.link);
           }}
           className={`d-flex position-relative ${
-            menu.isActive ? styles.active : ""
+            menu.isActive && selectedMenu === i ? styles.active : ""
           }`}
         >
           <div className="mx-3">{menu.icon}</div>
@@ -143,13 +145,17 @@ const Navbar = () => {
         {menu?.subItems && (
           <div className={styles.settings}>
             {menu?.isActive &&
-              menu.subItems.map((subItem, i) => (
+              menu.subItems.map((subItem, j) => (
                 <Link
-                  key={i}
+                  key={j}
                   onClick={() => {
-                    menu.activeSubItem = i;
+                    menu.activeSubItem = j;
                   }}
-                  className={menu.activeSubItem === i ? styles.subactive : null}
+                  className={
+                    menu.activeSubItem === j && selectedMenu === i
+                      ? styles.subactive
+                      : null
+                  }
                   to={subItem.link}
                 >
                   &nbsp; {subItem.title}

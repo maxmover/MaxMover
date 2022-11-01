@@ -29,23 +29,13 @@ export const Policymanagement = () => {
               <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12">
                 <div className="row g-3">
                   <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sm-12">
-                    <div onClick={() => navigate("/max/add_new_sms")}>
+                    <div onClick={() => navigate("/max/add_new_policy")}>
                       <BlueBtn
                         icon={<AiOutlinePlusCircle />}
                         title="Add new "
                       />
                     </div>
                   </div>
-                  {/* <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div>
-                      <BlueBtn title="Excel" />
-                    </div>
-                  </div>
-                  <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                    <div>
-                      <BlueBtn title="Print" />
-                    </div>
-                  </div> */}
                 </div>
               </div>
               {/* <div className="col-xl-6"></div> */}
