@@ -11,9 +11,18 @@ import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 
-// Select DropDown
+import Checkbox from "@mui/material/Checkbox";
 
-//
+const label = { inputProps: { "aria-label": "Checkbox demo" } };
+
+export const Checkboxes = (props) => {
+  return (
+    <>
+      <Checkbox sx={{ p: 0 }} {...label} {...props} />
+    </>
+  );
+};
+
 export const SelectBox = (props) => {
   const navigate = useNavigate();
 

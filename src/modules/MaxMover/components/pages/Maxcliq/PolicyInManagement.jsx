@@ -11,7 +11,6 @@ import { MdOutlineModeEditOutline } from "react-icons/md";
 import {
   AiOutlinePlusCircle,
   AiOutlineDelete,
-  AiOutlineCheck,
   AiOutlineDownload,
 } from "react-icons/ai";
 import { useState } from "react";
@@ -113,7 +112,8 @@ const MyTabel = () => {
         <td>
           <div
             onClick={() => navigate(props.editLink)}
-            className="tabel_td_inner">
+            className="tabel_td_inner"
+          >
             <MdOutlineModeEditOutline />
           </div>
         </td>
@@ -130,7 +130,8 @@ const MyTabel = () => {
       <div>
         <table
           id="template_sms_table"
-          className="table-striped table-hover text-center  table MyTabel_top_div">
+          className="table-striped table-hover text-center  table MyTabel_top_div"
+        >
           <thead>
             <tr>
               <th scope="col">Sr.No.</th>

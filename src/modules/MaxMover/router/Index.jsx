@@ -72,6 +72,14 @@ import { EditNewJob } from "../components/pages/InquiryManagement/JobsPages/Edit
 import { JobDetails } from "../components/pages/InquiryManagement/JobsPages/JobDetails";
 import { JobExpenseReport } from "../components/pages/JobPaymentManagement/JobExpenseReport";
 import { AddReceivedPayment } from "../components/pages/JobPaymentManagement/JobExpenseReportPages/AddReceivedPayment";
+import { JobPaymentEmployees } from "../components/pages/JobPaymentManagement/JobPaymentEmployees";
+import { JobPaymentAdmin } from "../components/pages/JobPaymentManagement/JobPaymentAdmin";
+import { JobPaymentSubContractor } from "../components/pages/JobPaymentManagement/JobPaymentSubContractor";
+import { FuelAccount } from "../components/pages/JobPaymentManagement/FuelAccount";
+import { DiscountReport } from "../components/pages/JobPaymentManagement/DiscountReport";
+import { HoursReport } from "../components/pages/JobPaymentManagement/HoursReport";
+import { Invoices } from "../components/pages/JobPaymentManagement/Invoices";
+import { InvoicesDetails } from "../components/pages/JobPaymentManagement/InvoicesDetails";
 
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
@@ -222,6 +230,23 @@ export const MaxMoverRouts = () => {
                   path="/add_received_payment"
                   element={<AddReceivedPayment />}
                 />
+                <Route
+                  path="/job_payment_employees"
+                  element={<JobPaymentEmployees />}
+                />
+                <Route
+                  path="/job_payment_admin"
+                  element={<JobPaymentAdmin />}
+                />
+                <Route
+                  path="/job_payment_sub_contractor"
+                  element={<JobPaymentSubContractor />}
+                />
+                <Route path="/fuel_account" element={<FuelAccount />} />
+                <Route path="/discount_report" element={<DiscountReport />} />
+                <Route path="/hours_report" element={<HoursReport />} />
+                <Route path="/invoices" element={<Invoices />} />
+                <Route path="/invoices_details" element={<InvoicesDetails />} />
 
                 <Route path="*" element={<main>NOT FOUND</main>} />
               </Routes>

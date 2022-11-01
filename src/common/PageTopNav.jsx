@@ -136,31 +136,31 @@ const allData = {
     },
     {
       name: "Employee",
-      link: "/",
+      link: "/max/job_payment_employees",
     },
     {
       name: "Admin",
-      link: "/",
+      link: "/max/job_payment_admin",
     },
     {
       name: "Sub-contractor",
-      link: "/",
+      link: "/max/job_payment_sub_contractor",
     },
     {
       name: "Fuel Account",
-      link: "/",
+      link: "/max/fuel_account",
     },
     {
-      name: "Discount report",
-      link: "/",
+      name: "Discount Report",
+      link: "/max/discount_report",
     },
     {
-      name: "Hours report",
-      link: "/",
+      name: "Hours Report",
+      link: "/max/hours_report",
     },
     {
       name: "Invoices",
-      link: "/",
+      link: "/max/invoices",
     },
   ],
 };

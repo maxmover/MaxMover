@@ -65,13 +65,13 @@ const Navbar = () => {
       icon: <GiExpense />,
       subItems: [
         { title: "Job Expense Report", link: "/max/job_expense_report" },
-        { title: "Employee ", link: "/" },
-        { title: "Admin", link: "/" },
-        { title: "Sub-contractor", link: "/" },
-        { title: "Fuel Account", link: "/" },
-        { title: "Discount report", link: "/" },
-        { title: "Hours report", link: "/" },
-        { title: "Invoices", link: "/" },
+        { title: "Employee ", link: "/max/job_payment_employees" },
+        { title: "Admin", link: "/max/job_payment_admin" },
+        { title: "Sub-contractor", link: "/max/job_payment_sub_contractor" },
+        { title: "Fuel Account", link: "/max/fuel_account" },
+        { title: "Discount report", link: "/max/discount_report" },
+        { title: "Hours report", link: "/max/hours_report" },
+        { title: "Invoices", link: "/max/invoices" },
       ],
     },
     {
@@ -116,7 +116,8 @@ const Navbar = () => {
       <div
         className={`${styles.li_navlink} ${
           menu.isActive ? styles.sidetabsactive : ""
-        }`}>
+        }`}
+      >
         <span
           onClick={() => {
             if (menu.isActive) menu.isActive = false;
@@ -126,7 +127,8 @@ const Navbar = () => {
           }}
           className={`d-flex position-relative ${
             menu.isActive ? styles.active : ""
-          }`}>
+          }`}
+        >
           <div className="mx-3">{menu.icon}</div>
           <div className={styles.description}>{menu.title} </div>
           <div className={styles.arrow}>
@@ -148,7 +150,8 @@ const Navbar = () => {
                     menu.activeSubItem = i;
                   }}
                   className={menu.activeSubItem === i ? styles.subactive : null}
-                  to={subItem.link}>
+                  to={subItem.link}
+                >
                   &nbsp; {subItem.title}
                 </Link>
               ))}
@@ -161,7 +164,8 @@ const Navbar = () => {
     <div
       className={`${styles.navbar_container} ${
         nav ? styles.navbar_mobile_active : ""
-      }`}>
+      }`}
+    >
       <nav>
         {/* LOGO */}
         <div className="text-center">
@@ -200,7 +204,8 @@ const Navbar = () => {
         className={nav ? styles.mobile_nav_background_active : null}
         onClick={() => {
           setNav(!nav);
-        }}></div>
+        }}
+      ></div>
     </div>
   );
 };

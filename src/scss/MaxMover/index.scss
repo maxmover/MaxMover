@@ -363,8 +363,8 @@ table.dataTable tfoot td {
 }
 // Inquiry Management end
 
-.SubscribeBadge{
-  font-family: 'Montserrat';
+.SubscribeBadge {
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 500;
   font-size: 12px;
@@ -374,15 +374,15 @@ table.dataTable tfoot td {
   align-items: center;
   letter-spacing: 0.04em;
   height: 40px;
-   position: relative;
+  position: relative;
 
-  .Subscribelink{
-    color: #EF2870;
+  .Subscribelink {
+    color: #ef2870;
     position: relative;
-    &:after{
+    &:after {
       position: absolute;
       content: "\2022";
-      background: #EF2870;
+      background: #ef2870;
       // color: #EF2870;
       filter: blur(1.5px);
       width: 8px;
@@ -393,8 +393,6 @@ table.dataTable tfoot td {
     }
   }
 }
-
-
 
 // quotation
 .quotation_man_title_bottom {
@@ -512,3 +510,93 @@ table.dataTable tfoot td {
   }
 }
 // Add Received Payment end
+// Invoices Details
+.invoices_details_tabel_div_col {
+  display: flex;
+  justify-content: flex-end;
+}
+.invoices_details_tabel_div {
+  text-align: end;
+  width: 13rem;
+  p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
+.invoices_details_tabel_date {
+  text-align: end;
+  text-transform: capitalize;
+  .hr_top {
+    color: #c4c4c4;
+    // height: 0.5px;
+    width: 100%;
+  }
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+.invoices_details_tabel_title_main_div {
+  text-transform: capitalize;
+  h3 {
+    font-weight: 500;
+    font-size: 14px;
+  }
+  p {
+    font-weight: 400;
+    font-size: 14px;
+    margin-bottom: 0;
+    width: 12rem;
+  }
+}
+.invoices_details_tabel_td_text_td_top {
+  width: 29rem;
+}
+.invoices_details_tabel_td_text {
+  h3 {
+    font-weight: 400;
+    font-size: 12px;
+    color: #5a5a5a;
+  }
+  p {
+    margin-bottom: 0;
+    font-weight: 400;
+    font-size: 10px;
+    color: #ababab;
+  }
+}
+.nvoices_details_tabel_MyTabel_top_div {
+  display: inline-table;
+  overflow-x: auto;
+  tr {
+    th {
+      font-weight: 500;
+      font-size: 12px;
+    }
+    td {
+      font-weight: 400;
+      font-size: 12px;
+    }
+  }
+}
+.invoices_details_ul {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  text-align: end;
+  border-bottom: 0.5px solid #282828;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  p {
+    margin-bottom: 0;
+    font-weight: 500;
+    font-size: 12px;
+    span {
+      font-weight: 400;
+      margin-left: 10px;
+    }
+  }
+}
+// Invoices Details and

@@ -1,6 +1,13 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .nvoices_details_tabel_MyTabel_top_div {
+    white-space: nowrap;
+    display: block;
+  }
+  .inner_pages_top_title {
+    font-size: 16px;
+  }
   .Job_Details_totle_text {
     .inner_title {
       font-size: 12px;
@@ -107,6 +114,9 @@
   }
 }
 @media (min-width: 768px) {
+  .invoices_details_tabel_td_text_td_top {
+    width: 16rem;
+  }
   .Job_Details_title_ul_color_3 {
     padding-left: 12px;
   }
@@ -148,6 +158,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .invoices_details_tabel_td_text_td_top {
+    width: 29rem;
+  }
   .Job_Details_title_ul_color_3 {
     padding-left: 2px;
   }
