@@ -7,6 +7,7 @@ import { TopSubBadge } from "../components/TopSubBadge/TopSubBadge";
 import { Dashboard } from "../pages/Dashboard";
 import Container from "../../MaxMover/components/Container/Container";
 import { Customer } from "../components/pages/UserManagement/Customer";
+import { AddnewPolicy } from "../components/pages/Maxcliq/AddnewPolicy";
 
 import { AddNewVehicle } from "../components/pages/VehicleManagement/AddNewVehicle";
 import { AddNewCategory } from "../components/pages/Servicecategory/AddNewCategory";
@@ -107,6 +108,7 @@ export const MaxMoverRouts = () => {
                 <Route path="/edit_employees" element={<EditEmployees />} />
                 <Route path="/edit_sms" element={<Editsms />} />
                 <Route path="/add_new_sms" element={<AddnewSms />} />
+                <Route path="/add_new_policy" element={<AddnewPolicy />} />
                 <Route path="/add_new_notes" element={<AddnewNotes />} />
                 <Route path="/edit_notes" element={<Editnotes />} />
                 <Route path="/add_expense" element={<AddNewExpense />} />
