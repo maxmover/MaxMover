@@ -12,7 +12,11 @@ import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
 
 import Checkbox from "@mui/material/Checkbox";
+// Select DropDown
+//CKtexteditor
 
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
 export const Checkboxes = (props) => {
@@ -22,12 +26,6 @@ export const Checkboxes = (props) => {
     </>
   );
 };
-
-// Select DropDown
-//CKtexteditor
-
-import { CKEditor } from "@ckeditor/ckeditor5-react";
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 
 export const SelectBox = (props) => {
   const navigate = useNavigate();
@@ -148,9 +146,7 @@ export const TextEditor = () => {
   return (
     <CKEditor
       editor={ClassicEditor}
-      data="<p>Hello from CKEditor 5!</p>"
       onReady={(editor) => {
-        // You can store the "editor" and use when it is needed.
         console.log("Editor is ready to use!", editor);
       }}
       onChange={(event, editor) => {

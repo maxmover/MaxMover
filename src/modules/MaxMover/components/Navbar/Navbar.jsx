@@ -23,7 +23,7 @@ import { BsChatLeftDots, BsTruck } from "react-icons/bs";
 import { VscServerEnvironment } from "react-icons/vsc";
 import { AiOutlineFileSearch } from "react-icons/ai";
 import { GiGears } from "react-icons/gi";
-
+import { IoNewspaperOutline } from "react-icons/io5";
 const Navbar = () => {
   let navigation = useNavigate();
   const { nav, setNav } = useContext(NavContext);
@@ -76,7 +76,7 @@ const Navbar = () => {
       ],
     },
     {
-      title: "Account Management",
+      title: "Expense Management",
       icon: <MdOutlineManageAccounts />,
       link: "/max/account_management",
     },
@@ -86,7 +86,7 @@ const Navbar = () => {
       subItems: [
         { title: "Announcement", link: "/max/announcement" },
         { title: "Policy & Insurance Management", link: "/max/policymanage" },
-        { title: "Training Management", link: "/max/trainingmanage" },
+        { title: "Training Management", link: "/max/training_management" },
       ],
     },
     {
@@ -100,6 +100,14 @@ const Navbar = () => {
       link: "/max/vehiclemanagement",
     },
     {
+      title: "NewsLetter Management",
+      icon: <IoNewspaperOutline />,
+      subItems: [
+        { title: "NewsLetter Templates", link: "/max/news_letter_templates" },
+        { title: "send NewsLetter", link: "/max/send_news_letter" },
+      ],
+    },
+    {
       title: "Templates & Notes",
       icon: <VscServerEnvironment />,
       link: "/max/templates_notes",
@@ -107,7 +115,10 @@ const Navbar = () => {
     {
       title: "SMS Management",
       icon: <BsChatLeftDots />,
-      link: "/max/smsmanagement",
+      subItems: [
+        { title: "SMS Management Templates", link: "/max/smsmanagement" },
+        { title: "send sms", link: "/max/send_sms" },
+      ],
     },
   ]);
 

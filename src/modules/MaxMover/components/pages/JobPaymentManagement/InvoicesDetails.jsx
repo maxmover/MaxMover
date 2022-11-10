@@ -12,7 +12,7 @@ export const InvoicesDetails = () => {
               <div className="row">
                 <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-10 col-sm-8 col-8">
                   <div className="user_managemen_top_title">
-                    <InnerPagesTopTitle name="Inquiry Management" />
+                    <InnerPagesTopTitle name="Job Payment Management" />
                   </div>
                 </div>
                 <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-2 col-sm-4 col-4">
@@ -195,6 +195,24 @@ const Tabel = () => {
               <p>Payment received by cash and due amount is zero.</p>
             </li>
           </ul>
+        </div>
+        <div className="col-12">
+          <div className="row">
+            <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-8 col-sm-12 col-12">
+              <div className="pay_tiyp_title">How to Pay</div>
+            </div>
+            <div className="col-xxl-4 col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12 pay_tiyp_title_bottom_col">
+              <div className="pay_tiyp_title_bottom">
+                <h3>Bank Details</h3>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ac
+                  vitae quam neque pretium commodo et consectetur ac. Interdum
+                  diam, volutpat elementum fermentum, egestas. Risus, ut porta
+                  adipiscing turpis.{" "}
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </>

@@ -7,7 +7,8 @@ import { MdOutlineModeEditOutline } from "react-icons/md";
 import { AiOutlineDelete } from "react-icons/ai";
 import { useState } from "react";
 import React, { useEffect } from "react";
-import { SideLabelInput } from "../../../../../common/InputField/Form";
+import { InputBox } from "../../../../../common/InputField/Form";
+
 import { useNavigate } from "react-router-dom";
 import { PageTopNav } from "../../../../../common/PageTopNav";
 import { MdOutlineAttachEmail } from "react-icons/md";
@@ -45,14 +46,22 @@ export const PageTopBtn = () => {
       <div className="row g-3">
         <div className="col-12">
           <div className="row g-3">
-            <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="start date" type="date" />
+            <div className="col-xxl-10 col-xl-10 col-lg-10 col-md-12 col-sm-12 col-12">
+              <div className="  PageTopBtn_date ">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="Start date"
+                />
               </div>
             </div>
-            <div className="col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="end date" type="date" />
+            <div className=" col-xxl-2 col-xl-2 col-lg-2 col-md-12 col-sm-12 col-12">
+              <div className=" PageTopBtn_date">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="End date"
+                />
               </div>
             </div>
           </div>

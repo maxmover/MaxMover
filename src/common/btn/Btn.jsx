@@ -7,7 +7,7 @@ export const BlueBtn = (props) => {
   const Fillbtn = () => {
     return (
       <>
-        <button className="BlueBtn" onClick={props.onClick}>
+        <button style={props.style} className="BlueBtn" onClick={props.onClick}>
           {props.title}
         </button>
       </>
@@ -16,7 +16,7 @@ export const BlueBtn = (props) => {
   const Fillbtnicon = () => {
     return (
       <>
-        <button className="BlueBtn" onClick={props.onClick}>
+        <button style={props.style} className="BlueBtn" onClick={props.onClick}>
           <span>{props.icon}</span>
           {props.title}
         </button>
@@ -29,7 +29,7 @@ export const BlueLinkBtn = (props) => {
   const FillLinkbtn = () => {
     return (
       <>
-        <NavLink className="BlueBtn" to={props.link}>
+        <NavLink style={props.style} className="BlueBtn" to={props.link}>
           {props.title}
         </NavLink>
       </>
@@ -38,7 +38,7 @@ export const BlueLinkBtn = (props) => {
   const FillLinkbtnicon = () => {
     return (
       <>
-        <NavLink className="BlueBtn" to={props.link}>
+        <NavLink style={props.style} className="BlueBtn" to={props.link}>
           <span>{props.icon}</span>
           {props.title}
         </NavLink>
@@ -52,7 +52,11 @@ export const OutlineBtn = (props) => {
   const OutlineBtnNormal = () => {
     return (
       <>
-        <button onClick={props.onClick} className="out_line_btn">
+        <button
+          style={props.style}
+          onClick={props.onClick}
+          className="out_line_btn"
+        >
           {props.title}
         </button>
       </>
@@ -60,7 +64,11 @@ export const OutlineBtn = (props) => {
   };
   const OutlineBtnIcon = () => {
     return (
-      <button onClick={props.onClick} className="out_line_btn">
+      <button
+        style={props.style}
+        onClick={props.onClick}
+        className="out_line_btn"
+      >
         <span>{props.icon}</span>
         {props.title}
       </button>
@@ -72,7 +80,7 @@ export const OutlineLinkBtn = (props) => {
   const OutlineBtnNormal = () => {
     return (
       <>
-        <NavLink to={props.link} className="out_line_btn">
+        <NavLink style={props.style} to={props.link} className="out_line_btn">
           {props.title}
         </NavLink>
       </>
@@ -80,7 +88,7 @@ export const OutlineLinkBtn = (props) => {
   };
   const OutlineBtnIcon = () => {
     return (
-      <NavLink to={props.link} className="out_line_btn">
+      <NavLink style={props.style} to={props.link} className="out_line_btn">
         <span>{props.icon}</span>
         {props.title}
       </NavLink>
@@ -93,7 +101,11 @@ export const DarkBlueBtn = (props) => {
   const Fillbtn = () => {
     return (
       <>
-        <button className="BlueBtn dark_blue_link_btn" onClick={props.onClick}>
+        <button
+          style={props.style}
+          className="BlueBtn dark_blue_link_btn"
+          onClick={props.onClick}
+        >
           {props.title}
         </button>
       </>
@@ -102,7 +114,11 @@ export const DarkBlueBtn = (props) => {
   const Fillbtnicon = () => {
     return (
       <>
-        <button className="BlueBtn dark_blue_link_btn" onClick={props.onClick}>
+        <button
+          style={props.style}
+          className="BlueBtn dark_blue_link_btn"
+          onClick={props.onClick}
+        >
           <span>{props.icon}</span>
           {props.title}
         </button>
@@ -115,7 +131,11 @@ export const DarkBlueLinkBtn = (props) => {
   const FillLinkbtn = () => {
     return (
       <>
-        <NavLink className="BlueBtn dark_blue_link_btn" to={props.link}>
+        <NavLink
+          style={props.style}
+          className="BlueBtn dark_blue_link_btn"
+          to={props.link}
+        >
           {props.title}
         </NavLink>
       </>
@@ -124,7 +144,11 @@ export const DarkBlueLinkBtn = (props) => {
   const FillLinkbtnicon = () => {
     return (
       <>
-        <NavLink className="BlueBtn dark_blue_link_btn" to={props.link}>
+        <NavLink
+          style={props.style}
+          className="BlueBtn dark_blue_link_btn"
+          to={props.link}
+        >
           <span>{props.icon}</span>
           {props.title}
         </NavLink>

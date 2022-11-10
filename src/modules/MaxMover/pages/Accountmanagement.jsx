@@ -1,7 +1,7 @@
 import { InnerPagesTopTitle } from "../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
 // import { PageTopBtn } from "../components/pages/UserManagement/Customer";
 import { OutlineLinkBtn, BlueBtn } from "../../../common/btn/Btn";
-import { SideLabelInput } from "../../../common/InputField/Form";
+import { InputBox } from "../../../common/InputField/Form";
 // import { AddNewVehicle } from "../../components/pages/Vehiclemanagement/AddNewVehicle";
 // import { NavLink } from "react-router-dom";
 import { useNavigate } from "react-router-dom";
@@ -22,45 +22,11 @@ export const Accountmanagement = () => {
       <div className="custom_container">
         <div className="inner_custom_container">
           <div className="user_managemen_top_title">
-            <InnerPagesTopTitle name="Account Management" />
+            <InnerPagesTopTitle name="Expense Management" />
           </div>
           <div className="row g-3">
-            <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12">
-              <div className="row g-3">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sm-12">
-                  <div>
-                    <OutlineLinkBtn
-                      icon={<AiOutlinePlusCircle />}
-                      title="Add new Expense"
-                      link="/max/add_expense"
-                    />
-                  </div>
-                </div>
-                <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                  <div>
-                    <BlueBtn title="Excel" />
-                  </div>
-                </div>
-                <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
-                  <div>
-                    <BlueBtn title="Print" />
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-5 col-sm-12 col-12">
-              <div className="row g-3">
-                <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                  <div className=" d-flex justify-content-end">
-                    <SideLabelInput label="start date" type="date" />
-                  </div>
-                </div>
-                <div className="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-                  <div className=" d-flex justify-content-end">
-                    <SideLabelInput label="end date" type="date" />
-                  </div>
-                </div>
-              </div>
+            <div className="col-12">
+              <PageTopBtn />
             </div>
             <div className="col-12 table_main_div">
               <MyTabel />
@@ -71,7 +37,59 @@ export const Accountmanagement = () => {
     </>
   );
 };
-
+export const PageTopBtn = () => {
+  return (
+    <>
+      <div className="row g-3">
+        <div className="col-xxl-5 col-xl-5 col-lg-6 col-md-7 col-sm-12 col-12">
+          <div className="row g-3">
+            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-sm-12">
+              <div>
+                <OutlineLinkBtn
+                  icon={<AiOutlinePlusCircle />}
+                  title="Add new Expense"
+                  link="/max/add_expense"
+                />
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+              <div>
+                <BlueBtn title="Excel" />
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-3 col-md-3 col-sm-6 col-6">
+              <div>
+                <BlueBtn title="Print" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-5 col-sm-12 col-12">
+          <div className="row g-3">
+            <div className="col-xxl-9 col-xl-9 col-lg-7 col-md-6 col-sm-12 col-12">
+              <div className="  PageTopBtn_date ">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="Start date"
+                />
+              </div>
+            </div>
+            <div className="col-xxl-3 col-xl-3 col-lg-5 col-md-6 col-sm-12 col-12">
+              <div className=" PageTopBtn_date">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="End date"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
 const MyTabel = () => {
   const navigate = useNavigate();
   const [isTableLoaded, setIsTableLoaded] = useState(false);

@@ -4,14 +4,15 @@ import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
 import $ from "jquery";
 import { MdOutlineModeEditOutline } from "react-icons/md";
-import { AiOutlineDelete } from "react-icons/ai";
+import { AiOutlineDelete, AiOutlinePlusCircle } from "react-icons/ai";
 import { useState } from "react";
 import React, { useEffect } from "react";
 import { DarkBlueLinkBtn } from "../../../../../../common/btn/Btn";
-import { SideLabelInput } from "../../../../../../common/InputField/Form";
+import { OutlineLinkBtn } from "../../../../../../common/btn/Btn";
 import { useNavigate } from "react-router-dom";
 import { FiArrowLeft } from "react-icons/fi";
 import { PageTopNav } from "../../../../../../common/PageTopNav";
+import { InputBox } from "../../../../../../common/InputField/Form";
 export const ViewHistory = () => {
   return (
     <>
@@ -58,13 +59,21 @@ export const PageTopBtn = () => {
         <div className="col-12">
           <div className="row g-3">
             <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="start date" type="date" />
+              <div>
+                <OutlineLinkBtn
+                  icon={<AiOutlinePlusCircle />}
+                  title="Add new customer"
+                  link="/max/"
+                />
               </div>
             </div>
             <div className="col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="end date" type="date" />
+              <div className=" PageTopBtn_date">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="End date"
+                />
               </div>
             </div>
           </div>

@@ -24,7 +24,7 @@ body {
 .App {
   display: flex;
 }
-
+/* 
 .subscribebadge {
   font-family: "Montserrat";
   font-style: normal;
@@ -41,8 +41,6 @@ body {
 .subscribeLink {
   color: #ef2870;
 }
-
-/* USERMANAGEMENT */
 
 .tabpillsscroll {
   width: 100%;
@@ -84,6 +82,6 @@ body {
   line-height: 18px;
   letter-spacing: 0.02em;
   color: #282828;
-}
+} */
 
 /* /MEDIA QUERIES/ */

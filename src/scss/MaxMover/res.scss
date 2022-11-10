@@ -1,6 +1,139 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .MyTabel_top_div_all {
+    white-space: nowrap !important;
+  }
+  .announcement_uedr_img_post_edit_btn {
+    bottom: -13px;
+    right: 0px;
+  }
+  .announcement_uedr_img_post_text {
+    padding: 0rem 0rem 0rem 0rem;
+    p {
+      font-size: 18px;
+      margin-bottom: 1rem;
+    }
+  }
+  .announcement_uedr_post_star {
+    top: 11px;
+    right: 0px;
+    span {
+      svg {
+        font-size: 20px;
+      }
+    }
+  }
+  .announcement_uedr_shar_btn {
+    font-size: 10px;
+  }
+  .announcement_uedr_post_ul {
+    li {
+      margin-right: 10px;
+    }
+  }
+  .announcement_post_view_name {
+    h3 {
+      font-size: 13px;
+    }
+  }
+  .announcement_uedr_img_post {
+    width: 2rem;
+    height: 2rem;
+    svg {
+      right: -3px;
+      bottom: -7px;
+    }
+  }
+  .PageTopBtn_date {
+    .MuiFormControl-root {
+      width: 100%;
+    }
+  }
+  .page_top_nav {
+    a {
+      border: none;
+    }
+  }
+  .announcement_input_icon_div {
+    bottom: 10px;
+    right: 5px;
+    top: unset;
+  }
+  .announcement_uedr_img {
+    margin: auto;
+    height: 5rem;
+    width: 5rem;
+    svg {
+      right: 6px;
+      bottom: -2px;
+    }
+  }
+  .announcement_input_top_div {
+    margin-right: 0;
+    textarea {
+      border-radius: 20px;
+      padding-right: 0;
+      height: 11rem;
+    }
+  }
+  .my_maps {
+    height: 14rem;
+  }
+  .my_maps_main_div {
+    padding: 0 0;
+  }
+  .Tracking_input_div {
+    margin-right: 0;
+  }
+  .Notifications_time {
+    p {
+      margin-top: 13px;
+    }
+  }
+  .notifications_img_icon {
+    margin: auto;
+  }
+  .Notifications_text {
+    h3 {
+      text-align: center;
+      margin-top: 10px;
+    }
+    p {
+      text-align: center;
+    }
+  }
+  .card_btn {
+    margin-top: 2rem;
+  }
+  .card_top_div {
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+  .card_poites {
+    justify-content: center;
+    margin-left: 0;
+  }
+  .card_top_div {
+    width: 100%;
+  }
+  .card_top_div_col_row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Subscription_text {
+    padding: 0 0;
+  }
+  .Top_Sub_Badge_text {
+    text-align: center;
+  }
+  .Top_Sub_Badge_link_div {
+    text-align: center;
+  }
+  .Top_Sub_Badge_link {
+    text-align: center;
+  }
   .nvoices_details_tabel_MyTabel_top_div {
     white-space: nowrap;
     display: block;
@@ -114,6 +247,24 @@
   }
 }
 @media (min-width: 768px) {
+  .PageTopBtn_date {
+    .MuiFormControl-root {
+      width: 100%;
+    }
+  }
+  .announcement_input_top_div {
+    margin-right: 0;
+  }
+  .Tracking_input_div {
+    margin-right: 2rem;
+  }
+  .card_top_div_col_row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .Subscription_text {
+    padding: 0 2rem;
+  }
   .invoices_details_tabel_td_text_td_top {
     width: 16rem;
   }
@@ -158,6 +309,24 @@
   }
 }
 @media (min-width: 1024px) {
+  .PageTopBtn_date {
+    .MuiFormControl-root {
+      width: 10rem;
+    }
+  }
+  .announcement_input_top_div {
+    margin-right: 2rem;
+  }
+  .Tracking_input_div {
+    margin-right: 10rem;
+  }
+  .card_top_div_col_row {
+    margin-left: 7rem;
+    margin-right: 7rem;
+  }
+  .Subscription_text {
+    padding: 0 10rem;
+  }
   .invoices_details_tabel_td_text_td_top {
     width: 29rem;
   }
@@ -202,6 +371,9 @@
   }
 }
 @media (min-width: 1440px) {
+  .Subscription_text {
+    padding: 0 12rem;
+  }
   .table_main_div {
     .dataTables_filter {
       input {

@@ -1,10 +1,10 @@
 import { InnerPagesTopTitle } from "../../../../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
 import React from "react";
-import { SideLabelInput } from "../../../../../../common/InputField/Form";
+
 import { PageTopNav } from "../../../../../../common/PageTopNav";
 import { PageTabs } from "../../../../../../common/PageTabs";
 import { ActionStrip } from "../../../../../../common/actionStrip/ActionStrip";
-import { AiOutlinePlus } from "react-icons/ai";
+import { AiOutlinePlus, AiOutlinePlusCircle } from "react-icons/ai";
 import {
   SelectBox,
   InputBox,
@@ -48,13 +48,21 @@ export const PageTopBtn = () => {
         <div className="col-12">
           <div className="row g-3">
             <div className="col-xxl-8 col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="start date" type="date" />
+              <div>
+                <OutlineLinkBtn
+                  icon={<AiOutlinePlusCircle />}
+                  title="Add new customer"
+                  link="/max/"
+                />
               </div>
             </div>
             <div className="col-4 col-xxl-4 col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="end date" type="date" />
+              <div className=" PageTopBtn_date">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="End date"
+                />
               </div>
             </div>
           </div>

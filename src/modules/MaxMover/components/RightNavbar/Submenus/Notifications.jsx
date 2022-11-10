@@ -6,6 +6,7 @@ import ProfilePic from "../../../../../pics/people1.jpg";
 //HOOKS
 import { useState } from "react";
 import useClickOutside from "../../../../../common/CustomHooks/ClickOutside";
+import { NavLink } from "react-router-dom";
 const Notification = ({ title, content, date }) => {
   return (
     <div className={styles.notification}>
@@ -67,7 +68,7 @@ const Notifications = () => {
               className={styles.title}
               style={{ paddingRight: ".8rem", fontSize: "14px" }}
             >
-              Clear All
+              <NavLink to="/max/all_notifications">View All</NavLink>
             </h6>
           </div>
         </div>

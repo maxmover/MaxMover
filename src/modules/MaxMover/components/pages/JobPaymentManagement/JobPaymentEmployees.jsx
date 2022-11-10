@@ -11,7 +11,8 @@ import {
   DarkBlueBtn,
   OutlineBtn,
 } from "../../../../../common/btn/Btn";
-import { SideLabelInput } from "../../../../../common/InputField/Form";
+import { InputBox } from "../../../../../common/InputField/Form";
+
 import { PageTopNav } from "../../../../../common/PageTopNav";
 import Modal from "react-bootstrap/Modal";
 export const JobPaymentEmployees = () => {
@@ -20,7 +21,7 @@ export const JobPaymentEmployees = () => {
       <div className="custom_container">
         <div className="inner_custom_container">
           <div className="user_managemen_top_title">
-            <InnerPagesTopTitle name="Inquiry Management" />
+            <InnerPagesTopTitle name="Job Payment Management" />
           </div>
 
           <div className="row g-xxl-4 g-xl-4 g-lg-4 g-md-4 g-sm-3 g-3 ">
@@ -67,14 +68,22 @@ export const PageTopBtn = () => {
         </div>
         <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-12 col-sm-12 col-12">
           <div className="row g-3">
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="start date" type="date" />
+            <div className="col-xxl-9 col-xl-9 col-lg-7 col-md-6 col-sm-12 col-12">
+              <div className="  PageTopBtn_date ">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="Start date"
+                />
               </div>
             </div>
-            <div className="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="end date" type="date" />
+            <div className="col-xxl-3 col-xl-3 col-lg-5 col-md-6 col-sm-12 col-12">
+              <div className=" PageTopBtn_date">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="End date"
+                />
               </div>
             </div>
           </div>

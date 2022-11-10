@@ -8,7 +8,7 @@ import { AiOutlinePlusCircle, AiOutlineDelete } from "react-icons/ai";
 import { useState } from "react";
 import React, { useEffect } from "react";
 import { OutlineLinkBtn, BlueBtn } from "../../../../../common/btn/Btn";
-import { SideLabelInput } from "../../../../../common/InputField/Form";
+import { InputBox } from "../../../../../common/InputField/Form";
 import Dropdown from "react-bootstrap/Dropdown";
 import { useNavigate } from "react-router-dom";
 import { PageTopNav } from "../../../../../common/PageTopNav";
@@ -70,14 +70,22 @@ export const PageTopBtn = () => {
         </div>
         <div className="col-xxl-7 col-xl-7 col-lg-6 col-md-5 col-sm-12 col-12">
           <div className="row g-3">
-            <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="start date" type="date" />
+            <div className="col-xxl-9 col-xl-9 col-lg-7 col-md-6 col-sm-12 col-12">
+              <div className="  PageTopBtn_date ">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="Start date"
+                />
               </div>
             </div>
-            <div className="col-6 col-xxl-6 col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
-              <div className=" d-flex justify-content-end">
-                <SideLabelInput label="end date" type="date" />
+            <div className="col-xxl-3 col-xl-3 col-lg-5 col-md-6 col-sm-12 col-12">
+              <div className=" PageTopBtn_date">
+                <InputBox
+                  type="date"
+                  InputLabelProps={{ shrink: true }}
+                  label="End date"
+                />
               </div>
             </div>
           </div>

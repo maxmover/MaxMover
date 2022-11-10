@@ -22,7 +22,7 @@ export const Policymanagement = () => {
       <div className="custom_container">
         <div className="inner_custom_container">
           <div className="user_managemen_top_title">
-            <InnerPagesTopTitle name="Policy & Insurance" />
+            <InnerPagesTopTitle name="Max Cliq" />
           </div>
           <div className="col-12">
             <div className="row g-3">
@@ -57,10 +57,11 @@ const MyTabel = () => {
     if (!isTableLoaded) {
       setTimeout(() => {
         setIsTableLoaded(true);
-        $("#VehicleMg_Table").DataTable({
+        $("#Customer_table").DataTable({
           responsive: true,
           deferRender: true,
           scroller: true,
+          // bLengthChange: false,
         });
       }, 1000);
     }
@@ -70,21 +71,7 @@ const MyTabel = () => {
       srno: "1",
       policytitle: "Insurance",
       policyDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      editLink: "/max/edit_policy",
-    },
-    {
-      srno: "2",
-      policytitle: "Insurance",
-      policyDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
-      editLink: "/max/edit_policy",
-    },
-    {
-      srno: "3",
-      policytitle: "Insurance",
-      policyDescription:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, ",
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Massa neque feugiat in tellus, pharetra nibh mi, amet, in. Neque ut viverra mauris.",
       editLink: "/max/edit_policy",
     },
   ];
@@ -93,7 +80,7 @@ const MyTabel = () => {
       <tr>
         <td>{props.srno}</td>
         <td>{props.policytitle}</td>
-        <td className="">{props.policyDescription}</td>
+        <td className="policymanage_td">{props.policyDescription}</td>
         <td>
           <div className="tabel_td_inner">
             <AiOutlineDownload />
@@ -115,12 +102,13 @@ const MyTabel = () => {
       </tr>
     );
   };
+
   return (
     <>
       <div>
         <table
-          id="template_sms_table"
-          className="table-striped table-hover text-center  table MyTabel_top_div"
+          id="Customer_table"
+          className="table-striped table-hover text-center  table MyTabel_top_div_all MyTabel_top_div"
         >
           <thead>
             <tr>
