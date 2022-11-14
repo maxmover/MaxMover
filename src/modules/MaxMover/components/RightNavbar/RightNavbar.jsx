@@ -35,6 +35,7 @@ const RightNavbar = () => {
       {/* ACTIONS */}
       <div className={styles.actions}>
         <ReactFlagsSelect
+          className=" d-none d-xxl-block d-xl-block d-lg-block d-md-block"
           selected={selected}
           onSelect={(code) => setSelected(code)}
           countries={["US", "GB", "FR", "DE", "IT", "NG"]}

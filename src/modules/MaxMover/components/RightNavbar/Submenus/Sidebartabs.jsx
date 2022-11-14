@@ -7,7 +7,8 @@ import { BiMessageDetail } from "react-icons/bi";
 import { FcGoogle } from "react-icons/fc";
 import { GrDropbox } from "react-icons/gr";
 import ProfilePic from "../../../../../pics/people4.jpg";
-
+import { SwitchBox } from "../../../../../common/InputField/Form";
+import { BlueBtn, BlueLinkBtn } from "../../../../../common/btn/Btn";
 // Style
 import "./Sidebartabs.scss";
 
@@ -33,7 +34,6 @@ function FillExample() {
         </div>
         <div className="col-9">
           <h6 className="Username" style={{ fontSize: "14px" }}>
-            {" "}
             {username}
           </h6>
           <p style={{ fontSize: "12px" }}>{messagepreview}</p>
@@ -59,7 +59,7 @@ function FillExample() {
         eventKey="tab1"
         title={
           <span>
-            <BiMessageDetail />{" "}
+            <BiMessageDetail />
           </span>
         }
       >
@@ -103,7 +103,7 @@ function FillExample() {
         eventKey="tab2"
         title={
           <span>
-            <MdOutlineDashboardCustomize />{" "}
+            <MdOutlineDashboardCustomize />
           </span>
         }
       >
@@ -119,7 +119,7 @@ function FillExample() {
             >
               <span>
                 <FcGoogle />
-              </span>{" "}
+              </span>
               &nbsp; G Suit
             </a>
           </div>
@@ -132,7 +132,7 @@ function FillExample() {
             >
               <span style={{ color: "#0061FF" }}>
                 <GrDropbox />
-              </span>{" "}
+              </span>
               &nbsp; Dropbox
             </a>
           </div>
@@ -142,12 +142,45 @@ function FillExample() {
         eventKey="tab3"
         title={
           <span>
-            <MdOutlineSettings />{" "}
+            <MdOutlineSettings />
           </span>
         }
       >
         <div className="blueTape">
           <h5>THEME SETTING </h5>
+        </div>
+        <div className="them_con">
+          <div className="theme_banner">
+            <span>Customize</span> the overall color scheme, sidebar menu, etc.
+          </div>
+          <div>
+            <div className="theme_title">
+              <h3>Color Scheme</h3>
+              <SwitchBox defaultChecked label="light Mode" />
+              <SwitchBox label="Dark Mode" />
+            </div>
+            <div className="theme_title">
+              <h3>Width</h3>
+              <SwitchBox defaultChecked label="Fluid " />
+              <SwitchBox label="Boxed" />
+            </div>
+            <div className="theme_title">
+              <h3>Left Sidebar Color</h3>
+              <SwitchBox defaultChecked label="Light" />
+              <SwitchBox label="Dark" />
+              <SwitchBox label="Brand" />
+              <SwitchBox label="Gradient" />
+            </div>
+            <div className="theme_title">
+              <h3>Top Bar</h3>
+              <SwitchBox defaultChecked label="Light" />
+              <SwitchBox label="Dark" />
+            </div>
+            <div className="theme_btn">
+              <BlueBtn title="Reset to Default" />
+              <BlueLinkBtn link="/max/subscription" title="Purchase Now" />
+            </div>
+          </div>
         </div>
       </Tab>
     </Tabs>

@@ -10,7 +10,8 @@ import Stack from "@mui/material/Stack";
 import { LocalizationProvider } from "@mui/x-date-pickers/LocalizationProvider";
 import { AdapterDayjs } from "@mui/x-date-pickers/AdapterDayjs";
 import { MobileDatePicker } from "@mui/x-date-pickers/MobileDatePicker";
-
+import FormGroup from "@mui/material/FormGroup";
+import FormControlLabel from "@mui/material/FormControlLabel";
 import Checkbox from "@mui/material/Checkbox";
 // Select DropDown
 //CKtexteditor
@@ -19,6 +20,13 @@ import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 const label = { inputProps: { "aria-label": "Checkbox demo" } };
 
+export const SwitchBox = (props) => {
+  return (
+    <FormGroup>
+      <FormControlLabel control={<Switch {...props} />} {...props} />
+    </FormGroup>
+  );
+};
 export const Checkboxes = (props) => {
   return (
     <>

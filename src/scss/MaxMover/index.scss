@@ -1104,3 +1104,39 @@ table.dataTable tfoot td {
     height: 21rem !important;
   }
 }
+// THEME SETTING
+.them_con {
+  padding: 1.5rem;
+}
+.theme_banner {
+  background-color: #fff3df;
+  padding: 25px 27px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  span {
+    font-weight: 700;
+  }
+}
+.theme_title {
+  margin-bottom: 1rem;
+  h3 {
+    font-weight: 500;
+    font-size: 18px;
+    text-transform: capitalize;
+  }
+  label {
+    text-transform: capitalize;
+    font-weight: 500;
+    font-size: 16px;
+    color: #969393;
+  }
+}
+.theme_btn {
+  a {
+    background: #f75964;
+    margin-top: 1rem;
+  }
+}
+// THEME SETTING end

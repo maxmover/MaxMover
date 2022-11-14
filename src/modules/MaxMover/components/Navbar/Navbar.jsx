@@ -1,6 +1,7 @@
 //STYLES
 import styles from "./Navbar.module.scss";
 // import { usermanageCustomer } from "../UsermanageCustomer/UsermanageCustomer";
+import "animate.css";
 
 //CONTEXT
 import { useContext, useState } from "react";
@@ -32,6 +33,7 @@ const Navbar = () => {
   //   if (window.innerWidth < 1240) setNav(!nav);
   // };
   const [selectedMenu, setSelectedMenu] = useState(null);
+  const [lastSelectedMenu, setLastSelectedMenu] = useState(null);
   const [menuItems] = useState([
     {
       title: "Dashboard",
@@ -42,7 +44,6 @@ const Navbar = () => {
     {
       title: "User Management",
       icon: <MdOutlineManageAccounts />,
-      activeSubItem: null,
       subItems: [
         { title: "Customers", link: "/max/Customer" },
         { title: "Employees", link: "/max/employees" },
@@ -123,30 +124,27 @@ const Navbar = () => {
   ]);
 
   const MenuItem = ({ menu, i }) => {
-    const [showItems, setShowItems] = useState(false);
     return (
       <div
         className={`${styles.li_navlink} ${
-          menu.isActive ? styles.sidetabsactive : ""
+          selectedMenu === i ? styles.sidetabsactive : ""
         }`}
       >
         <span
           onClick={() => {
-            setSelectedMenu(i);
-            if (menu.isActive) menu.isActive = false;
-            else menu["isActive"] = true;
-            if (menu?.subItems) setShowItems(!showItems);
-            else navigation(menu.link);
+            if (selectedMenu === i) setSelectedMenu(null);
+            else setSelectedMenu(i);
+            if (!menu?.subItems) navigation(menu.link);
           }}
-          className={`d-flex position-relative ${
-            menu.isActive && selectedMenu === i ? styles.active : ""
+          className={`d-flex position-relative  ${
+            selectedMenu === i ? styles.active : ""
           }`}
         >
           <div className="mx-3">{menu.icon}</div>
           <div className={styles.description}>{menu.title} </div>
           <div className={styles.arrow}>
             {menu.subItems &&
-              (showItems ? (
+              (selectedMenu === i ? (
                 <MdOutlineKeyboardArrowDown />
               ) : (
                 <MdOutlineKeyboardArrowRight />
@@ -155,15 +153,16 @@ const Navbar = () => {
         </span>
         {menu?.subItems && (
           <div className={styles.settings}>
-            {menu?.isActive &&
+            {selectedMenu === i &&
               menu.subItems.map((subItem, j) => (
                 <Link
                   key={j}
                   onClick={() => {
-                    menu.activeSubItem = j;
+                    menu["activeSubItem"] = j;
+                    setLastSelectedMenu(i);
                   }}
                   className={
-                    menu.activeSubItem === j && selectedMenu === i
+                    lastSelectedMenu === i && menu["activeSubItem"] === j
                       ? styles.subactive
                       : null
                   }
