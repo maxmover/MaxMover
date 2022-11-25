@@ -1,7 +1,7 @@
 import { InnerPagesTopTitle } from "../../../../../common/InnerPagesTopTitle/InnerPagesTopTitle";
 import { IoCall } from "react-icons/io5";
 import { OutlineLinkBtn } from "../../../../../common/btn/Btn";
-import SearchPng from "../../../../../pics/Search.png";
+// import SearchPng from "../../../../../pics/Search.png";
 export const TrackingDelivery = () => {
   return (
     <>
@@ -33,10 +33,10 @@ const Contact = () => {
           </div>
         </div>
         <div className="col-xxl-7 col-xl-7 col-lg-7 col-md-6 col-sm-12 col-12">
-          <div className="Tracking_input_div">
+          {/* <div className="Tracking_input_div">
             <img src={SearchPng} alt="search" />
             <input type="email" className="form-control" />
-          </div>
+          </div> */}
         </div>
         <div className="col-xxl-2 col-xl-2 col-lg-2 col-md-3 col-sm-12 col-12">
           <div>
@@ -93,8 +93,16 @@ const Maps = () => {
   return (
     <>
       <div className="my_maps_main_div">
+        {/* <iframe
+          src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d224281.4807379062!2d76.94824431337382!3d28.557804968278447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d28.414067799999998!2d77.0422586!4m5!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!3m2!1d28.7040592!2d77.10249019999999!5e0!3m2!1sen!2sin!4v1668420267144!5m2!1sen!2sin"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="myFrame"
+          className="my_maps"
+        /> */}
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d7018.34368619124!2d77.0422939!3d28.4140712!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1667446536436!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d224281.4807379062!2d76.94824431337382!3d28.557804968278447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e6!4m3!3m2!1d28.414067799999998!2d77.0422586!4m5!1s0x390cfd5b347eb62d%3A0x37205b715389640!2sDelhi!3m2!1d28.7040592!2d77.10249019999999!5e0!3m2!1sen!2sin!4v1668420267144!5m2!1sen!2sin"
           className="my_maps"
           allowFullScreen=""
           loading="lazy"

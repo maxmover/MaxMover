@@ -4,7 +4,6 @@ import "datatables.net-dt/js/dataTables.dataTables";
 import "datatables.net-dt/css/jquery.dataTables.min.css";
 import $ from "jquery";
 import { AiOutlineDelete } from "react-icons/ai";
-import { MdOutlineModeEditOutline } from "react-icons/md";
 import { useState } from "react";
 import React, { useEffect } from "react";
 import { BlueBtn } from "../../../../../common/btn/Btn";
@@ -135,7 +134,7 @@ const MyTabel = () => {
             onClick={() => navigate("/max/invoices_details")}
             className="tabel_td_inner"
           >
-            <MdOutlineModeEditOutline />
+            View
           </div>
         </td>
         <td>

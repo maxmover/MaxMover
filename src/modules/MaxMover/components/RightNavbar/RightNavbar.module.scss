@@ -29,7 +29,11 @@ ul li span {
     font-size: 1.8rem;
   }
 }
-
+.right_nav_Search_icon {
+  svg {
+    font-size: 23px !important;
+  }
+}
 .actions {
   display: flex;
   justify-content: flex-end;
@@ -37,7 +41,11 @@ ul li span {
   gap: 0.5rem;
   z-index: -1;
   align-items: center;
-
+  svg {
+    font-size: 20px;
+    cursor: pointer;
+    color: black;
+  }
   @media screen and (max-width: 360px) {
     justify-content: flex-start;
     margin-left: 1rem;

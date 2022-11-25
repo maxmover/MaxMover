@@ -5,7 +5,7 @@ export const PageTabs = (props) => {
     Inquiries: [
       {
         name: "Inquiry Information",
-        link: "/max/inquiry_information",
+        link: "/max/edit_inquiry_information",
       },
       {
         name: "Inquiry Followup Information",

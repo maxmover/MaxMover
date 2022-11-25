@@ -94,6 +94,8 @@ import { AddNewsLetter } from "../components/pages/NewsLetter/AddNewsLetter";
 import { TrainingManagement } from "../components/pages/Maxcliq/TrainingManagement";
 import { AddTraining } from "../components/pages/Maxcliq/AddTraining";
 import { EditTraining } from "../components/pages/Maxcliq/EditTraining";
+import { EditInquiryInformation } from "../components/pages/InquiryManagement/InquiriesPages/EditInquiryInformation";
+import { Chat } from "../components/pages/chat/Chat";
 
 export const MaxMoverRouts = () => {
   const [nav, setNav] = useState(false);
@@ -206,6 +208,10 @@ export const MaxMoverRouts = () => {
                     path="/inquiry_information"
                     element={<InquiryInformation />}
                   />
+                  <Route
+                    path="/edit_inquiry_information"
+                    element={<EditInquiryInformation />}
+                  />
                   <Route path="/quotation" element={<Quotation />} />
                   <Route path="/view_history" element={<ViewHistory />} />
                   <Route path="/take_action" element={<TakeAction />} />
@@ -301,6 +307,7 @@ export const MaxMoverRouts = () => {
                   />
                   <Route path="/add_training" element={<AddTraining />} />
                   <Route path="/edit_training" element={<EditTraining />} />
+                  <Route path="/messages" element={<Chat />} />
 
                   <Route path="*" element={<main>NOT FOUND</main>} />
                 </Routes>

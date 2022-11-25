@@ -139,11 +139,7 @@ const MyTabel = () => {
         <td>{props.Discription}</td>
         <td>{props.CashReceived}</td>
         <td>{props.PayAndExpenseMade}</td>
-        <td>
-          <div className="tabel_td_inner">
-            <AiOutlineDelete />
-          </div>
-        </td>
+
         <td>
           <div className="tabel_td_inner" onClick={() => setModalShow(true)}>
             Job Details
@@ -152,6 +148,11 @@ const MyTabel = () => {
             show={modalShow}
             onHide={() => setModalShow(false)}
           />
+        </td>
+        <td>
+          <div className="tabel_td_inner">
+            <AiOutlineDelete />
+          </div>
         </td>
       </tr>
     );
@@ -173,8 +174,8 @@ const MyTabel = () => {
               <th scope="col">Discription</th>
               <th scope="col">Cash Received</th>
               <th scope="col">Pay & Expense made</th>
-              <th scope="col">Delete</th>
               <th scope="col">More Details+</th>
+              <th scope="col">Delete</th>
             </tr>
           </thead>
           <tbody>

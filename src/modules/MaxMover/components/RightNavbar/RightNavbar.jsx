@@ -15,7 +15,8 @@ import { MdOutlineMenu } from "react-icons/md";
 import MyProfile from "./Submenus/MyProfile";
 import Notifications from "./Submenus/Notifications";
 import Search from "./Submenus/Search";
-
+import { FiMessageSquare } from "react-icons/fi";
+import { NavLink } from "react-router-dom";
 const RightNavbar = () => {
   const { nav, setNav } = useContext(NavContext);
   const [selected, setSelected] = useState("US");
@@ -42,9 +43,16 @@ const RightNavbar = () => {
           showSelectedLabel={false}
           showOptionLabel={false}
         />
-        <Search />
+
+        <div className={styles.right_nav_Search_icon}>
+          <Search />
+        </div>
         <Notifications />
-        {/* <Support /> */}
+        <div>
+          <NavLink to="/max/messages">
+            <FiMessageSquare />
+          </NavLink>
+        </div>
       </div>
 
       {/* My Profile */}

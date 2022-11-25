@@ -150,12 +150,12 @@ const MyTabel = () => {
         <td>{props.PaymentMode}</td>
         <td>{props.NetPayable}</td>
         <td>
+          <TabelMoreDetailsBtn />
+        </td>
+        <td>
           <div className="tabel_td_inner">
             <AiOutlineDelete />
           </div>
-        </td>
-        <td>
-          <TabelMoreDetailsBtn />
         </td>
       </tr>
     );
@@ -172,9 +172,9 @@ const MyTabel = () => {
             </div>
           </Dropdown.Toggle>
 
-          <Dropdown.Menu>
+          <Dropdown.Menu className="dropdown-menu-end animate slideIn">
             <Dropdown.Item>
-              <button onClick={() => setModalShow(true)}>Bank Details</button>
+              <button onClick={() => setModalShow(true)}>job Details</button>
             </Dropdown.Item>
             <Dropdown.Item>
               <button onClick={() => navigate("/max/add_received_payment")}>
@@ -206,8 +206,8 @@ const MyTabel = () => {
               <th scope="col">Total Payment</th>
               <th scope="col">Payment Mode</th>
               <th scope="col">Net payable</th>
-              <th scope="col">Delete</th>
               <th scope="col">More Details+</th>
+              <th scope="col">Delete</th>
             </tr>
           </thead>
           <tbody>

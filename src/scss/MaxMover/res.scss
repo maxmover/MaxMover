@@ -1,6 +1,9 @@
 @import "--var.scss";
 @import "--mixing.scss";
 @media (max-width: 576px) {
+  .MuiDrawer-root {
+    display: block;
+  }
   .MyTabel_top_div_all {
     white-space: nowrap !important;
   }
@@ -247,6 +250,9 @@
   }
 }
 @media (min-width: 768px) {
+  .MuiDrawer-root {
+    display: block;
+  }
   .PageTopBtn_date {
     .MuiFormControl-root {
       width: 100%;
@@ -309,6 +315,9 @@
   }
 }
 @media (min-width: 1024px) {
+  .MuiDrawer-root {
+    display: none;
+  }
   .PageTopBtn_date {
     .MuiFormControl-root {
       width: 10rem;

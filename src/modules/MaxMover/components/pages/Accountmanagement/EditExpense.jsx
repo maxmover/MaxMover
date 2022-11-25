@@ -46,7 +46,7 @@ export const EditExpenseForm = () => {
           <InputBox label="Driver Name" type="text" required />
         </div>
         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
-          <InputBox label="Expense Type" type="text" required />
+          <InputBox label="Expense Type " type="text" required />
         </div>
         <div className="col-xxl-6 col-xl-6 col-lg-6 col-md-6 col-sm-12 col-12">
           <InputBox label="Amount" type="number" required />

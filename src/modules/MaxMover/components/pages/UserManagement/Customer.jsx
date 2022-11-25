@@ -158,6 +158,9 @@ const MyTabel = () => {
         <td>{props.EmailId}</td>
         <td>{props.Phone}</td>
         <td>
+          <TabelMoreDetailsBtn />
+        </td>
+        <td>
           <div
             onClick={() => navigate(props.editLink)}
             className="tabel_td_inner"
@@ -169,9 +172,6 @@ const MyTabel = () => {
           <div className="tabel_td_inner">
             <AiOutlineDelete />
           </div>
-        </td>
-        <td>
-          <TabelMoreDetailsBtn />
         </td>
       </tr>
     );
@@ -189,7 +189,7 @@ const MyTabel = () => {
             </div>
           </Dropdown.Toggle>
 
-          <Dropdown.Menu>
+          <Dropdown.Menu className="dropdown-menu-end animate slideIn">
             <Dropdown.Item>
               <button onClick={() => navigate("/max/bank_details")}>
                 Bank Details
@@ -220,9 +220,9 @@ const MyTabel = () => {
               <th scope="col">Name</th>
               <th scope="col">Email Id</th>
               <th scope="col">Phone Number</th>
+              <th scope="col">More Details</th>
               <th scope="col">Action</th>
               <th scope="col">Delete</th>
-              <th scope="col">More Details</th>
             </tr>
           </thead>
           <tbody>

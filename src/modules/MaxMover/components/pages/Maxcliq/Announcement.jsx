@@ -92,7 +92,7 @@ const AnnouncementPost = () => {
                     </div>
                   </Dropdown.Toggle>
 
-                  <Dropdown.Menu>
+                  <Dropdown.Menu className="dropdown-menu-end animate slideIn">
                     <Dropdown.Item>Drivers</Dropdown.Item>
                     <Dropdown.Item>Movers</Dropdown.Item>
                     <Dropdown.Item>Choose employee</Dropdown.Item>

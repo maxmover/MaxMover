@@ -16,7 +16,6 @@ import { InputBox } from "../../../../../common/InputField/Form";
 import { useNavigate } from "react-router-dom";
 import { FiClock } from "react-icons/fi";
 import { PageTopNav } from "../../../../../common/PageTopNav";
-import { PageTabs } from "../../../../../common/PageTabs";
 export const Inquiries = () => {
   return (
     <>
@@ -44,9 +43,7 @@ export const Inquiries = () => {
                 </div>
               </div>
             </div>
-            <div className="col-12 ">
-              <PageTabs data="Inquiries" />
-            </div>
+
             <div className="col-12  ">
               <div className="table_main_div">
                 <MyTabel />
@@ -69,8 +66,8 @@ export const PageTopBtn = () => {
               <div>
                 <OutlineLinkBtn
                   icon={<AiOutlinePlusCircle />}
-                  title="Add new customer"
-                  link="/max/"
+                  title="Add new Inquiries"
+                  link="/max/inquiry_information"
                 />
               </div>
             </div>
@@ -139,40 +136,7 @@ const MyTabel = () => {
       PhoneNumber: "1234567890",
       Status: "Job Completed",
       Resource: "google",
-      editLink: "/",
-    },
-    {
-      SrNo: "2",
-      ID: "MMCR111",
-      date: "22-02-22",
-      Name: "Lauren Scott",
-      EmailId: "lauren@gmail.com",
-      PhoneNumber: "1234567890",
-      Status: "Job Completed",
-      Resource: "google",
-      editLink: "/",
-    },
-    {
-      SrNo: "3",
-      ID: "MMCR111",
-      date: "22-02-22",
-      Name: "Lauren Scott",
-      EmailId: "lauren@gmail.com",
-      PhoneNumber: "1234567890",
-      Status: "Job Completed",
-      Resource: "google",
-      editLink: "/",
-    },
-    {
-      SrNo: "4",
-      ID: "MMCR111",
-      date: "22-02-22",
-      Name: "Lauren Scott",
-      EmailId: "lauren@gmail.com",
-      PhoneNumber: "1234567890",
-      Status: "Job Completed",
-      Resource: "google",
-      editLink: "/",
+      editLink: "/max/edit_inquiry_information",
     },
   ];
   const ListApp = (props) => {

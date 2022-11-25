@@ -2,7 +2,6 @@ import { InnerPagesTopTitle } from "../../../../../../common/InnerPagesTopTitle/
 import React from "react";
 
 import { PageTopNav } from "../../../../../../common/PageTopNav";
-import { PageTabs } from "../../../../../../common/PageTabs";
 import { ActionStrip } from "../../../../../../common/actionStrip/ActionStrip";
 import { AiOutlinePlus, AiOutlinePlusCircle } from "react-icons/ai";
 import {
@@ -25,9 +24,7 @@ export const InquiryInformation = () => {
             <div className="col-12">
               <PageTopNav data="Inquiries" activeTabName="Inquiries" />
             </div>
-            <div className="col-12">
-              <PageTabs data="Inquiries" activeTabName="Inquiry Information" />
-            </div>
+
             <div className="col-12">
               <ActionStrip
                 icon={<AiOutlinePlus />}

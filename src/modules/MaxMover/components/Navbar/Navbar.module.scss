@@ -120,7 +120,7 @@ nav {
   padding: 0.7rem 0rem;
   text-decoration: none;
   color: var(--color_nav_ctg);
-  transition: all ease-in-out 0.2s;
+  // transition: all ease-in-out 0.2s;
 
   .description {
     font-weight: 400;
@@ -128,7 +128,6 @@ nav {
     line-height: 21px;
     margin-top: 5px;
     letter-spacing: 0.02em;
-    transition: opacity 200ms ease;
   }
 
   svg {
@@ -166,7 +165,7 @@ nav {
     .subactive {
       background: rgba(196, 196, 196, 0.2);
     }
-    // animation: test 0.5s ease-out;
+    animation: test 0.5s ease-out;
     margin: 0.5rem 1rem;
     background: #ffffff;
     border: 1px solid #f3f4f6;
@@ -177,12 +176,12 @@ nav {
 .li_navlink {
   margin: 5px 10px 0px 10px;
   // background: var(--color_nav_active_bg);
-  animation: test2 3s ease-out;
   .active,
   .active svg {
     color: #fff;
     background: #3499ff;
   }
+
   .arrow {
     position: absolute;
     right: 1%;
@@ -248,20 +247,26 @@ hr {
   // margin: 0px auto !important;
   border-bottom: 1px solid rgb(211, 211, 211);
 }
-
-// @keyframes test {
-//   0% {
-//     opacity: 0.5;
-//     position: relative;
-//     top: 10%;
-//   }
-//   100% {
-//     opacity: 1;
-//     position: relative;
-//     top: 0%;
-//   }
+// .demoNew {
+//   animation: test 0.5s;
 // }
 // @keyframes test2 {
+//   0% {
+//     opacity: 0;
+//     transform: scale(0);
+//   }
+
+//   80% {
+//     opacity: 1;
+//     transform: scale(1.07);
+//   }
+
+//   100% {
+//     opacity: 1;
+//     transform: scale(1.07);
+//   }
+// }
+// @keyframes test {
 //   0% {
 //     opacity: 0;
 //     transform: rotateX(-90deg);

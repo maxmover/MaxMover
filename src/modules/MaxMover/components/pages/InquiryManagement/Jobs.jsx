@@ -17,6 +17,8 @@ import { BiMap } from "react-icons/bi";
 import { InputBox } from "../../../../../common/InputField/Form";
 import { useNavigate } from "react-router-dom";
 import { PageTopNav } from "../../../../../common/PageTopNav";
+import Dropdown from "react-bootstrap/Dropdown";
+
 export const Jobs = () => {
   return (
     <>
@@ -136,7 +138,6 @@ const MyTabel = () => {
       StartDate: "22-02-22",
       Status: "Job Created",
       editLink: "/max/edit_job",
-      JobDetails: "/max/job_details",
     },
     {
       SrNo: "2",
@@ -147,7 +148,6 @@ const MyTabel = () => {
       StartDate: "22-02-22",
       Status: "Job Created",
       editLink: "/max/edit_job",
-      JobDetails: "/max/job_details",
     },
   ];
   const ListApp = (props) => {
@@ -182,17 +182,40 @@ const MyTabel = () => {
           </div>
         </td>
         <td>
-          <div
-            className="tabel_td_inner"
-            onClick={() => navigate(props.JobDetails)}
-          >
-            job Details
-          </div>
+          <TabelMoreDetailsBtn />
         </td>
       </tr>
     );
   };
+  const TabelMoreDetailsBtn = () => {
+    const navigate = useNavigate();
 
+    return (
+      <>
+        <Dropdown className="list_btn_dropdown">
+          <Dropdown.Toggle variant="success" id="dropdown-basic">
+            <div className="tabel_td_inner">
+              <span>More Details</span>
+              <AiOutlinePlusCircle />
+            </div>
+          </Dropdown.Toggle>
+
+          <Dropdown.Menu className="dropdown-menu-end animate slideIn">
+            <Dropdown.Item>
+              <button onClick={() => navigate("/max/add_expense")}>
+                add Expense
+              </button>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <button onClick={() => navigate("/max/job_details")}>
+                job details
+              </button>
+            </Dropdown.Item>
+          </Dropdown.Menu>
+        </Dropdown>
+      </>
+    );
+  };
   return (
     <>
       <div>
